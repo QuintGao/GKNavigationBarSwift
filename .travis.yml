@@ -1,0 +1,16 @@
+language: objective-c
+osx_image: xcode11.3.1
+
+before_install:
+  - env
+  - locale
+  - xcpretty --version
+  - xcodebuild -version
+  - xcodebuild -showsdks
+
+script:
+  - set -o pipefail
+  - travis_retry xcodebuild -workspace GKNavigationBarSwift.xcworkspace -scheme "Example" -destination "platform=iOS Simulator,name=iPhone 6" build-for-testing test | xcpretty
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

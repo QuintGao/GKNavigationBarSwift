@@ -63,6 +63,7 @@
 		79C48F3024420207000B0815 /* UIViewController+GKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+GKExtension.swift"; path = "Sources/UIViewController+GKExtension.swift"; sourceTree = SOURCE_ROOT; };
 		79C48F3124420207000B0815 /* UIImage+GKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+GKExtension.swift"; path = "Sources/UIImage+GKExtension.swift"; sourceTree = SOURCE_ROOT; };
 		79C490192442D033000B0815 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		79C490242442DD4C000B0815 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +123,7 @@
 				79C48EB72441EE71000B0815 /* GKNavigationBarSwift.podspec */,
 				79C48EB62441EE70000B0815 /* Package.swift */,
 				79C490192442D033000B0815 /* README.md */,
+				79C490242442DD4C000B0815 /* .travis.yml */,
 			);
 			name = Deployment;
 			sourceTree = "<group>";

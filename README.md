@@ -7,7 +7,8 @@ GKNavigationBar的Swift版本 - iOS自定义导航栏，为你的每个控制器
 [![platform](http://img.shields.io/cocoapods/p/GKNavigationBarSwift.svg?style=flat)](http://cocoadocs.org/docsets/GKNavigationBarSwift)
 [![languages](https://img.shields.io/badge/language-objective--c-blue.svg)](#)
 [![cocoapods](http://img.shields.io/cocoapods/v/GKNavigationBarSwift.svg?style=flat)](https://cocoapods.org/pods/GKNavigationBarSwift)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/QuintGao/GKNavigationBarSwift)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![support](https://img.shields.io/badge/support-ios%208%2B-orange.svg)](#) 
 
 ## 介绍：(本框架的特性)
