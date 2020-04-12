@@ -10,7 +10,7 @@ before_install:
 
 script:
   - set -o pipefail
-  - travis_retry xcodebuild -workspace GKNavigationBarSwift.xcworkspace -scheme "Example" -destination "platform=iOS Simulator,name=iPhone 11"
+  - travis_retry xcodebuild -workspace GKNavigationBarSwift.xcworkspace -scheme "Example" -destination "platform=iOS Simulator,name=iPhone 6"
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
