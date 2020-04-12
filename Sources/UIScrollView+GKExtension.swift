@@ -24,7 +24,7 @@ extension UIScrollView {
     }
 }
 
-extension UIScrollView: UIGestureRecognizerDelegate {
+extension UIScrollView {
     open override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         if self.gk_gestureHandleDisabled {
             return true

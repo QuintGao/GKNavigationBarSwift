@@ -50,5 +50,5 @@ self.gk_navBackgroundColor = [UIColor red]
 
 ## 版本记录
 
-* 0.0.2 - 2020.04.12  优化对UIScrollView手势的处理
+* 0.0.3 - 2020.04.12  优化对UIScrollView手势的处理
 * 0.0.1 - 2020.04.12  初始版本，支持Cocoapods，Carthage，SPM

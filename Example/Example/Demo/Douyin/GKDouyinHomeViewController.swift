@@ -8,7 +8,8 @@
 
 import UIKit
 import GKNavigationBarSwift
-class GKDouyinScrollView: UIScrollView {
+
+class GKDouyinScrollView: UIScrollView, UIGestureRecognizerDelegate {
     override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         if self.panBack(gesture: gestureRecognizer) {
             return false
