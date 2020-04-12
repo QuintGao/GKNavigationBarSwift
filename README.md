@@ -44,6 +44,10 @@ self.gk_navBackgroundColor = [UIColor red]
 ```
 更多属性及方法可在demo中查看
 
+## 效果图
+
+![demo](https://github.com/QuintGao/GKNavigationBarSwift/blob/master/imgs/demo.png)
+
 ## 版本记录
 
 * 0.0.1 - 2020.04.12  初始版本，支持Cocoapods，Carthage，SPM
