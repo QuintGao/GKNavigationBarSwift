@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SnapKit
+import GKNavigationBarSwift
 
 class GKMainViewController: GKBaseViewController {
 
@@ -16,7 +16,7 @@ class GKMainViewController: GKBaseViewController {
     var dataSource: [String] = {
         return ["导航功能测试",
                 "UIScrollView使用（手势冲突）",
-                "TZImagePickerController使用",
+                "相册使用",
                 "系统导航",
                 "抖音左右滑动",
                 "今日头条",
@@ -54,11 +54,7 @@ class GKMainViewController: GKBaseViewController {
             self.automaticallyAdjustsScrollViewInsets = false
         }
         self.view.addSubview(self.tableView!)
-        
-        self.tableView?.snp.makeConstraints({ (make) in
-            make.left.right.bottom.equalTo(self.view)
-            make.top.equalTo(self.gk_navigationBar.snp_bottom)
-        })
+        self.tableView?.frame = CGRect(x: 0, y: GK_STATUSBAR_NAVBAR_HEIGHT, width: GK_SCREEN_WIDTH, height: GK_SCREEN_HEIGHT - GK_STATUSBAR_NAVBAR_HEIGHT)
         self.tableView?.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "cell")
     }
 }

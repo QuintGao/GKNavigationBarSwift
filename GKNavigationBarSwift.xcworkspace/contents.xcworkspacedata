@@ -4,4 +4,7 @@
    <FileRef
       location = "group:GKNavigationBarSwift.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Example/Example.xcodeproj">
+   </FileRef>
 </Workspace>

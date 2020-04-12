@@ -60,10 +60,7 @@ class GKDemoWebViewController: GKBaseViewController {
         self.gk_navRightBarButtonItem = self.closeBtn
         
         self.view.addSubview(self.webView)
-        self.webView.snp.makeConstraints { (make) in
-            make.left.right.bottom.equalTo(self.view)
-            make.top.equalTo(self.gk_navigationBar.snp_bottom)
-        }
+        self.webView.frame = CGRect(x: 0, y: GK_STATUSBAR_NAVBAR_HEIGHT, width: GK_SCREEN_WIDTH, height: GK_SCREEN_HEIGHT - GK_STATUSBAR_NAVBAR_HEIGHT)
         
         let filePath = Bundle.main.path(forResource: "web", ofType: "txt")
         

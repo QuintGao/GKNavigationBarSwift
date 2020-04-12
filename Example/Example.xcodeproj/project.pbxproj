@@ -3,64 +3,77 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		79C48F4E244202E2000B0815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79C48F4D244202E2000B0815 /* Assets.xcassets */; };
-		79C48F9E244203FF000B0815 /* GKDemoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F76244203FF000B0815 /* GKDemoBaseViewController.swift */; };
-		79C48F9F244203FF000B0815 /* GKTabBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F77244203FF000B0815 /* GKTabBaseViewController.swift */; };
-		79C48FA0244203FF000B0815 /* GKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F78244203FF000B0815 /* GKBaseViewController.swift */; };
-		79C48FA1244203FF000B0815 /* GKToutiaoMicroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F7A244203FF000B0815 /* GKToutiaoMicroViewController.swift */; };
-		79C48FA2244203FF000B0815 /* GKToutiaoMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F7B244203FF000B0815 /* GKToutiaoMineViewController.swift */; };
-		79C48FA3244203FF000B0815 /* GKToutiaoHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F7C244203FF000B0815 /* GKToutiaoHomeViewController.swift */; };
-		79C48FA4244203FF000B0815 /* GKToutiaoVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F7D244203FF000B0815 /* GKToutiaoVideoViewController.swift */; };
-		79C48FA5244203FF000B0815 /* GKToutiaoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F7E244203FF000B0815 /* GKToutiaoDetailViewController.swift */; };
-		79C48FA6244203FF000B0815 /* GKToutiaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F7F244203FF000B0815 /* GKToutiaoViewController.swift */; };
-		79C48FA7244203FF000B0815 /* GKWYMusicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F81244203FF000B0815 /* GKWYMusicDetailViewController.swift */; };
-		79C48FA8244203FF000B0815 /* GKWYMusicFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F82244203FF000B0815 /* GKWYMusicFriendViewController.swift */; };
-		79C48FA9244203FF000B0815 /* GKWYMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F83244203FF000B0815 /* GKWYMusicViewController.swift */; };
-		79C48FAA244203FF000B0815 /* GKWYMusicAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F84244203FF000B0815 /* GKWYMusicAccountViewController.swift */; };
-		79C48FAB244203FF000B0815 /* GKWYMusicFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F85244203FF000B0815 /* GKWYMusicFindViewController.swift */; };
-		79C48FAC244203FF000B0815 /* GKWYMusicMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F86244203FF000B0815 /* GKWYMusicMineViewController.swift */; };
-		79C48FAD244203FF000B0815 /* GKDouyinHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F88244203FF000B0815 /* GKDouyinHomeViewController.swift */; };
-		79C48FAE244203FF000B0815 /* GKDouyinSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F89244203FF000B0815 /* GKDouyinSearchViewController.swift */; };
-		79C48FAF244203FF000B0815 /* GKDouyinPersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F8A244203FF000B0815 /* GKDouyinPersonalViewController.swift */; };
-		79C48FB0244203FF000B0815 /* GKDouyinPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F8B244203FF000B0815 /* GKDouyinPlayerViewController.swift */; };
-		79C48FB1244203FF000B0815 /* GKMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F8C244203FF000B0815 /* GKMainViewController.swift */; };
-		79C48FB2244203FF000B0815 /* GKWYNewsLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F8E244203FF000B0815 /* GKWYNewsLiveViewController.swift */; };
-		79C48FB3244203FF000B0815 /* GKWYNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F8F244203FF000B0815 /* GKWYNewsViewController.swift */; };
-		79C48FB4244203FF000B0815 /* GKWYNewsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F90244203FF000B0815 /* GKWYNewsHomeViewController.swift */; };
-		79C48FB5244203FF000B0815 /* GKWYNewsNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F91244203FF000B0815 /* GKWYNewsNewViewController.swift */; };
-		79C48FB6244203FF000B0815 /* GKWYNewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F92244203FF000B0815 /* GKWYNewsDetailViewController.swift */; };
-		79C48FB7244203FF000B0815 /* GKWYNewsVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F93244203FF000B0815 /* GKWYNewsVideoViewController.swift */; };
-		79C48FB8244203FF000B0815 /* GKWYNewsProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F94244203FF000B0815 /* GKWYNewsProfileViewController.swift */; };
-		79C48FB9244203FF000B0815 /* GKWYNewsCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F95244203FF000B0815 /* GKWYNewsCommentViewController.swift */; };
-		79C48FBA244203FF000B0815 /* GKDemo000ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79C48F97244203FF000B0815 /* GKDemo000ViewController.xib */; };
-		79C48FBB244203FF000B0815 /* GKDemo003ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F98244203FF000B0815 /* GKDemo003ViewController.swift */; };
-		79C48FBC244203FF000B0815 /* GKDemo002ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F99244203FF000B0815 /* GKDemo002ViewController.swift */; };
-		79C48FBD244203FF000B0815 /* GKDemo001ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F9A244203FF000B0815 /* GKDemo001ViewController.swift */; };
-		79C48FBE244203FF000B0815 /* GKDemo000ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F9B244203FF000B0815 /* GKDemo000ViewController.swift */; };
-		79C48FBF244203FF000B0815 /* GKDemoWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F9C244203FF000B0815 /* GKDemoWebViewController.swift */; };
-		79C48FC0244203FF000B0815 /* web.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79C48F9D244203FF000B0815 /* web.txt */; };
-		79C48FC224420408000B0815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48FC124420408000B0815 /* AppDelegate.swift */; };
-		79C48FFB24420695000B0815 /* GKNavigationBarSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C48FF72442068A000B0815 /* GKNavigationBarSwift.framework */; };
-		79C49004244213AD000B0815 /* GKNavigationBarSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 79C48FF72442068A000B0815 /* GKNavigationBarSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		79C49006244218D9000B0815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C49005244218D8000B0815 /* LaunchScreen.storyboard */; };
-		FB7389CC6FABC54B0EA802D0 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE24032478F66CD25C2E3E1F /* Pods_Example.framework */; };
+		796AB5192442E7C400C724D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796AB5182442E7C400C724D4 /* Assets.xcassets */; };
+		796AB51C2442E7C400C724D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796AB51A2442E7C400C724D4 /* LaunchScreen.storyboard */; };
+		796AB56A2442E83E00C724D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB53F2442E83E00C724D4 /* AppDelegate.swift */; };
+		796AB56B2442E83F00C724D4 /* GKDemoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5422442E83E00C724D4 /* GKDemoBaseViewController.swift */; };
+		796AB56C2442E83F00C724D4 /* GKTabBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5432442E83E00C724D4 /* GKTabBaseViewController.swift */; };
+		796AB56D2442E83F00C724D4 /* GKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5442442E83E00C724D4 /* GKBaseViewController.swift */; };
+		796AB56E2442E83F00C724D4 /* GKToutiaoMicroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5462442E83E00C724D4 /* GKToutiaoMicroViewController.swift */; };
+		796AB56F2442E83F00C724D4 /* GKToutiaoMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5472442E83E00C724D4 /* GKToutiaoMineViewController.swift */; };
+		796AB5702442E83F00C724D4 /* GKToutiaoHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5482442E83E00C724D4 /* GKToutiaoHomeViewController.swift */; };
+		796AB5712442E83F00C724D4 /* GKToutiaoVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5492442E83E00C724D4 /* GKToutiaoVideoViewController.swift */; };
+		796AB5722442E83F00C724D4 /* GKToutiaoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB54A2442E83E00C724D4 /* GKToutiaoDetailViewController.swift */; };
+		796AB5732442E83F00C724D4 /* GKToutiaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB54B2442E83E00C724D4 /* GKToutiaoViewController.swift */; };
+		796AB5742442E83F00C724D4 /* GKWYMusicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB54D2442E83E00C724D4 /* GKWYMusicDetailViewController.swift */; };
+		796AB5752442E83F00C724D4 /* GKWYMusicFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB54E2442E83E00C724D4 /* GKWYMusicFriendViewController.swift */; };
+		796AB5762442E83F00C724D4 /* GKWYMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB54F2442E83E00C724D4 /* GKWYMusicViewController.swift */; };
+		796AB5772442E83F00C724D4 /* GKWYMusicAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5502442E83E00C724D4 /* GKWYMusicAccountViewController.swift */; };
+		796AB5782442E83F00C724D4 /* GKWYMusicFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5512442E83E00C724D4 /* GKWYMusicFindViewController.swift */; };
+		796AB5792442E83F00C724D4 /* GKWYMusicMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5522442E83E00C724D4 /* GKWYMusicMineViewController.swift */; };
+		796AB57A2442E83F00C724D4 /* GKDouyinHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5542442E83E00C724D4 /* GKDouyinHomeViewController.swift */; };
+		796AB57B2442E83F00C724D4 /* GKDouyinSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5552442E83E00C724D4 /* GKDouyinSearchViewController.swift */; };
+		796AB57C2442E83F00C724D4 /* GKDouyinPersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5562442E83E00C724D4 /* GKDouyinPersonalViewController.swift */; };
+		796AB57D2442E83F00C724D4 /* GKDouyinPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5572442E83E00C724D4 /* GKDouyinPlayerViewController.swift */; };
+		796AB57E2442E83F00C724D4 /* GKMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5582442E83E00C724D4 /* GKMainViewController.swift */; };
+		796AB57F2442E83F00C724D4 /* GKWYNewsLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB55A2442E83E00C724D4 /* GKWYNewsLiveViewController.swift */; };
+		796AB5802442E83F00C724D4 /* GKWYNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB55B2442E83E00C724D4 /* GKWYNewsViewController.swift */; };
+		796AB5812442E83F00C724D4 /* GKWYNewsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB55C2442E83E00C724D4 /* GKWYNewsHomeViewController.swift */; };
+		796AB5822442E83F00C724D4 /* GKWYNewsNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB55D2442E83E00C724D4 /* GKWYNewsNewViewController.swift */; };
+		796AB5832442E83F00C724D4 /* GKWYNewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB55E2442E83E00C724D4 /* GKWYNewsDetailViewController.swift */; };
+		796AB5842442E83F00C724D4 /* GKWYNewsVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB55F2442E83E00C724D4 /* GKWYNewsVideoViewController.swift */; };
+		796AB5852442E83F00C724D4 /* GKWYNewsProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5602442E83E00C724D4 /* GKWYNewsProfileViewController.swift */; };
+		796AB5862442E83F00C724D4 /* GKWYNewsCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5612442E83E00C724D4 /* GKWYNewsCommentViewController.swift */; };
+		796AB5872442E83F00C724D4 /* GKDemo000ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 796AB5632442E83E00C724D4 /* GKDemo000ViewController.xib */; };
+		796AB5882442E83F00C724D4 /* GKDemo003ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5642442E83E00C724D4 /* GKDemo003ViewController.swift */; };
+		796AB5892442E83F00C724D4 /* GKDemo002ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5652442E83E00C724D4 /* GKDemo002ViewController.swift */; };
+		796AB58A2442E83F00C724D4 /* GKDemo001ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5662442E83E00C724D4 /* GKDemo001ViewController.swift */; };
+		796AB58B2442E83F00C724D4 /* GKDemo000ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5672442E83E00C724D4 /* GKDemo000ViewController.swift */; };
+		796AB58C2442E83F00C724D4 /* GKDemoWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5682442E83E00C724D4 /* GKDemoWebViewController.swift */; };
+		796AB58D2442E83F00C724D4 /* web.txt in Resources */ = {isa = PBXBuildFile; fileRef = 796AB5692442E83E00C724D4 /* web.txt */; };
+		796AB5992442E88600C724D4 /* GKNavigationBarSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796AB5952442E87B00C724D4 /* GKNavigationBarSwift.framework */; };
+		796AB59A2442E88600C724D4 /* GKNavigationBarSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 796AB5952442E87B00C724D4 /* GKNavigationBarSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		79C48FF62442068A000B0815 /* PBXContainerItemProxy */ = {
+		796AB5232442E7C400C724D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 79C48FF12442068A000B0815 /* GKNavigationBarSwift.xcodeproj */;
+			containerPortal = 796AB5042442E7C200C724D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 796AB50B2442E7C200C724D4;
+			remoteInfo = Example;
+		};
+		796AB52E2442E7C400C724D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 796AB5042442E7C200C724D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 796AB50B2442E7C200C724D4;
+			remoteInfo = Example;
+		};
+		796AB5942442E87B00C724D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 796AB58F2442E87B00C724D4 /* GKNavigationBarSwift.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 79C48E9E2441EC50000B0815;
 			remoteInfo = GKNavigationBarSwift;
 		};
-		79C48FF82442068A000B0815 /* PBXContainerItemProxy */ = {
+		796AB5962442E87B00C724D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 79C48FF12442068A000B0815 /* GKNavigationBarSwift.xcodeproj */;
+			containerPortal = 796AB58F2442E87B00C724D4 /* GKNavigationBarSwift.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 79C48EA62441EC50000B0815;
 			remoteInfo = GKNavigationBarSwiftTests;
@@ -68,247 +81,240 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		79C49003244213A0000B0815 /* Copy Frameworks */ = {
+		796AB59B2442E88600C724D4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				79C49004244213AD000B0815 /* GKNavigationBarSwift.framework in Copy Frameworks */,
+				796AB59A2442E88600C724D4 /* GKNavigationBarSwift.framework in Embed Frameworks */,
 			);
-			name = "Copy Frameworks";
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		79C48F41244202E0000B0815 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		79C48F4D244202E2000B0815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		79C48F52244202E2000B0815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79C48F76244203FF000B0815 /* GKDemoBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDemoBaseViewController.swift; sourceTree = "<group>"; };
-		79C48F77244203FF000B0815 /* GKTabBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKTabBaseViewController.swift; sourceTree = "<group>"; };
-		79C48F78244203FF000B0815 /* GKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBaseViewController.swift; sourceTree = "<group>"; };
-		79C48F7A244203FF000B0815 /* GKToutiaoMicroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKToutiaoMicroViewController.swift; sourceTree = "<group>"; };
-		79C48F7B244203FF000B0815 /* GKToutiaoMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKToutiaoMineViewController.swift; sourceTree = "<group>"; };
-		79C48F7C244203FF000B0815 /* GKToutiaoHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKToutiaoHomeViewController.swift; sourceTree = "<group>"; };
-		79C48F7D244203FF000B0815 /* GKToutiaoVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKToutiaoVideoViewController.swift; sourceTree = "<group>"; };
-		79C48F7E244203FF000B0815 /* GKToutiaoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKToutiaoDetailViewController.swift; sourceTree = "<group>"; };
-		79C48F7F244203FF000B0815 /* GKToutiaoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKToutiaoViewController.swift; sourceTree = "<group>"; };
-		79C48F81244203FF000B0815 /* GKWYMusicDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYMusicDetailViewController.swift; sourceTree = "<group>"; };
-		79C48F82244203FF000B0815 /* GKWYMusicFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYMusicFriendViewController.swift; sourceTree = "<group>"; };
-		79C48F83244203FF000B0815 /* GKWYMusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYMusicViewController.swift; sourceTree = "<group>"; };
-		79C48F84244203FF000B0815 /* GKWYMusicAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYMusicAccountViewController.swift; sourceTree = "<group>"; };
-		79C48F85244203FF000B0815 /* GKWYMusicFindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYMusicFindViewController.swift; sourceTree = "<group>"; };
-		79C48F86244203FF000B0815 /* GKWYMusicMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYMusicMineViewController.swift; sourceTree = "<group>"; };
-		79C48F88244203FF000B0815 /* GKDouyinHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDouyinHomeViewController.swift; sourceTree = "<group>"; };
-		79C48F89244203FF000B0815 /* GKDouyinSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDouyinSearchViewController.swift; sourceTree = "<group>"; };
-		79C48F8A244203FF000B0815 /* GKDouyinPersonalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDouyinPersonalViewController.swift; sourceTree = "<group>"; };
-		79C48F8B244203FF000B0815 /* GKDouyinPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDouyinPlayerViewController.swift; sourceTree = "<group>"; };
-		79C48F8C244203FF000B0815 /* GKMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKMainViewController.swift; sourceTree = "<group>"; };
-		79C48F8E244203FF000B0815 /* GKWYNewsLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYNewsLiveViewController.swift; sourceTree = "<group>"; };
-		79C48F8F244203FF000B0815 /* GKWYNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYNewsViewController.swift; sourceTree = "<group>"; };
-		79C48F90244203FF000B0815 /* GKWYNewsHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYNewsHomeViewController.swift; sourceTree = "<group>"; };
-		79C48F91244203FF000B0815 /* GKWYNewsNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYNewsNewViewController.swift; sourceTree = "<group>"; };
-		79C48F92244203FF000B0815 /* GKWYNewsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYNewsDetailViewController.swift; sourceTree = "<group>"; };
-		79C48F93244203FF000B0815 /* GKWYNewsVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYNewsVideoViewController.swift; sourceTree = "<group>"; };
-		79C48F94244203FF000B0815 /* GKWYNewsProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYNewsProfileViewController.swift; sourceTree = "<group>"; };
-		79C48F95244203FF000B0815 /* GKWYNewsCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYNewsCommentViewController.swift; sourceTree = "<group>"; };
-		79C48F97244203FF000B0815 /* GKDemo000ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKDemo000ViewController.xib; sourceTree = "<group>"; };
-		79C48F98244203FF000B0815 /* GKDemo003ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDemo003ViewController.swift; sourceTree = "<group>"; };
-		79C48F99244203FF000B0815 /* GKDemo002ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDemo002ViewController.swift; sourceTree = "<group>"; };
-		79C48F9A244203FF000B0815 /* GKDemo001ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDemo001ViewController.swift; sourceTree = "<group>"; };
-		79C48F9B244203FF000B0815 /* GKDemo000ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDemo000ViewController.swift; sourceTree = "<group>"; };
-		79C48F9C244203FF000B0815 /* GKDemoWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDemoWebViewController.swift; sourceTree = "<group>"; };
-		79C48F9D244203FF000B0815 /* web.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = web.txt; sourceTree = "<group>"; };
-		79C48FC124420408000B0815 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79C48FF12442068A000B0815 /* GKNavigationBarSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GKNavigationBarSwift.xcodeproj; path = ../GKNavigationBarSwift.xcodeproj; sourceTree = "<group>"; };
-		79C49005244218D8000B0815 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CE24032478F66CD25C2E3E1F /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D62B142482676D55070931FA /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		F5FC739918E1851323F3A492 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		796AB50C2442E7C200C724D4 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		796AB5182442E7C400C724D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		796AB51B2442E7C400C724D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		796AB51D2442E7C400C724D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		796AB5222442E7C400C724D4 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		796AB52D2442E7C400C724D4 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		796AB53F2442E83E00C724D4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		796AB5422442E83E00C724D4 /* GKDemoBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDemoBaseViewController.swift; sourceTree = "<group>"; };
+		796AB5432442E83E00C724D4 /* GKTabBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKTabBaseViewController.swift; sourceTree = "<group>"; };
+		796AB5442442E83E00C724D4 /* GKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBaseViewController.swift; sourceTree = "<group>"; };
+		796AB5462442E83E00C724D4 /* GKToutiaoMicroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKToutiaoMicroViewController.swift; sourceTree = "<group>"; };
+		796AB5472442E83E00C724D4 /* GKToutiaoMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKToutiaoMineViewController.swift; sourceTree = "<group>"; };
+		796AB5482442E83E00C724D4 /* GKToutiaoHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKToutiaoHomeViewController.swift; sourceTree = "<group>"; };
+		796AB5492442E83E00C724D4 /* GKToutiaoVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKToutiaoVideoViewController.swift; sourceTree = "<group>"; };
+		796AB54A2442E83E00C724D4 /* GKToutiaoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKToutiaoDetailViewController.swift; sourceTree = "<group>"; };
+		796AB54B2442E83E00C724D4 /* GKToutiaoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKToutiaoViewController.swift; sourceTree = "<group>"; };
+		796AB54D2442E83E00C724D4 /* GKWYMusicDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYMusicDetailViewController.swift; sourceTree = "<group>"; };
+		796AB54E2442E83E00C724D4 /* GKWYMusicFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYMusicFriendViewController.swift; sourceTree = "<group>"; };
+		796AB54F2442E83E00C724D4 /* GKWYMusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYMusicViewController.swift; sourceTree = "<group>"; };
+		796AB5502442E83E00C724D4 /* GKWYMusicAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYMusicAccountViewController.swift; sourceTree = "<group>"; };
+		796AB5512442E83E00C724D4 /* GKWYMusicFindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYMusicFindViewController.swift; sourceTree = "<group>"; };
+		796AB5522442E83E00C724D4 /* GKWYMusicMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYMusicMineViewController.swift; sourceTree = "<group>"; };
+		796AB5542442E83E00C724D4 /* GKDouyinHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDouyinHomeViewController.swift; sourceTree = "<group>"; };
+		796AB5552442E83E00C724D4 /* GKDouyinSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDouyinSearchViewController.swift; sourceTree = "<group>"; };
+		796AB5562442E83E00C724D4 /* GKDouyinPersonalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDouyinPersonalViewController.swift; sourceTree = "<group>"; };
+		796AB5572442E83E00C724D4 /* GKDouyinPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDouyinPlayerViewController.swift; sourceTree = "<group>"; };
+		796AB5582442E83E00C724D4 /* GKMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKMainViewController.swift; sourceTree = "<group>"; };
+		796AB55A2442E83E00C724D4 /* GKWYNewsLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYNewsLiveViewController.swift; sourceTree = "<group>"; };
+		796AB55B2442E83E00C724D4 /* GKWYNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYNewsViewController.swift; sourceTree = "<group>"; };
+		796AB55C2442E83E00C724D4 /* GKWYNewsHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYNewsHomeViewController.swift; sourceTree = "<group>"; };
+		796AB55D2442E83E00C724D4 /* GKWYNewsNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYNewsNewViewController.swift; sourceTree = "<group>"; };
+		796AB55E2442E83E00C724D4 /* GKWYNewsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYNewsDetailViewController.swift; sourceTree = "<group>"; };
+		796AB55F2442E83E00C724D4 /* GKWYNewsVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYNewsVideoViewController.swift; sourceTree = "<group>"; };
+		796AB5602442E83E00C724D4 /* GKWYNewsProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYNewsProfileViewController.swift; sourceTree = "<group>"; };
+		796AB5612442E83E00C724D4 /* GKWYNewsCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKWYNewsCommentViewController.swift; sourceTree = "<group>"; };
+		796AB5632442E83E00C724D4 /* GKDemo000ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKDemo000ViewController.xib; sourceTree = "<group>"; };
+		796AB5642442E83E00C724D4 /* GKDemo003ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDemo003ViewController.swift; sourceTree = "<group>"; };
+		796AB5652442E83E00C724D4 /* GKDemo002ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDemo002ViewController.swift; sourceTree = "<group>"; };
+		796AB5662442E83E00C724D4 /* GKDemo001ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDemo001ViewController.swift; sourceTree = "<group>"; };
+		796AB5672442E83E00C724D4 /* GKDemo000ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDemo000ViewController.swift; sourceTree = "<group>"; };
+		796AB5682442E83E00C724D4 /* GKDemoWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDemoWebViewController.swift; sourceTree = "<group>"; };
+		796AB5692442E83E00C724D4 /* web.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = web.txt; sourceTree = "<group>"; };
+		796AB58F2442E87B00C724D4 /* GKNavigationBarSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GKNavigationBarSwift.xcodeproj; path = ../GKNavigationBarSwift.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		79C48F3E244202E0000B0815 /* Frameworks */ = {
+		796AB5092442E7C200C724D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79C48FFB24420695000B0815 /* GKNavigationBarSwift.framework in Frameworks */,
-				FB7389CC6FABC54B0EA802D0 /* Pods_Example.framework in Frameworks */,
+				796AB5992442E88600C724D4 /* GKNavigationBarSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796AB51F2442E7C400C724D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796AB52A2442E7C400C724D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6A9E8ACC6113B9BF2246655C /* Frameworks */ = {
+		796AB5032442E7C200C724D4 = {
 			isa = PBXGroup;
 			children = (
-				CE24032478F66CD25C2E3E1F /* Pods_Example.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		79C48F38244202E0000B0815 = {
-			isa = PBXGroup;
-			children = (
-				79C48F43244202E0000B0815 /* Example */,
-				79C48F42244202E0000B0815 /* Products */,
-				B1293EBFA7ED902505E9BF83 /* Pods */,
-				6A9E8ACC6113B9BF2246655C /* Frameworks */,
-				79C48FF12442068A000B0815 /* GKNavigationBarSwift.xcodeproj */,
+				796AB50E2442E7C200C724D4 /* Example */,
+				796AB50D2442E7C200C724D4 /* Products */,
+				796AB58F2442E87B00C724D4 /* GKNavigationBarSwift.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
-		79C48F42244202E0000B0815 /* Products */ = {
+		796AB50D2442E7C200C724D4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79C48F41244202E0000B0815 /* Example.app */,
+				796AB50C2442E7C200C724D4 /* Example.app */,
+				796AB5222442E7C400C724D4 /* ExampleTests.xctest */,
+				796AB52D2442E7C400C724D4 /* ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		79C48F43244202E0000B0815 /* Example */ = {
+		796AB50E2442E7C200C724D4 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				79C48F74244203FF000B0815 /* Demo */,
-				79C48FC3244204AF000B0815 /* Supporting Files */,
+				796AB5402442E83E00C724D4 /* Demo */,
+				796AB58E2442E84600C724D4 /* Supporting Files */,
 			);
 			path = Example;
 			sourceTree = "<group>";
 		};
-		79C48F74244203FF000B0815 /* Demo */ = {
+		796AB5402442E83E00C724D4 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				79C48F8C244203FF000B0815 /* GKMainViewController.swift */,
-				79C48F75244203FF000B0815 /* BaseVC */,
-				79C48F96244203FF000B0815 /* DemoVC */,
-				79C48F87244203FF000B0815 /* Douyin */,
-				79C48F79244203FF000B0815 /* Toutiao */,
-				79C48F80244203FF000B0815 /* WYMusic */,
-				79C48F8D244203FF000B0815 /* WYNews */,
+				796AB5582442E83E00C724D4 /* GKMainViewController.swift */,
+				796AB5412442E83E00C724D4 /* BaseVC */,
+				796AB5622442E83E00C724D4 /* DemoVC */,
+				796AB5532442E83E00C724D4 /* Douyin */,
+				796AB5452442E83E00C724D4 /* Toutiao */,
+				796AB54C2442E83E00C724D4 /* WYMusic */,
+				796AB5592442E83E00C724D4 /* WYNews */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
 		};
-		79C48F75244203FF000B0815 /* BaseVC */ = {
+		796AB5412442E83E00C724D4 /* BaseVC */ = {
 			isa = PBXGroup;
 			children = (
-				79C48F76244203FF000B0815 /* GKDemoBaseViewController.swift */,
-				79C48F77244203FF000B0815 /* GKTabBaseViewController.swift */,
-				79C48F78244203FF000B0815 /* GKBaseViewController.swift */,
+				796AB5422442E83E00C724D4 /* GKDemoBaseViewController.swift */,
+				796AB5432442E83E00C724D4 /* GKTabBaseViewController.swift */,
+				796AB5442442E83E00C724D4 /* GKBaseViewController.swift */,
 			);
 			path = BaseVC;
 			sourceTree = "<group>";
 		};
-		79C48F79244203FF000B0815 /* Toutiao */ = {
+		796AB5452442E83E00C724D4 /* Toutiao */ = {
 			isa = PBXGroup;
 			children = (
-				79C48F7A244203FF000B0815 /* GKToutiaoMicroViewController.swift */,
-				79C48F7B244203FF000B0815 /* GKToutiaoMineViewController.swift */,
-				79C48F7C244203FF000B0815 /* GKToutiaoHomeViewController.swift */,
-				79C48F7D244203FF000B0815 /* GKToutiaoVideoViewController.swift */,
-				79C48F7E244203FF000B0815 /* GKToutiaoDetailViewController.swift */,
-				79C48F7F244203FF000B0815 /* GKToutiaoViewController.swift */,
+				796AB5462442E83E00C724D4 /* GKToutiaoMicroViewController.swift */,
+				796AB5472442E83E00C724D4 /* GKToutiaoMineViewController.swift */,
+				796AB5482442E83E00C724D4 /* GKToutiaoHomeViewController.swift */,
+				796AB5492442E83E00C724D4 /* GKToutiaoVideoViewController.swift */,
+				796AB54A2442E83E00C724D4 /* GKToutiaoDetailViewController.swift */,
+				796AB54B2442E83E00C724D4 /* GKToutiaoViewController.swift */,
 			);
 			path = Toutiao;
 			sourceTree = "<group>";
 		};
-		79C48F80244203FF000B0815 /* WYMusic */ = {
+		796AB54C2442E83E00C724D4 /* WYMusic */ = {
 			isa = PBXGroup;
 			children = (
-				79C48F81244203FF000B0815 /* GKWYMusicDetailViewController.swift */,
-				79C48F82244203FF000B0815 /* GKWYMusicFriendViewController.swift */,
-				79C48F83244203FF000B0815 /* GKWYMusicViewController.swift */,
-				79C48F84244203FF000B0815 /* GKWYMusicAccountViewController.swift */,
-				79C48F85244203FF000B0815 /* GKWYMusicFindViewController.swift */,
-				79C48F86244203FF000B0815 /* GKWYMusicMineViewController.swift */,
+				796AB54D2442E83E00C724D4 /* GKWYMusicDetailViewController.swift */,
+				796AB54E2442E83E00C724D4 /* GKWYMusicFriendViewController.swift */,
+				796AB54F2442E83E00C724D4 /* GKWYMusicViewController.swift */,
+				796AB5502442E83E00C724D4 /* GKWYMusicAccountViewController.swift */,
+				796AB5512442E83E00C724D4 /* GKWYMusicFindViewController.swift */,
+				796AB5522442E83E00C724D4 /* GKWYMusicMineViewController.swift */,
 			);
 			path = WYMusic;
 			sourceTree = "<group>";
 		};
-		79C48F87244203FF000B0815 /* Douyin */ = {
+		796AB5532442E83E00C724D4 /* Douyin */ = {
 			isa = PBXGroup;
 			children = (
-				79C48F88244203FF000B0815 /* GKDouyinHomeViewController.swift */,
-				79C48F89244203FF000B0815 /* GKDouyinSearchViewController.swift */,
-				79C48F8A244203FF000B0815 /* GKDouyinPersonalViewController.swift */,
-				79C48F8B244203FF000B0815 /* GKDouyinPlayerViewController.swift */,
+				796AB5542442E83E00C724D4 /* GKDouyinHomeViewController.swift */,
+				796AB5552442E83E00C724D4 /* GKDouyinSearchViewController.swift */,
+				796AB5562442E83E00C724D4 /* GKDouyinPersonalViewController.swift */,
+				796AB5572442E83E00C724D4 /* GKDouyinPlayerViewController.swift */,
 			);
 			path = Douyin;
 			sourceTree = "<group>";
 		};
-		79C48F8D244203FF000B0815 /* WYNews */ = {
+		796AB5592442E83E00C724D4 /* WYNews */ = {
 			isa = PBXGroup;
 			children = (
-				79C48F8E244203FF000B0815 /* GKWYNewsLiveViewController.swift */,
-				79C48F8F244203FF000B0815 /* GKWYNewsViewController.swift */,
-				79C48F90244203FF000B0815 /* GKWYNewsHomeViewController.swift */,
-				79C48F91244203FF000B0815 /* GKWYNewsNewViewController.swift */,
-				79C48F92244203FF000B0815 /* GKWYNewsDetailViewController.swift */,
-				79C48F93244203FF000B0815 /* GKWYNewsVideoViewController.swift */,
-				79C48F94244203FF000B0815 /* GKWYNewsProfileViewController.swift */,
-				79C48F95244203FF000B0815 /* GKWYNewsCommentViewController.swift */,
+				796AB55A2442E83E00C724D4 /* GKWYNewsLiveViewController.swift */,
+				796AB55B2442E83E00C724D4 /* GKWYNewsViewController.swift */,
+				796AB55C2442E83E00C724D4 /* GKWYNewsHomeViewController.swift */,
+				796AB55D2442E83E00C724D4 /* GKWYNewsNewViewController.swift */,
+				796AB55E2442E83E00C724D4 /* GKWYNewsDetailViewController.swift */,
+				796AB55F2442E83E00C724D4 /* GKWYNewsVideoViewController.swift */,
+				796AB5602442E83E00C724D4 /* GKWYNewsProfileViewController.swift */,
+				796AB5612442E83E00C724D4 /* GKWYNewsCommentViewController.swift */,
 			);
 			path = WYNews;
 			sourceTree = "<group>";
 		};
-		79C48F96244203FF000B0815 /* DemoVC */ = {
+		796AB5622442E83E00C724D4 /* DemoVC */ = {
 			isa = PBXGroup;
 			children = (
-				79C48F9B244203FF000B0815 /* GKDemo000ViewController.swift */,
-				79C48F97244203FF000B0815 /* GKDemo000ViewController.xib */,
-				79C48F9A244203FF000B0815 /* GKDemo001ViewController.swift */,
-				79C48F99244203FF000B0815 /* GKDemo002ViewController.swift */,
-				79C48F98244203FF000B0815 /* GKDemo003ViewController.swift */,
-				79C48F9C244203FF000B0815 /* GKDemoWebViewController.swift */,
-				79C48F9D244203FF000B0815 /* web.txt */,
+				796AB5672442E83E00C724D4 /* GKDemo000ViewController.swift */,
+				796AB5632442E83E00C724D4 /* GKDemo000ViewController.xib */,
+				796AB5662442E83E00C724D4 /* GKDemo001ViewController.swift */,
+				796AB5652442E83E00C724D4 /* GKDemo002ViewController.swift */,
+				796AB5642442E83E00C724D4 /* GKDemo003ViewController.swift */,
+				796AB5682442E83E00C724D4 /* GKDemoWebViewController.swift */,
+				796AB5692442E83E00C724D4 /* web.txt */,
 			);
 			path = DemoVC;
 			sourceTree = "<group>";
 		};
-		79C48FC3244204AF000B0815 /* Supporting Files */ = {
+		796AB58E2442E84600C724D4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				79C48FC124420408000B0815 /* AppDelegate.swift */,
-				79C48F4D244202E2000B0815 /* Assets.xcassets */,
-				79C48F52244202E2000B0815 /* Info.plist */,
-				79C49005244218D8000B0815 /* LaunchScreen.storyboard */,
+				796AB53F2442E83E00C724D4 /* AppDelegate.swift */,
+				796AB5182442E7C400C724D4 /* Assets.xcassets */,
+				796AB51A2442E7C400C724D4 /* LaunchScreen.storyboard */,
+				796AB51D2442E7C400C724D4 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		79C48FF22442068A000B0815 /* Products */ = {
+		796AB5902442E87B00C724D4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79C48FF72442068A000B0815 /* GKNavigationBarSwift.framework */,
-				79C48FF92442068A000B0815 /* GKNavigationBarSwiftTests.xctest */,
+				796AB5952442E87B00C724D4 /* GKNavigationBarSwift.framework */,
+				796AB5972442E87B00C724D4 /* GKNavigationBarSwiftTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B1293EBFA7ED902505E9BF83 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F5FC739918E1851323F3A492 /* Pods-Example.debug.xcconfig */,
-				D62B142482676D55070931FA /* Pods-Example.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		79C48F40244202E0000B0815 /* Example */ = {
+		796AB50B2442E7C200C724D4 /* Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79C48F6B244202E2000B0815 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildConfigurationList = 796AB5362442E7C400C724D4 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
-				43D3DA20A3D94DDAAFCB5079 /* [CP] Check Pods Manifest.lock */,
-				79C48F3D244202E0000B0815 /* Sources */,
-				79C48F3E244202E0000B0815 /* Frameworks */,
-				79C48F3F244202E0000B0815 /* Resources */,
-				79C49003244213A0000B0815 /* Copy Frameworks */,
-				1D500553E6F5E0B76FF639EF /* [CP] Embed Pods Frameworks */,
+				796AB5082442E7C200C724D4 /* Sources */,
+				796AB5092442E7C200C724D4 /* Frameworks */,
+				796AB50A2442E7C200C724D4 /* Resources */,
+				796AB59B2442E88600C724D4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,25 +322,70 @@
 			);
 			name = Example;
 			productName = Example;
-			productReference = 79C48F41244202E0000B0815 /* Example.app */;
+			productReference = 796AB50C2442E7C200C724D4 /* Example.app */;
 			productType = "com.apple.product-type.application";
+		};
+		796AB5212442E7C400C724D4 /* ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796AB5392442E7C400C724D4 /* Build configuration list for PBXNativeTarget "ExampleTests" */;
+			buildPhases = (
+				796AB51E2442E7C400C724D4 /* Sources */,
+				796AB51F2442E7C400C724D4 /* Frameworks */,
+				796AB5202442E7C400C724D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				796AB5242442E7C400C724D4 /* PBXTargetDependency */,
+			);
+			name = ExampleTests;
+			productName = ExampleTests;
+			productReference = 796AB5222442E7C400C724D4 /* ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		796AB52C2442E7C400C724D4 /* ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796AB53C2442E7C400C724D4 /* Build configuration list for PBXNativeTarget "ExampleUITests" */;
+			buildPhases = (
+				796AB5292442E7C400C724D4 /* Sources */,
+				796AB52A2442E7C400C724D4 /* Frameworks */,
+				796AB52B2442E7C400C724D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				796AB52F2442E7C400C724D4 /* PBXTargetDependency */,
+			);
+			name = ExampleUITests;
+			productName = ExampleUITests;
+			productReference = 796AB52D2442E7C400C724D4 /* ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		79C48F39244202E0000B0815 /* Project object */ = {
+		796AB5042442E7C200C724D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = QuintGao;
 				TargetAttributes = {
-					79C48F40244202E0000B0815 = {
+					796AB50B2442E7C200C724D4 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
+					};
+					796AB5212442E7C400C724D4 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 796AB50B2442E7C200C724D4;
+					};
+					796AB52C2442E7C400C724D4 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 796AB50B2442E7C200C724D4;
 					};
 				};
 			};
-			buildConfigurationList = 79C48F3C244202E0000B0815 /* Build configuration list for PBXProject "Example" */;
+			buildConfigurationList = 796AB5072442E7C200C724D4 /* Build configuration list for PBXProject "Example" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -342,141 +393,153 @@
 				en,
 				Base,
 			);
-			mainGroup = 79C48F38244202E0000B0815;
-			productRefGroup = 79C48F42244202E0000B0815 /* Products */;
+			mainGroup = 796AB5032442E7C200C724D4;
+			productRefGroup = 796AB50D2442E7C200C724D4 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 79C48FF22442068A000B0815 /* Products */;
-					ProjectRef = 79C48FF12442068A000B0815 /* GKNavigationBarSwift.xcodeproj */;
+					ProductGroup = 796AB5902442E87B00C724D4 /* Products */;
+					ProjectRef = 796AB58F2442E87B00C724D4 /* GKNavigationBarSwift.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				79C48F40244202E0000B0815 /* Example */,
+				796AB50B2442E7C200C724D4 /* Example */,
+				796AB5212442E7C400C724D4 /* ExampleTests */,
+				796AB52C2442E7C400C724D4 /* ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		79C48FF72442068A000B0815 /* GKNavigationBarSwift.framework */ = {
+		796AB5952442E87B00C724D4 /* GKNavigationBarSwift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = GKNavigationBarSwift.framework;
-			remoteRef = 79C48FF62442068A000B0815 /* PBXContainerItemProxy */;
+			remoteRef = 796AB5942442E87B00C724D4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		79C48FF92442068A000B0815 /* GKNavigationBarSwiftTests.xctest */ = {
+		796AB5972442E87B00C724D4 /* GKNavigationBarSwiftTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = GKNavigationBarSwiftTests.xctest;
-			remoteRef = 79C48FF82442068A000B0815 /* PBXContainerItemProxy */;
+			remoteRef = 796AB5962442E87B00C724D4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		79C48F3F244202E0000B0815 /* Resources */ = {
+		796AB50A2442E7C200C724D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79C48FC0244203FF000B0815 /* web.txt in Resources */,
-				79C49006244218D9000B0815 /* LaunchScreen.storyboard in Resources */,
-				79C48FBA244203FF000B0815 /* GKDemo000ViewController.xib in Resources */,
-				79C48F4E244202E2000B0815 /* Assets.xcassets in Resources */,
+				796AB51C2442E7C400C724D4 /* LaunchScreen.storyboard in Resources */,
+				796AB5192442E7C400C724D4 /* Assets.xcassets in Resources */,
+				796AB5872442E83F00C724D4 /* GKDemo000ViewController.xib in Resources */,
+				796AB58D2442E83F00C724D4 /* web.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796AB5202442E7C400C724D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796AB52B2442E7C400C724D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		1D500553E6F5E0B76FF639EF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		43D3DA20A3D94DDAAFCB5079 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		79C48F3D244202E0000B0815 /* Sources */ = {
+		796AB5082442E7C200C724D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79C48FA2244203FF000B0815 /* GKToutiaoMineViewController.swift in Sources */,
-				79C48FB3244203FF000B0815 /* GKWYNewsViewController.swift in Sources */,
-				79C48FB8244203FF000B0815 /* GKWYNewsProfileViewController.swift in Sources */,
-				79C48FB5244203FF000B0815 /* GKWYNewsNewViewController.swift in Sources */,
-				79C48FB6244203FF000B0815 /* GKWYNewsDetailViewController.swift in Sources */,
-				79C48FA3244203FF000B0815 /* GKToutiaoHomeViewController.swift in Sources */,
-				79C48FBD244203FF000B0815 /* GKDemo001ViewController.swift in Sources */,
-				79C48FA9244203FF000B0815 /* GKWYMusicViewController.swift in Sources */,
-				79C48FBF244203FF000B0815 /* GKDemoWebViewController.swift in Sources */,
-				79C48F9E244203FF000B0815 /* GKDemoBaseViewController.swift in Sources */,
-				79C48FA1244203FF000B0815 /* GKToutiaoMicroViewController.swift in Sources */,
-				79C48FAB244203FF000B0815 /* GKWYMusicFindViewController.swift in Sources */,
-				79C48FB0244203FF000B0815 /* GKDouyinPlayerViewController.swift in Sources */,
-				79C48FB9244203FF000B0815 /* GKWYNewsCommentViewController.swift in Sources */,
-				79C48FA0244203FF000B0815 /* GKBaseViewController.swift in Sources */,
-				79C48FAE244203FF000B0815 /* GKDouyinSearchViewController.swift in Sources */,
-				79C48FBC244203FF000B0815 /* GKDemo002ViewController.swift in Sources */,
-				79C48FA4244203FF000B0815 /* GKToutiaoVideoViewController.swift in Sources */,
-				79C48FB4244203FF000B0815 /* GKWYNewsHomeViewController.swift in Sources */,
-				79C48FBB244203FF000B0815 /* GKDemo003ViewController.swift in Sources */,
-				79C48F9F244203FF000B0815 /* GKTabBaseViewController.swift in Sources */,
-				79C48FB7244203FF000B0815 /* GKWYNewsVideoViewController.swift in Sources */,
-				79C48FB2244203FF000B0815 /* GKWYNewsLiveViewController.swift in Sources */,
-				79C48FA5244203FF000B0815 /* GKToutiaoDetailViewController.swift in Sources */,
-				79C48FAD244203FF000B0815 /* GKDouyinHomeViewController.swift in Sources */,
-				79C48FAC244203FF000B0815 /* GKWYMusicMineViewController.swift in Sources */,
-				79C48FA6244203FF000B0815 /* GKToutiaoViewController.swift in Sources */,
-				79C48FAF244203FF000B0815 /* GKDouyinPersonalViewController.swift in Sources */,
-				79C48FA7244203FF000B0815 /* GKWYMusicDetailViewController.swift in Sources */,
-				79C48FA8244203FF000B0815 /* GKWYMusicFriendViewController.swift in Sources */,
-				79C48FAA244203FF000B0815 /* GKWYMusicAccountViewController.swift in Sources */,
-				79C48FBE244203FF000B0815 /* GKDemo000ViewController.swift in Sources */,
-				79C48FC224420408000B0815 /* AppDelegate.swift in Sources */,
-				79C48FB1244203FF000B0815 /* GKMainViewController.swift in Sources */,
+				796AB57A2442E83F00C724D4 /* GKDouyinHomeViewController.swift in Sources */,
+				796AB5772442E83F00C724D4 /* GKWYMusicAccountViewController.swift in Sources */,
+				796AB5732442E83F00C724D4 /* GKToutiaoViewController.swift in Sources */,
+				796AB5782442E83F00C724D4 /* GKWYMusicFindViewController.swift in Sources */,
+				796AB5812442E83F00C724D4 /* GKWYNewsHomeViewController.swift in Sources */,
+				796AB5882442E83F00C724D4 /* GKDemo003ViewController.swift in Sources */,
+				796AB5762442E83F00C724D4 /* GKWYMusicViewController.swift in Sources */,
+				796AB5862442E83F00C724D4 /* GKWYNewsCommentViewController.swift in Sources */,
+				796AB5832442E83F00C724D4 /* GKWYNewsDetailViewController.swift in Sources */,
+				796AB5802442E83F00C724D4 /* GKWYNewsViewController.swift in Sources */,
+				796AB5702442E83F00C724D4 /* GKToutiaoHomeViewController.swift in Sources */,
+				796AB5852442E83F00C724D4 /* GKWYNewsProfileViewController.swift in Sources */,
+				796AB57F2442E83F00C724D4 /* GKWYNewsLiveViewController.swift in Sources */,
+				796AB5792442E83F00C724D4 /* GKWYMusicMineViewController.swift in Sources */,
+				796AB57D2442E83F00C724D4 /* GKDouyinPlayerViewController.swift in Sources */,
+				796AB56B2442E83F00C724D4 /* GKDemoBaseViewController.swift in Sources */,
+				796AB5722442E83F00C724D4 /* GKToutiaoDetailViewController.swift in Sources */,
+				796AB5752442E83F00C724D4 /* GKWYMusicFriendViewController.swift in Sources */,
+				796AB58C2442E83F00C724D4 /* GKDemoWebViewController.swift in Sources */,
+				796AB57B2442E83F00C724D4 /* GKDouyinSearchViewController.swift in Sources */,
+				796AB5712442E83F00C724D4 /* GKToutiaoVideoViewController.swift in Sources */,
+				796AB56D2442E83F00C724D4 /* GKBaseViewController.swift in Sources */,
+				796AB58B2442E83F00C724D4 /* GKDemo000ViewController.swift in Sources */,
+				796AB5742442E83F00C724D4 /* GKWYMusicDetailViewController.swift in Sources */,
+				796AB56C2442E83F00C724D4 /* GKTabBaseViewController.swift in Sources */,
+				796AB57C2442E83F00C724D4 /* GKDouyinPersonalViewController.swift in Sources */,
+				796AB56A2442E83E00C724D4 /* AppDelegate.swift in Sources */,
+				796AB5842442E83F00C724D4 /* GKWYNewsVideoViewController.swift in Sources */,
+				796AB56E2442E83F00C724D4 /* GKToutiaoMicroViewController.swift in Sources */,
+				796AB57E2442E83F00C724D4 /* GKMainViewController.swift in Sources */,
+				796AB56F2442E83F00C724D4 /* GKToutiaoMineViewController.swift in Sources */,
+				796AB5892442E83F00C724D4 /* GKDemo002ViewController.swift in Sources */,
+				796AB5822442E83F00C724D4 /* GKWYNewsNewViewController.swift in Sources */,
+				796AB58A2442E83F00C724D4 /* GKDemo001ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796AB51E2442E7C400C724D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796AB5292442E7C400C724D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		796AB5242442E7C400C724D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 796AB50B2442E7C200C724D4 /* Example */;
+			targetProxy = 796AB5232442E7C400C724D4 /* PBXContainerItemProxy */;
+		};
+		796AB52F2442E7C400C724D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 796AB50B2442E7C200C724D4 /* Example */;
+			targetProxy = 796AB52E2442E7C400C724D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		796AB51A2442E7C400C724D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				796AB51B2442E7C400C724D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		79C48F69244202E2000B0815 /* Debug */ = {
+		796AB5342442E7C400C724D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -536,7 +599,7 @@
 			};
 			name = Debug;
 		};
-		79C48F6A244202E2000B0815 /* Release */ = {
+		796AB5352442E7C400C724D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -590,72 +653,165 @@
 			};
 			name = Release;
 		};
-		79C48F6C244202E2000B0815 /* Debug */ = {
+		796AB5372442E7C400C724D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5FC739918E1851323F3A492 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: xinjun zhang (DNJGV7XB9Q)";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = X52753HQNM;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.gknavigationbarswift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.gknavigationbarswift.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = aystfm_dev_test;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		79C48F6D244202E2000B0815 /* Release */ = {
+		796AB5382442E7C400C724D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D62B142482676D55070931FA /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: xinjun zhang (DNJGV7XB9Q)";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = X52753HQNM;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.gknavigationbarswift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.gknavigationbarswift.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = aystfm_dev_test;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		796AB53A2442E7C400C724D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.gknavigationbarswift.ExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Debug;
+		};
+		796AB53B2442E7C400C724D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.gknavigationbarswift.ExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Release;
+		};
+		796AB53D2442E7C400C724D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.gknavigationbarswift.ExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Example;
+			};
+			name = Debug;
+		};
+		796AB53E2442E7C400C724D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.gknavigationbarswift.ExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Example;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		79C48F3C244202E0000B0815 /* Build configuration list for PBXProject "Example" */ = {
+		796AB5072442E7C200C724D4 /* Build configuration list for PBXProject "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79C48F69244202E2000B0815 /* Debug */,
-				79C48F6A244202E2000B0815 /* Release */,
+				796AB5342442E7C400C724D4 /* Debug */,
+				796AB5352442E7C400C724D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79C48F6B244202E2000B0815 /* Build configuration list for PBXNativeTarget "Example" */ = {
+		796AB5362442E7C400C724D4 /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79C48F6C244202E2000B0815 /* Debug */,
-				79C48F6D244202E2000B0815 /* Release */,
+				796AB5372442E7C400C724D4 /* Debug */,
+				796AB5382442E7C400C724D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		796AB5392442E7C400C724D4 /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796AB53A2442E7C400C724D4 /* Debug */,
+				796AB53B2442E7C400C724D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		796AB53C2442E7C400C724D4 /* Build configuration list for PBXNativeTarget "ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796AB53D2442E7C400C724D4 /* Debug */,
+				796AB53E2442E7C400C724D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 79C48F39244202E0000B0815 /* Project object */;
+	rootObject = 796AB5042442E7C200C724D4 /* Project object */;
 }
