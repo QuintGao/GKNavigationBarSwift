@@ -16,16 +16,6 @@ class GKDouyinScrollView: UIScrollView {
         return true
     }
     
-//    override func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-//        if self.gk_gestureHandleDisabled {
-//            return false
-//        }
-//        if self.panBack(gesture: gestureRecognizer) {
-//            return true
-//        }
-//        return false
-//    }
-    
     fileprivate func panBack(gesture: UIGestureRecognizer) -> Bool {
         if gesture == self.panGestureRecognizer {
             let point = self.panGestureRecognizer.translation(in: self)
