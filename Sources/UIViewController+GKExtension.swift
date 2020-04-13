@@ -350,8 +350,7 @@ extension UIViewController: GKAwakeProtocol {
     
     public var gk_navTitleColor: UIColor? {
         get {
-            guard let obj = objc_getAssociatedObject(self, &AssociatedKeys.gkNavTitleColor) as? UIColor else { return GKConfigure.titleColor }
-            return obj
+            return objc_getAssociatedObject(self, &AssociatedKeys.gkNavTitleColor) as? UIColor
         }
         set {
             objc_setAssociatedObject(self, &AssociatedKeys.gkNavTitleColor, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
@@ -364,8 +363,7 @@ extension UIViewController: GKAwakeProtocol {
     
     public var gk_navTitleFont: UIFont? {
         get {
-            guard let obj = objc_getAssociatedObject(self, &AssociatedKeys.gkNavTitleFont) as? UIFont else { return GKConfigure.titleFont }
-            return obj
+            return objc_getAssociatedObject(self, &AssociatedKeys.gkNavTitleFont) as? UIFont
         }
         set {
             objc_setAssociatedObject(self, &AssociatedKeys.gkNavTitleFont, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
@@ -494,14 +492,23 @@ extension UIViewController: GKAwakeProtocol {
         self.gk_navItemRightSpace = GKNavigationBarItemSpace
         
         // 设置默认背景色
-        self.gk_navBackgroundColor = GKConfigure.backgroundColor
+        if self.gk_navBackgroundColor == nil {
+            self.gk_navBackgroundColor = GKConfigure.backgroundColor
+        }
         
         // 设置默认标题大小及颜色
-        self.gk_navTitleFont = GKConfigure.titleFont
-        self.gk_navTitleColor = GKConfigure.titleColor
+        if self.gk_navTitleFont == nil {
+            self.gk_navTitleFont = GKConfigure.titleFont
+        }
+        
+        if self.gk_navTitleColor == nil {
+            self.gk_navTitleColor = GKConfigure.titleColor
+        }
         
         // 设置默认返回样式
-        self.gk_backStyle = GKConfigure.backStyle
+        if self.gk_backStyle == .none {
+            self.gk_backStyle = GKConfigure.backStyle
+        }
     }
     
     fileprivate func setupNavBarFrame() {
