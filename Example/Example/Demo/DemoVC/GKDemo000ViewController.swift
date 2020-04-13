@@ -79,8 +79,8 @@ class GKDemo000ViewController: GKBaseViewController {
         super.viewDidLoad()
 
         // 设置默认样式
+        self.gk_navTitleColor = .brown
         self.gk_navTitle = "Demo"
-        self.gk_navTitleColor = .white
         self.gk_navBackgroundColor = .red
         self.gk_navShadowColor = .black
         self.gk_backStyle = .white
