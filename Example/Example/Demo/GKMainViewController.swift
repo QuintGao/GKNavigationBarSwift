@@ -29,12 +29,11 @@ class GKMainViewController: GKBaseViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = .white
-//        self.gk_navigationItem.title = "MainVC"
-//        self.gk_navBackgroundColor = .red
-//        self.gk_statusBarStyle = .lightContent
-//        self.gk_navTitleFont = UIFont.systemFont(ofSize: 18)
-//        self.gk_navTitleColor = .white
-        self.gk_navTitle = "MainVC"
+        self.gk_navigationItem.title = "MainVC"
+        self.gk_navBackgroundColor = .red
+        self.gk_statusBarStyle = .lightContent
+        self.gk_navTitleFont = UIFont.systemFont(ofSize: 18)
+        self.gk_navTitleColor = .white
         
         setupTableView()
     }
