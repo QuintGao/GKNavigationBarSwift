@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GKNavigationBarSwift"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Customize navigation bar, adding navigation bar for each controller"
   s.homepage     = "https://github.com/QuintGao/GKNavigationBarSwift"
   s.license      = 'MIT'

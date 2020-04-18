@@ -22,6 +22,37 @@ GKNavigationBar的Swift版本 - iOS自定义导航栏，为你的每个控制器
 * 可实现push，pop时控制器缩放效果（如：今日头条）
 * 可实现左滑push一个控制器的效果（如：网易新闻）
 
+## 重要！！！
+1、如果想要在控制器中动态改变状态栏样式，需要在基类控制器实现下面的方法
+```
+override var prefersStatusBarHidden: Bool {
+    return self.gk_statusBarHidden
+}
+
+override var preferredStatusBarStyle: UIStatusBarStyle {
+    return self.gk_statusBarStyle
+}
+```
+
+2、如果切换控制器的时候出现状态栏显示异常（一半黑一半白等）
+解决办法：在控制器初始化方法里面设置状态栏样式
+```
+- (instancetype)init {
+    if (self = [super init]) {
+        self.gk_statusBarStyle = UIStatusBarStyleLightContent;
+    }
+    return self;
+}
+```
+3、Xcode 11.4 在调试的时候会出现不自动调用awake方法
+解决办法：APP启动的时候调用GKConfigure.awake()方法
+```
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    
+    GKConfigure.awake()
+}
+```
+
 ## 使用说明
 
 #### 1、在AppDelegate中添加导航配置
@@ -50,5 +81,6 @@ self.gk_navBackgroundColor = [UIColor red]
 
 ## 版本记录
 
+* 0.0.4 - 2020.04.18  修复设置标题文字颜色及大小可能无效的情况
 * 0.0.3 - 2020.04.12  优化对UIScrollView手势的处理
 * 0.0.1 - 2020.04.12  初始版本，支持Cocoapods，Carthage，SPM
