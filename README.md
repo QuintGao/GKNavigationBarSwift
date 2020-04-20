@@ -77,7 +77,7 @@ self.gk_navBackgroundColor = [UIColor red]
 
 ## 效果图
 
-![demo](https://github.com/QuintGao/GKNavigationBarSwift/blob/master/imgs/demo.png)
+![demo](https://github.com/QuintGao/GKExampleImages/blob/master/GKNavigationBar/demo.png)
 
 ## 版本记录
 
