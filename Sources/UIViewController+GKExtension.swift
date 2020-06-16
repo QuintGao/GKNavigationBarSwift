@@ -473,8 +473,13 @@ extension UIViewController: GKAwakeProtocol {
     
     @objc func gk_viewWillDisappear(_ animated: Bool) {
         GKConfigure.update { (configure) in
-            configure.gk_navItemLeftSpace = configure.navItemLeftSpace
-            configure.gk_navItemRightSpace = configure.navItemRightSpace
+            if configure.gk_navItemLeftSpace == self.gk_navItemLeftSpace {
+                configure.gk_navItemLeftSpace = configure.navItemLeftSpace
+            }
+            
+            if configure.gk_navItemRightSpace == self.gk_navItemRightSpace {
+                configure.gk_navItemRightSpace = configure.navItemRightSpace
+            }
         }
         gk_viewWillDisappear(animated)
     }
@@ -517,7 +522,11 @@ extension UIViewController: GKAwakeProtocol {
         
         var navBarH: CGFloat = 0.0
         if width > height { // 横屏
-            if GK_NOTCHED_SCREEN {
+            if GK_IS_IPAD {
+                let statusBarH = UIApplication.shared.statusBarFrame.size.height
+                let navigaBarH = self.navigationController?.navigationBar.frame.size.height ?? 0
+                navBarH = statusBarH + navigaBarH
+            }else if GK_NOTCHED_SCREEN {
                 navBarH = GK_NAVBAR_HEIGHT
             }else {
                 if width == 736.0 && height == 414.0 { // plus横屏
