@@ -424,7 +424,6 @@ extension UIViewController: GKAwakeProtocol {
         DispatchQueue.once(token: onceToken) {
             let oriSels = ["viewWillAppear:",
                            "viewDidAppear:",
-                           "viewWillDisappear:",
                            "viewWillLayoutSubviews"
             ]
             
@@ -445,11 +444,11 @@ extension UIViewController: GKAwakeProtocol {
             }
             
             if self.gk_navItemLeftSpace == GKNavigationBarItemSpace {
-                self.gk_navItemLeftSpace = GKConfigure.gk_navItemLeftSpace
+                self.gk_navItemLeftSpace = GKConfigure.navItemLeftSpace
             }
             
             if self.gk_navItemRightSpace == GKNavigationBarItemSpace {
-                self.gk_navItemRightSpace = GKConfigure.gk_navItemRightSpace
+                self.gk_navItemRightSpace = GKConfigure.navItemRightSpace
             }
             
             // 重置navItem_space
@@ -469,19 +468,6 @@ extension UIViewController: GKAwakeProtocol {
         postPropertyChangeNotification()
         
         gk_viewDidAppear(animated)
-    }
-    
-    @objc func gk_viewWillDisappear(_ animated: Bool) {
-        GKConfigure.update { (configure) in
-            if configure.gk_navItemLeftSpace == self.gk_navItemLeftSpace {
-                configure.gk_navItemLeftSpace = configure.navItemLeftSpace
-            }
-            
-            if configure.gk_navItemRightSpace == self.gk_navItemRightSpace {
-                configure.gk_navItemRightSpace = configure.navItemRightSpace
-            }
-        }
-        gk_viewWillDisappear(animated)
     }
     
     @objc func gk_viewWillLayoutSubviews() {

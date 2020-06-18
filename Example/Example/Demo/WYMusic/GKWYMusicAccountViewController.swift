@@ -15,5 +15,7 @@ class GKWYMusicAccountViewController: GKTabBaseViewController {
 
         self.gk_navTitle = "账号"
         self.gk_navBackgroundColor = UIColor(red: 200/255.0, green: 39/255.0, blue: 39/255.0, alpha: 1.0)
+        
+        self.gk_navItemRightSpace = 20;
     }
 }
