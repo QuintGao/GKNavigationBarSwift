@@ -83,6 +83,7 @@ self.gk_navBackgroundColor = [UIColor red]
 
 ## 版本记录
 
+* 0.0.7 - 2020.06.22 设置导航栏间距不再局限于GKNavigationBar
 * 0.0.6 - 2020.06.18  修复设置导航栏item间距的bug
 * 0.0.4 - 2020.04.18  修复设置标题文字颜色及大小可能无效的情况
 * 0.0.3 - 2020.04.12  优化对UIScrollView手势的处理

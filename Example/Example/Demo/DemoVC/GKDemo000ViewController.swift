@@ -48,7 +48,7 @@ class GKDemo000ViewController: GKBaseViewController {
         let btn = UIButton()
         btn.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
         btn.setTitle("更多", for: .normal)
-        btn.backgroundColor = .red
+        btn.backgroundColor = .black
         btn.setTitleColor(.white, for: .normal)
         
         return UIBarButtonItem(customView: btn)
