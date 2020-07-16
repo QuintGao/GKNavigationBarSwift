@@ -38,6 +38,7 @@ extension UIViewController: GKAwakeProtocol {
         static var gkNavigationItem: UINavigationItem = UINavigationItem()
         static var gkStatusBarHidden: Bool = GKConfigure.statusBarHidden
         static var gkStatusBarStyle: UIStatusBarStyle = GKConfigure.statusBarStyle
+        static var gkBackImage: UIImage?
         static var gkBackStyle: GKNavigationBarBackStyle = .none
         static var gkNavBackgroundColor: UIColor?
         static var gkNavBackgroundImage: UIImage?
@@ -195,6 +196,17 @@ extension UIViewController: GKAwakeProtocol {
         }
     }
     
+    public var gk_backImage: UIImage? {
+        get {
+            return objc_getAssociatedObject(self, &AssociatedKeys.gkBackImage) as? UIImage
+        }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.gkBackImage, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            
+            setBackItemImage(image: newValue)
+        }
+    }
+    
     public var gk_backStyle: GKNavigationBarBackStyle {
         get {
             guard let style = objc_getAssociatedObject(self, &AssociatedKeys.gkBackStyle) as? GKNavigationBarBackStyle else { return .none }
@@ -203,16 +215,7 @@ extension UIViewController: GKAwakeProtocol {
         set {
             objc_setAssociatedObject(self, &AssociatedKeys.gkBackStyle, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             
-            // 根控制器不作处理
-            guard let count = self.navigationController?.children.count else { return }
-            if count <= 1 { return }
-            
-            if self.gk_backStyle != .none {
-                let imageName = newValue == .black ? "btn_back_black" : "btn_back_white"
-                let backImage = UIImage.gk_image(with: imageName)
-                
-                self.gk_navigationItem.leftBarButtonItem = UIBarButtonItem.gk_item(image: backImage, target: self, action: #selector(backItemClick(_:)))
-            }
+            setBackItemImage(image: self.gk_backImage)
         }
     }
     
@@ -443,6 +446,22 @@ extension UIViewController: GKAwakeProtocol {
     }
     
     @objc func gk_viewWillAppear(_ animated: Bool) {
+        if self.isKind(of: UINavigationController.classForCoder()) { return }
+        if self.isKind(of: UITabBarController.classForCoder()) { return }
+        if self.navigationController == nil { return }
+        
+        var exist = false
+        
+        if let shiledVCs = GKConfigure.shiledVCs {
+            for vc in shiledVCs {
+                if self.isKind(of: vc.classForCoder) {
+                    exist = true
+                }
+            }
+        }
+        
+        if exist { return }
+        
         if self.gk_navBarInit {
             // 隐藏系统导航栏
             self.navigationController?.isNavigationBarHidden = true
@@ -537,6 +556,25 @@ extension UIViewController: GKAwakeProtocol {
     
     fileprivate func postPropertyChangeNotification() {
         NotificationCenter.default.post(name: GKViewControllerPropertyChanged, object: ["viewController": self])
+    }
+    
+    fileprivate func setBackItemImage(image: UIImage?) {
+        var backImage = image
+        
+        // 根控制器不作处理
+        guard let count = self.navigationController?.children.count else { return }
+        if (count<=1) { return }
+        
+        if backImage == nil {
+            if self.gk_backStyle != .none {
+                let imageName = self.gk_backStyle == .black ? "btn_back_black" : "btn_back_white"
+                backImage = UIImage.gk_image(with: imageName)
+            }
+        }
+        
+        if backImage == nil { return }
+        
+        self.gk_navLeftBarButtonItem = UIBarButtonItem.gk_item(image: backImage, target: self, action: #selector(backItemClick(_:)))
     }
     
     @objc func backItemClick(_ sender: Any) {

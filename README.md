@@ -83,6 +83,7 @@ self.gk_navBackgroundColor = [UIColor red]
 
 ## 版本记录
 
+* 0.0.9 - 2020.07.16 增加gk_backImage，可自定义导航栏返回按钮图片
 * 0.0.7 - 2020.06.22 设置导航栏间距不再局限于GKNavigationBar
 * 0.0.6 - 2020.06.18  修复设置导航栏item间距的bug
 * 0.0.4 - 2020.04.18  修复设置标题文字颜色及大小可能无效的情况

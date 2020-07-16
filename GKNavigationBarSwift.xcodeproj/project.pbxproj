@@ -160,7 +160,7 @@
 				79C48F2F24420207000B0815 /* UIBarButtonItem+GKExtension.swift */,
 				79C48F3124420207000B0815 /* UIImage+GKExtension.swift */,
 			);
-			path = Extensions;
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		79C48F282441F2A9000B0815 /* Configure */ = {

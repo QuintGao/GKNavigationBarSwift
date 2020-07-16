@@ -17,6 +17,7 @@ class GKDemo002ViewController: GKBaseViewController {
         self.view.backgroundColor = .white
         self.gk_navTitle = "相册使用"
         self.gk_statusBarStyle = .default
+        self.gk_backImage = UIImage(named: "Mine_selected")
         
         let btn = UIButton()
         btn.frame = CGRect(x: 0, y: 200, width: 80, height: 30)
