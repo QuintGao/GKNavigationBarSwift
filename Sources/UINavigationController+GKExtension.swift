@@ -162,6 +162,22 @@ extension UINavigationController: GKChildAwakeProtocol {
         
         let vc: UIViewController = obj["viewController"] as! UIViewController
         
+        // 不处理导航控制器和tabbar控制器
+        if vc.isKind(of: UINavigationController.classForCoder()) { return }
+        if vc.isKind(of: UITabBarController.classForCoder()) { return }
+        if vc.navigationController == nil { return }
+        
+        var exist = false
+        
+        if let shiledVCs = GKConfigure.shiledGuestureVCs {
+            for vc in shiledVCs {
+                if self.isKind(of: vc.classForCoder) {
+                    exist = true
+                }
+            }
+        }
+        if exist { return }
+        
         let isRootVC = vc == self.viewControllers.first
         
         // 手势处理

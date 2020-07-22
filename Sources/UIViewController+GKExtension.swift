@@ -452,7 +452,7 @@ extension UIViewController: GKAwakeProtocol {
         
         var exist = false
         
-        if let shiledVCs = GKConfigure.shiledVCs {
+        if let shiledVCs = GKConfigure.shiledItemSpaceVCs {
             for vc in shiledVCs {
                 if self.isKind(of: vc.classForCoder) {
                     exist = true
@@ -512,13 +512,19 @@ extension UIViewController: GKAwakeProtocol {
             self.gk_navBackgroundColor = GKConfigure.backgroundColor
         }
         
-        // 设置默认标题大小及颜色
+        // 设置默认标题字体
         if self.gk_navTitleFont == nil {
             self.gk_navTitleFont = GKConfigure.titleFont
         }
         
+        // 设置默认标题颜色
         if self.gk_navTitleColor == nil {
             self.gk_navTitleColor = GKConfigure.titleColor
+        }
+        
+        // 设置默认返回按钮图片
+        if self.gk_backImage == nil {
+            self.gk_backImage = GKConfigure.backImage
         }
         
         // 设置默认返回样式
@@ -559,6 +565,8 @@ extension UIViewController: GKAwakeProtocol {
     }
     
     fileprivate func setBackItemImage(image: UIImage?) {
+        if self.gk_navBarInit == false { return }
+        
         var backImage = image
         
         // 根控制器不作处理

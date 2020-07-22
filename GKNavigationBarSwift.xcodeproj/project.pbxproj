@@ -132,8 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				79C48F082441F169000B0815 /* GKNavigationBarSwift.swift */,
-				79C48F292441F2B2000B0815 /* Transition */,
 				79C48F282441F2A9000B0815 /* Configure */,
+				79C48F292441F2B2000B0815 /* Transition */,
 				79C48F272441F219000B0815 /* Extensions */,
 				79C48F262441F202000B0815 /* Supporting Files */,
 			);
