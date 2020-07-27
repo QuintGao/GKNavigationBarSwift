@@ -432,7 +432,7 @@ extension UIViewController: GKAwakeProtocol {
             ]
             
             for oriSel in oriSels {
-                gk_swizzled_instanceMethod(self, oldSelector: oriSel, newClass: self)
+                gk_swizzled_instanceMethod("gk", oldClass: self, oldSelector: oriSel, newClass: self)
             }
         }
     }
