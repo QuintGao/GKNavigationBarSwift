@@ -61,11 +61,11 @@ open class GKNavigationBarConfigure : NSObject {
 
     open var gk_scaleY: CGFloat = 0.97
 
-    /// 调整导航栏间距时需要屏蔽的VC，默认nil
-    open var shiledItemSpaceVCs: [UIViewController]?
+    /// 调整导航栏间距时需要屏蔽的VC，默认nil，支持UIViewController和String
+    open var shiledItemSpaceVCs: [Any]?
     
-    /// 需要屏蔽手势处理的VC，默认nil
-    open var shiledGuestureVCs: [UIViewController]?
+    /// 需要屏蔽手势处理的VC，默认nil，支持UIViewController和String
+    open var shiledGuestureVCs: [Any]?
     
     /// 导航栏左右间距，内部使用
     open var navItemLeftSpace: CGFloat = 0

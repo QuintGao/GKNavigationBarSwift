@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             configure.gk_scaleY = 0.92
             configure.gk_navItemLeftSpace = 12.0
             configure.gk_navItemRightSpace = 12.0
+            
+            configure.shiledItemSpaceVCs = [UIViewController.classForCoder(), "GKMainViewController"]
         }
         
         self.window = UIWindow(frame: UIScreen.main.bounds)

@@ -448,14 +448,24 @@ extension UIViewController: GKAwakeProtocol {
     @objc func gk_viewWillAppear(_ animated: Bool) {
         if self.isKind(of: UINavigationController.classForCoder()) { return }
         if self.isKind(of: UITabBarController.classForCoder()) { return }
+        if self.isKind(of: UIImagePickerController.classForCoder()) { return }
+        if self.isKind(of: UIVideoEditorController.classForCoder()) { return }
+        if self.isKind(of: UIAlertController.classForCoder()) { return }
+        if NSStringFromClass(self.classForCoder).components(separatedBy: ".").last == "PUPhotoPickerHostViewController" { return }
         if self.navigationController == nil { return }
         
         var exist = false
         
         if let shiledVCs = GKConfigure.shiledItemSpaceVCs {
-            for vc in shiledVCs {
-                if self.isKind(of: vc.classForCoder) {
-                    exist = true
+            for obj in shiledVCs {
+                if obj is UIViewController.Type {
+                    if self.isKind(of: obj as! UIViewController.Type) {
+                        exist = true
+                    }
+                }else if obj is String {
+                    if NSStringFromClass(self.classForCoder).components(separatedBy: ".").last == (obj as! String) {
+                        exist = true
+                    }
                 }
             }
         }

@@ -170,9 +170,15 @@ extension UINavigationController: GKChildAwakeProtocol {
         var exist = false
         
         if let shiledVCs = GKConfigure.shiledGuestureVCs {
-            for vc in shiledVCs {
-                if self.isKind(of: vc.classForCoder) {
-                    exist = true
+            for obj in shiledVCs {
+                if obj is UIViewController.Type {
+                    if self.isKind(of: obj as! UIViewController.Type) {
+                        exist = true
+                    }
+                }else if obj is String {
+                    if NSStringFromClass(self.classForCoder).components(separatedBy: ".").last == (obj as! String) {
+                        exist = true
+                    }
                 }
             }
         }
