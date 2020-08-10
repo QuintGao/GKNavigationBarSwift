@@ -39,11 +39,11 @@ override var preferredStatusBarStyle: UIStatusBarStyle {
 2、如果切换控制器的时候出现状态栏显示异常（一半黑一半白等）
 解决办法：在控制器初始化方法里面设置状态栏样式
 ```
-- (instancetype)init {
-    if (self = [super init]) {
-        self.gk_statusBarStyle = UIStatusBarStyleLightContent;
-    }
-    return self;
+// 最好在初始化方法中设置gk_statusBarStyle，否则可能导致状态栏切换闪动问题
+override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    
+    self.gk_statusBarStyle = .lightContent
 }
 ```
 3、Xcode 11.4 在调试的时候会出现不自动调用awake方法
