@@ -26,14 +26,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             configure.gk_navItemLeftSpace = 12.0
             configure.gk_navItemRightSpace = 12.0
             
-            configure.shiledItemSpaceVCs = [UIViewController.classForCoder(), "GKMainViewController"]
+            configure.shiledItemSpaceVCs = [GKDemo000ViewController.classForCoder(), "GKMainViewController"]
         }
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
-        
-        
-        
+    
         let nav = UINavigationController(rootVC: GKMainViewController())
         nav.gk_openScrollLeftPush = true
         
