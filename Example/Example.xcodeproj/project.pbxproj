@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		601456BC24FCAAA500918F0E /* GKNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601456BB24FCAAA400918F0E /* GKNavViewController.swift */; };
 		796AB5192442E7C400C724D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796AB5182442E7C400C724D4 /* Assets.xcassets */; };
 		796AB51C2442E7C400C724D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796AB51A2442E7C400C724D4 /* LaunchScreen.storyboard */; };
 		796AB56A2442E83E00C724D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB53F2442E83E00C724D4 /* AppDelegate.swift */; };
@@ -81,6 +82,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		601456BB24FCAAA400918F0E /* GKNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKNavViewController.swift; sourceTree = "<group>"; };
 		796AB50C2442E7C200C724D4 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		796AB5182442E7C400C724D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		796AB51B2442E7C400C724D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				796AB5422442E83E00C724D4 /* GKDemoBaseViewController.swift */,
 				796AB5432442E83E00C724D4 /* GKTabBaseViewController.swift */,
 				796AB5442442E83E00C724D4 /* GKBaseViewController.swift */,
+				601456BB24FCAAA400918F0E /* GKNavViewController.swift */,
 			);
 			path = BaseVC;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				796AB56F2442E83F00C724D4 /* GKToutiaoMineViewController.swift in Sources */,
 				796AB5892442E83F00C724D4 /* GKDemo002ViewController.swift in Sources */,
 				796AB5822442E83F00C724D4 /* GKWYNewsNewViewController.swift in Sources */,
+				601456BC24FCAAA500918F0E /* GKNavViewController.swift in Sources */,
 				796AB58A2442E83F00C724D4 /* GKDemo001ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

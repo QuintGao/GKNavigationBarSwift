@@ -85,6 +85,7 @@ class GKDemo000ViewController: GKBaseViewController {
         self.gk_navShadowColor = .black
         self.gk_backStyle = .white
         self.gk_navLineHidden = true
+        self.gk_navItemRightSpace = 0;
         self.gk_navRightBarButtonItem = self.moreItem
         
         self.leftPushSwitch.isOn = false

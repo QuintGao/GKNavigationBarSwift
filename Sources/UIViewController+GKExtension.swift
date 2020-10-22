@@ -33,6 +33,8 @@ extension UIViewController: GKAwakeProtocol {
         static var gkNavBarAlpha: CGFloat = 1
         static var gkPushDelegate: GKViewControllerPushDelegate?
         static var gkPopDelegate: GKViewControllerPopDelegate?
+        static var gkPushTransition: UIViewControllerAnimatedTransitioning?
+        static var gkPopTransition: UIViewControllerAnimatedTransitioning?
         static var gkNavBarInit: Bool = false
         static var gkNavigationBar: GKNavigationBar = GKNavigationBar()
         static var gkNavigationItem: UINavigationItem = UINavigationItem()
@@ -124,6 +126,24 @@ extension UIViewController: GKAwakeProtocol {
             objc_setAssociatedObject(self, &AssociatedKeys.gkPopDelegate, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             
             postPropertyChangeNotification()
+        }
+    }
+    
+    public var gk_pushTransition: UIViewControllerAnimatedTransitioning? {
+        get {
+            return objc_getAssociatedObject(self, &AssociatedKeys.gkPushTransition) as? UIViewControllerAnimatedTransitioning
+        }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.gkPushTransition, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    
+    public var gk_popTransition: UIViewControllerAnimatedTransitioning? {
+        get {
+            return objc_getAssociatedObject(self, &AssociatedKeys.gkPopTransition) as? UIViewControllerAnimatedTransitioning
+        }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.gkPopTransition, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
     
