@@ -8,6 +8,7 @@
 
 import UIKit
 import GKNavigationBarSwift
+import TZImagePickerController
 
 class GKDemo002ViewController: GKBaseViewController {
 
@@ -15,7 +16,7 @@ class GKDemo002ViewController: GKBaseViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = .white
-        self.gk_navTitle = "相册使用"
+        self.gk_navTitle = "嵌套TZImagePickerController"
         self.gk_statusBarStyle = .default
         self.gk_backImage = UIImage(named: "Mine_selected")
         
@@ -29,23 +30,20 @@ class GKDemo002ViewController: GKBaseViewController {
     }
     
     @objc func btnAction() {
-        let pickerVC = UIImagePickerController()
-        pickerVC.sourceType = .photoLibrary
-        pickerVC.allowsEditing = true
-        pickerVC.delegate = self
-        
+        let pickerVC = TZImagePickerController(maxImagesCount: 9, delegate: self)
+        pickerVC?.allowCrop = true
+        pickerVC?.modalPresentationStyle = .fullScreen
         GKConfigure.gk_disableFixSpace = true
-        self.present(pickerVC, animated: true, completion: nil)
+        self.present(pickerVC!, animated: true, completion: nil)
     }
 }
 
-extension GKDemo002ViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        picker .dismiss(animated: true, completion: nil)
+extension GKDemo002ViewController: TZImagePickerControllerDelegate {
+    func tz_imagePickerControllerDidCancel(_ picker: TZImagePickerController!) {
         GKConfigure.gk_disableFixSpace = false
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    func imagePickerController(_ picker: TZImagePickerController!, didFinishPickingPhotos photos: [UIImage]!, sourceAssets assets: [Any]!, isSelectOriginalPhoto: Bool) {
         GKConfigure.gk_disableFixSpace = false
     }
 }

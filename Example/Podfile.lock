@@ -1,0 +1,20 @@
+PODS:
+  - SnapKit (4.2.0)
+  - TZImagePickerController (3.4.8)
+
+DEPENDENCIES:
+  - SnapKit
+  - TZImagePickerController
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SnapKit
+    - TZImagePickerController
+
+SPEC CHECKSUMS:
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  TZImagePickerController: 6685e6d81b8fd5453e80ba369dd4ebd6e97276ee
+
+PODFILE CHECKSUM: 87995032cd6060a0a5ff273e7198baf1185ddb45
+
+COCOAPODS: 1.10.0.beta.2

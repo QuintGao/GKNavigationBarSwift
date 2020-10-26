@@ -14,7 +14,7 @@ class GKTabBaseViewController: GKBaseViewController {
         let btn = UIButton()
         btn.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
         btn.setTitle("关闭", for: .normal)
-        btn.setTitleColor(.white, for: .normal)
+        btn.setTitleColor(.red, for: .normal)
         btn.addTarget(self, action: #selector(closeAction), for: .touchUpInside)
         return UIBarButtonItem(customView: btn)
     }()

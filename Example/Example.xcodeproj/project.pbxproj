@@ -3,11 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		601456BC24FCAAA500918F0E /* GKNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601456BB24FCAAA400918F0E /* GKNavViewController.swift */; };
+		608FC7202546A9F1003DB82F /* GKWXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FC71F2546A9F1003DB82F /* GKWXViewController.swift */; };
+		608FC7222546AA20003DB82F /* GKWXHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FC7212546AA20003DB82F /* GKWXHomeViewController.swift */; };
+		608FC7242546AA27003DB82F /* GKWXFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FC7232546AA27003DB82F /* GKWXFindViewController.swift */; };
+		608FC7262546AA2E003DB82F /* GKWXMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FC7252546AA2E003DB82F /* GKWXMineViewController.swift */; };
+		608FC7282546AA39003DB82F /* GKWXDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FC7272546AA39003DB82F /* GKWXDetailViewController.swift */; };
+		608FC72B2546AB81003DB82F /* GKFloatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FC72A2546AB81003DB82F /* GKFloatView.swift */; };
+		608FC72D2546AB99003DB82F /* GKFloatTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FC72C2546AB99003DB82F /* GKFloatTransition.swift */; };
 		796AB5192442E7C400C724D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796AB5182442E7C400C724D4 /* Assets.xcassets */; };
 		796AB51C2442E7C400C724D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796AB51A2442E7C400C724D4 /* LaunchScreen.storyboard */; };
 		796AB56A2442E83E00C724D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB53F2442E83E00C724D4 /* AppDelegate.swift */; };
@@ -48,6 +55,7 @@
 		796AB58D2442E83F00C724D4 /* web.txt in Resources */ = {isa = PBXBuildFile; fileRef = 796AB5692442E83E00C724D4 /* web.txt */; };
 		796AB5992442E88600C724D4 /* GKNavigationBarSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796AB5952442E87B00C724D4 /* GKNavigationBarSwift.framework */; };
 		796AB59A2442E88600C724D4 /* GKNavigationBarSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 796AB5952442E87B00C724D4 /* GKNavigationBarSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		852998146AE21C36CA8F786A /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34ABAF9BDED111FFC6E33C2 /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +91,13 @@
 
 /* Begin PBXFileReference section */
 		601456BB24FCAAA400918F0E /* GKNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKNavViewController.swift; sourceTree = "<group>"; };
+		608FC71F2546A9F1003DB82F /* GKWXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKWXViewController.swift; sourceTree = "<group>"; };
+		608FC7212546AA20003DB82F /* GKWXHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKWXHomeViewController.swift; sourceTree = "<group>"; };
+		608FC7232546AA27003DB82F /* GKWXFindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKWXFindViewController.swift; sourceTree = "<group>"; };
+		608FC7252546AA2E003DB82F /* GKWXMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKWXMineViewController.swift; sourceTree = "<group>"; };
+		608FC7272546AA39003DB82F /* GKWXDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKWXDetailViewController.swift; sourceTree = "<group>"; };
+		608FC72A2546AB81003DB82F /* GKFloatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKFloatView.swift; sourceTree = "<group>"; };
+		608FC72C2546AB99003DB82F /* GKFloatTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKFloatTransition.swift; sourceTree = "<group>"; };
 		796AB50C2442E7C200C724D4 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		796AB5182442E7C400C724D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		796AB51B2442E7C400C724D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -124,6 +139,9 @@
 		796AB5682442E83E00C724D4 /* GKDemoWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDemoWebViewController.swift; sourceTree = "<group>"; };
 		796AB5692442E83E00C724D4 /* web.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = web.txt; sourceTree = "<group>"; };
 		796AB58F2442E87B00C724D4 /* GKNavigationBarSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GKNavigationBarSwift.xcodeproj; path = ../GKNavigationBarSwift.xcodeproj; sourceTree = "<group>"; };
+		C8FC9D6D5681D452920783C4 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D34ABAF9BDED111FFC6E33C2 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E84AA3F4D2EF211BFEECB8 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,18 +150,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				796AB5992442E88600C724D4 /* GKNavigationBarSwift.framework in Frameworks */,
+				852998146AE21C36CA8F786A /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AC806C3E849BF42FFABD1D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8FC9D6D5681D452920783C4 /* Pods-Example.debug.xcconfig */,
+				D3E84AA3F4D2EF211BFEECB8 /* Pods-Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		608FC71C2546A9D1003DB82F /* WX */ = {
+			isa = PBXGroup;
+			children = (
+				608FC71F2546A9F1003DB82F /* GKWXViewController.swift */,
+				608FC7212546AA20003DB82F /* GKWXHomeViewController.swift */,
+				608FC7232546AA27003DB82F /* GKWXFindViewController.swift */,
+				608FC7252546AA2E003DB82F /* GKWXMineViewController.swift */,
+				608FC7272546AA39003DB82F /* GKWXDetailViewController.swift */,
+				608FC7292546AB5C003DB82F /* GKFloatView */,
+			);
+			path = WX;
+			sourceTree = "<group>";
+		};
+		608FC7292546AB5C003DB82F /* GKFloatView */ = {
+			isa = PBXGroup;
+			children = (
+				608FC72A2546AB81003DB82F /* GKFloatView.swift */,
+				608FC72C2546AB99003DB82F /* GKFloatTransition.swift */,
+			);
+			path = GKFloatView;
+			sourceTree = "<group>";
+		};
 		796AB5032442E7C200C724D4 = {
 			isa = PBXGroup;
 			children = (
 				796AB50E2442E7C200C724D4 /* Example */,
 				796AB50D2442E7C200C724D4 /* Products */,
 				796AB58F2442E87B00C724D4 /* GKNavigationBarSwift.xcodeproj */,
+				3AC806C3E849BF42FFABD1D1 /* Pods */,
+				D0D8CD080B2F14DF98ECE25F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +226,7 @@
 				796AB5452442E83E00C724D4 /* Toutiao */,
 				796AB54C2442E83E00C724D4 /* WYMusic */,
 				796AB5592442E83E00C724D4 /* WYNews */,
+				608FC71C2546A9D1003DB82F /* WX */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -275,6 +328,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D0D8CD080B2F14DF98ECE25F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D34ABAF9BDED111FFC6E33C2 /* Pods_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -282,10 +343,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 796AB5362442E7C400C724D4 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
+				C0331124E13E14244CE8C88D /* [CP] Check Pods Manifest.lock */,
 				796AB5082442E7C200C724D4 /* Sources */,
 				796AB5092442E7C200C724D4 /* Frameworks */,
 				796AB50A2442E7C200C724D4 /* Resources */,
 				796AB59B2442E88600C724D4 /* Embed Frameworks */,
+				2125FFE16CD93BC6B9C68B46 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,7 +366,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = QuintGao;
 				TargetAttributes = {
 					796AB50B2442E7C200C724D4 = {
@@ -367,6 +430,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2125FFE16CD93BC6B9C68B46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0331124E13E14244CE8C88D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		796AB5082442E7C200C724D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -376,13 +481,16 @@
 				796AB5772442E83F00C724D4 /* GKWYMusicAccountViewController.swift in Sources */,
 				796AB5732442E83F00C724D4 /* GKToutiaoViewController.swift in Sources */,
 				796AB5782442E83F00C724D4 /* GKWYMusicFindViewController.swift in Sources */,
+				608FC7282546AA39003DB82F /* GKWXDetailViewController.swift in Sources */,
 				796AB5812442E83F00C724D4 /* GKWYNewsHomeViewController.swift in Sources */,
 				796AB5882442E83F00C724D4 /* GKDemo003ViewController.swift in Sources */,
 				796AB5762442E83F00C724D4 /* GKWYMusicViewController.swift in Sources */,
 				796AB5862442E83F00C724D4 /* GKWYNewsCommentViewController.swift in Sources */,
 				796AB5832442E83F00C724D4 /* GKWYNewsDetailViewController.swift in Sources */,
 				796AB5802442E83F00C724D4 /* GKWYNewsViewController.swift in Sources */,
+				608FC72B2546AB81003DB82F /* GKFloatView.swift in Sources */,
 				796AB5702442E83F00C724D4 /* GKToutiaoHomeViewController.swift in Sources */,
+				608FC7202546A9F1003DB82F /* GKWXViewController.swift in Sources */,
 				796AB5852442E83F00C724D4 /* GKWYNewsProfileViewController.swift in Sources */,
 				796AB57F2442E83F00C724D4 /* GKWYNewsLiveViewController.swift in Sources */,
 				796AB5792442E83F00C724D4 /* GKWYMusicMineViewController.swift in Sources */,
@@ -393,12 +501,14 @@
 				796AB58C2442E83F00C724D4 /* GKDemoWebViewController.swift in Sources */,
 				796AB57B2442E83F00C724D4 /* GKDouyinSearchViewController.swift in Sources */,
 				796AB5712442E83F00C724D4 /* GKToutiaoVideoViewController.swift in Sources */,
+				608FC7222546AA20003DB82F /* GKWXHomeViewController.swift in Sources */,
 				796AB56D2442E83F00C724D4 /* GKBaseViewController.swift in Sources */,
 				796AB58B2442E83F00C724D4 /* GKDemo000ViewController.swift in Sources */,
 				796AB5742442E83F00C724D4 /* GKWYMusicDetailViewController.swift in Sources */,
 				796AB56C2442E83F00C724D4 /* GKTabBaseViewController.swift in Sources */,
 				796AB57C2442E83F00C724D4 /* GKDouyinPersonalViewController.swift in Sources */,
 				796AB56A2442E83E00C724D4 /* AppDelegate.swift in Sources */,
+				608FC72D2546AB99003DB82F /* GKFloatTransition.swift in Sources */,
 				796AB5842442E83F00C724D4 /* GKWYNewsVideoViewController.swift in Sources */,
 				796AB56E2442E83F00C724D4 /* GKToutiaoMicroViewController.swift in Sources */,
 				796AB57E2442E83F00C724D4 /* GKMainViewController.swift in Sources */,
@@ -406,6 +516,8 @@
 				796AB5892442E83F00C724D4 /* GKDemo002ViewController.swift in Sources */,
 				796AB5822442E83F00C724D4 /* GKWYNewsNewViewController.swift in Sources */,
 				601456BC24FCAAA500918F0E /* GKNavViewController.swift in Sources */,
+				608FC7262546AA2E003DB82F /* GKWXMineViewController.swift in Sources */,
+				608FC7242546AA27003DB82F /* GKWXFindViewController.swift in Sources */,
 				796AB58A2442E83F00C724D4 /* GKDemo001ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +562,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -510,6 +623,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -540,6 +654,7 @@
 		};
 		796AB5372442E7C400C724D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8FC9D6D5681D452920783C4 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -563,6 +678,7 @@
 		};
 		796AB5382442E7C400C724D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3E84AA3F4D2EF211BFEECB8 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

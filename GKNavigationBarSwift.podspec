@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name         = "GKNavigationBarSwift"
-  s.version      = "1.1.8"
+  s.version      = "1.2.0"
   s.summary      = "Customize navigation bar, adding navigation bar for each controller"
   s.homepage     = "https://github.com/QuintGao/GKNavigationBarSwift"
   s.license      = 'MIT'
   s.authors      = { "高坤" => "1094887059@qq.com" }
   s.social_media_url   = "https://github.com/QuintGao"
-  s.platform     = :ios, "8.0"
-  s.ios.deployment_target = "8.0"
+  s.platform     = :ios, "9.0"
+  s.ios.deployment_target = "9.0"
   s.source       = { :git => "https://github.com/QuintGao/GKNavigationBarSwift.git", :tag => s.version }
   s.source_files  = 'Sources/*.swift'
   s.resource      = 'Sources/GKNavigationBarSwift.bundle'

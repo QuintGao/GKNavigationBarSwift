@@ -21,7 +21,8 @@ class GKMainViewController: GKBaseViewController {
                 "抖音左右滑动",
                 "今日头条",
                 "网易云音乐",
-                "网易新闻"
+                "网易新闻",
+                "微信(自定义push、pop)"
         ]
     }()
     
@@ -106,6 +107,10 @@ extension GKMainViewController: UITableViewDataSource, UITableViewDelegate {
                 let wyNewsVC = GKWYNewsViewController()
                 wyNewsVC.modalPresentationStyle = .fullScreen
                 self.present(wyNewsVC, animated: true, completion: nil)
+            }else if indexPath.row == 8 {
+                let wxVC = GKWXViewController()
+                wxVC.modalPresentationStyle = .fullScreen
+                self.present(wxVC, animated: true, completion: nil)
             }
         }
     }

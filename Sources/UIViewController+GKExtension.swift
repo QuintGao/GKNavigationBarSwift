@@ -630,8 +630,8 @@ extension UIViewController: GKAwakeProtocol {
     }
     
     public func gk_visibleViewControllerIfExist() -> UIViewController? {
-        if self.presentingViewController != nil {
-            return self.presentingViewController?.gk_visibleViewControllerIfExist()
+        if self.presentedViewController != nil {
+            return self.presentedViewController?.gk_visibleViewControllerIfExist()
         }
         
         if self.isKind(of: UINavigationController.classForCoder()) {
