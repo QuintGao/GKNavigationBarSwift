@@ -8,7 +8,6 @@
 
 import UIKit
 import GKNavigationBarSwift
-import TZImagePickerController
 
 class GKDemo002ViewController: GKBaseViewController {
 

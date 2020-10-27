@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		79C48EA72441EC51000B0815 /* GKNavigationBarSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C48E9E2441EC50000B0815 /* GKNavigationBarSwift.framework */; };
 		79C48F152441F16A000B0815 /* GKBaseAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F042441F169000B0815 /* GKBaseAnimatedTransition.swift */; };
 		79C48F162441F16A000B0815 /* GKPopAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F052441F169000B0815 /* GKPopAnimatedTransition.swift */; };
 		79C48F192441F16A000B0815 /* GKNavigationBarSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F082441F169000B0815 /* GKNavigationBarSwift.swift */; };
@@ -25,16 +24,6 @@
 		79C48F3724420207000B0815 /* UIImage+GKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F3124420207000B0815 /* UIImage+GKExtension.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		79C48EA82441EC51000B0815 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 79C48E5E2441EBEC000B0815 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79C48E9D2441EC50000B0815;
-			remoteInfo = GKNavigationBarSwift;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		79C48E692441EBEC000B0815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79C48E6B2441EBEC000B0815 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +32,6 @@
 		79C48E722441EBEE000B0815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79C48E752441EBEE000B0815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79C48E9E2441EC50000B0815 /* GKNavigationBarSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GKNavigationBarSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79C48EA62441EC50000B0815 /* GKNavigationBarSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKNavigationBarSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C48EB62441EE70000B0815 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		79C48EB72441EE71000B0815 /* GKNavigationBarSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GKNavigationBarSwift.podspec; sourceTree = "<group>"; };
 		79C48F042441F169000B0815 /* GKBaseAnimatedTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBaseAnimatedTransition.swift; sourceTree = "<group>"; };
@@ -74,14 +62,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79C48EA32441EC50000B0815 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79C48EA72441EC51000B0815 /* GKNavigationBarSwift.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				79C48E9E2441EC50000B0815 /* GKNavigationBarSwift.framework */,
-				79C48EA62441EC50000B0815 /* GKNavigationBarSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,24 +194,6 @@
 			productReference = 79C48E9E2441EC50000B0815 /* GKNavigationBarSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		79C48EA52441EC50000B0815 /* GKNavigationBarSwiftTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 79C48EB22441EC51000B0815 /* Build configuration list for PBXNativeTarget "GKNavigationBarSwiftTests" */;
-			buildPhases = (
-				79C48EA22441EC50000B0815 /* Sources */,
-				79C48EA32441EC50000B0815 /* Frameworks */,
-				79C48EA42441EC50000B0815 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				79C48EA92441EC51000B0815 /* PBXTargetDependency */,
-			);
-			name = GKNavigationBarSwiftTests;
-			productName = GKNavigationBarSwiftTests;
-			productReference = 79C48EA62441EC50000B0815 /* GKNavigationBarSwiftTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -246,9 +207,6 @@
 					79C48E9D2441EC50000B0815 = {
 						CreatedOnToolsVersion = 11.4;
 						LastSwiftMigration = 1140;
-					};
-					79C48EA52441EC50000B0815 = {
-						CreatedOnToolsVersion = 11.4;
 					};
 				};
 			};
@@ -266,7 +224,6 @@
 			projectRoot = "";
 			targets = (
 				79C48E9D2441EC50000B0815 /* GKNavigationBarSwift */,
-				79C48EA52441EC50000B0815 /* GKNavigationBarSwiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -277,13 +234,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				79C48F232441F16A000B0815 /* GKNavigationBarSwift.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		79C48EA42441EC50000B0815 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,22 +260,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79C48EA22441EC50000B0815 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		79C48EA92441EC51000B0815 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 79C48E9D2441EC50000B0815 /* GKNavigationBarSwift */;
-			targetProxy = 79C48EA82441EC51000B0815 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		79C48E6F2441EBEC000B0815 /* Main.storyboard */ = {
@@ -477,7 +412,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -511,7 +446,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -527,42 +462,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		79C48EB32441EC51000B0815 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GKNavigationBarSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.gknavigationbarswift.GKNavigationBarSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		79C48EB42441EC51000B0815 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GKNavigationBarSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.gknavigationbarswift.GKNavigationBarSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -583,15 +482,6 @@
 			buildConfigurations = (
 				79C48EB02441EC51000B0815 /* Debug */,
 				79C48EB12441EC51000B0815 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		79C48EB22441EC51000B0815 /* Build configuration list for PBXNativeTarget "GKNavigationBarSwiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				79C48EB32441EC51000B0815 /* Debug */,
-				79C48EB42441EC51000B0815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

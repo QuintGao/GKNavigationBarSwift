@@ -277,6 +277,7 @@
 }
 
 - (void)resizeSubviews {
+    _imageContainerView.transform = CGAffineTransformIdentity;
     _imageContainerView.tz_origin = CGPointZero;
     _imageContainerView.tz_width = self.scrollView.tz_width;
     
