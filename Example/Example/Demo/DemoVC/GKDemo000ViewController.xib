@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,6 +14,8 @@
                 <outlet property="backStyleSwitch" destination="kBg-3N-UYt" id="8Lr-io-tIU"/>
                 <outlet property="fullScreenDistanceLabel" destination="D8R-Ej-5nN" id="pCQ-4f-ncj"/>
                 <outlet property="fullScreenDistanceSlider" destination="mmt-cb-btF" id="udF-v0-MCD"/>
+                <outlet property="fullScreenInterceptLabel" destination="ONp-nz-Ywq" id="hzc-uq-JIe"/>
+                <outlet property="fullScreenInterceptSwitch" destination="3uc-4K-eKN" id="JAv-13-SwL"/>
                 <outlet property="fullScreenPopLabel" destination="Lz7-lv-Kxd" id="dOt-3f-y0T"/>
                 <outlet property="fullScreenPopSwitch" destination="l7f-ua-EXa" id="5a4-w7-eLF"/>
                 <outlet property="interactivePopLabel" destination="Ym7-ji-SfU" id="Syx-1m-61D"/>
@@ -148,31 +151,44 @@
                     </connections>
                 </switch>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全屏返回手势距离：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8R-Ej-5nN">
-                    <rect key="frame" x="20" y="469" width="156" height="21"/>
+                    <rect key="frame" x="20" y="510" width="156" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mmt-cb-btF">
-                    <rect key="frame" x="-2" y="510" width="418" height="31"/>
+                    <rect key="frame" x="-2" y="551" width="418" height="31"/>
                     <connections>
                         <action selector="maxDistanceAction:" destination="-1" eventType="valueChanged" id="5YC-IC-0iT"/>
                     </connections>
                 </slider>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="导航栏透明度：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lH-2u-RCb">
-                    <rect key="frame" x="20" y="560" width="121.5" height="21"/>
+                    <rect key="frame" x="20" y="601" width="121.5" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kH5-LH-hN1">
-                    <rect key="frame" x="-2" y="601" width="418" height="31"/>
+                    <rect key="frame" x="-2" y="642" width="418" height="31"/>
                     <connections>
                         <action selector="navAlphaAction:" destination="-1" eventType="valueChanged" id="Hoj-Kg-GD8"/>
                     </connections>
                 </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全屏返回手势拦截：关" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONp-nz-Ywq">
+                    <rect key="frame" x="20" y="469" width="173.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3uc-4K-eKN">
+                    <rect key="frame" x="345" y="464" width="51" height="31"/>
+                    <connections>
+                        <action selector="fullScreenInterceptAction:" destination="-1" eventType="valueChanged" id="zs3-s5-HNo"/>
+                        <action selector="moreItemAction:" destination="-1" eventType="valueChanged" id="kKe-Vu-P4P"/>
+                    </connections>
+                </switch>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="kH5-LH-hN1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="24b-sv-cWz"/>
                 <constraint firstItem="iiL-LU-ApT" firstAttribute="top" secondItem="Rid-YI-dbV" secondAttribute="bottom" constant="20" id="2TF-J5-QzR"/>
@@ -183,10 +199,12 @@
                 <constraint firstItem="mmt-cb-btF" firstAttribute="top" secondItem="D8R-Ej-5nN" secondAttribute="bottom" constant="20" id="7K8-l8-fYG"/>
                 <constraint firstAttribute="trailing" secondItem="FXp-pZ-MxZ" secondAttribute="trailing" constant="20" id="8FL-2h-YMh"/>
                 <constraint firstItem="mM7-WX-nOb" firstAttribute="centerY" secondItem="iiL-LU-ApT" secondAttribute="centerY" id="93I-vN-vFz"/>
+                <constraint firstItem="3uc-4K-eKN" firstAttribute="centerY" secondItem="ONp-nz-Ywq" secondAttribute="centerY" id="93p-nR-qWi"/>
                 <constraint firstItem="SuF-FP-5Ec" firstAttribute="top" secondItem="Lz7-lv-Kxd" secondAttribute="bottom" constant="20" id="9kn-D2-Rta"/>
                 <constraint firstItem="kBg-3N-UYt" firstAttribute="centerY" secondItem="FUg-ql-rY6" secondAttribute="centerY" id="A9V-Dg-4ne"/>
                 <constraint firstAttribute="trailing" secondItem="kH5-LH-hN1" secondAttribute="trailing" id="AZS-4B-c4h"/>
                 <constraint firstItem="Rid-YI-dbV" firstAttribute="top" secondItem="SuF-FP-5Ec" secondAttribute="bottom" constant="20" id="AgH-2L-UvK"/>
+                <constraint firstItem="D8R-Ej-5nN" firstAttribute="top" secondItem="ONp-nz-Ywq" secondAttribute="bottom" constant="20" id="BKN-rS-qH7"/>
                 <constraint firstItem="qCZ-2m-1XZ" firstAttribute="top" secondItem="x3Z-dD-mfL" secondAttribute="bottom" constant="20" id="CsG-Qa-EOy"/>
                 <constraint firstAttribute="trailing" secondItem="tXk-hz-Uu9" secondAttribute="trailing" constant="20" id="D4S-8m-udE"/>
                 <constraint firstItem="JHu-GY-aZJ" firstAttribute="centerY" secondItem="UFk-xF-N0M" secondAttribute="centerY" id="I6E-Do-bNq"/>
@@ -214,14 +232,21 @@
                 <constraint firstAttribute="trailing" secondItem="mM7-WX-nOb" secondAttribute="trailing" constant="20" id="n30-0Q-ATz"/>
                 <constraint firstItem="l7f-ua-EXa" firstAttribute="centerY" secondItem="Lz7-lv-Kxd" secondAttribute="centerY" id="ocD-T1-Urg"/>
                 <constraint firstItem="1T3-Qh-SR3" firstAttribute="centerY" secondItem="Rid-YI-dbV" secondAttribute="centerY" id="pDk-Cj-HTZ"/>
-                <constraint firstItem="D8R-Ej-5nN" firstAttribute="top" secondItem="qCZ-2m-1XZ" secondAttribute="bottom" constant="20" id="qOC-tR-LSC"/>
+                <constraint firstItem="ONp-nz-Ywq" firstAttribute="top" secondItem="qCZ-2m-1XZ" secondAttribute="bottom" constant="20" id="q8j-0t-6RO"/>
                 <constraint firstItem="Lz7-lv-Kxd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="rFF-Or-5jU"/>
                 <constraint firstAttribute="trailing" secondItem="p8i-E5-ixx" secondAttribute="trailing" constant="20" id="rQJ-r9-xOv"/>
+                <constraint firstItem="ONp-nz-Ywq" firstAttribute="leading" secondItem="qCZ-2m-1XZ" secondAttribute="leading" id="siM-4L-iVd"/>
                 <constraint firstItem="7Wi-CL-KBM" firstAttribute="centerY" secondItem="qCZ-2m-1XZ" secondAttribute="centerY" id="slU-04-Uoc"/>
+                <constraint firstItem="3uc-4K-eKN" firstAttribute="trailing" secondItem="7Wi-CL-KBM" secondAttribute="trailing" id="vsB-C6-Drb"/>
                 <constraint firstAttribute="trailing" secondItem="l7f-ua-EXa" secondAttribute="trailing" constant="20" id="wKG-Iw-xRR"/>
                 <constraint firstItem="UFk-xF-N0M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="yRI-Mp-BKv"/>
             </constraints>
             <point key="canvasLocation" x="139" y="96"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

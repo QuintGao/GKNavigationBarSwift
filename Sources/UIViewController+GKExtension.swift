@@ -448,8 +448,7 @@ extension UIViewController: GKAwakeProtocol {
             let oriSels = ["viewDidLoad",
                            "viewWillAppear:",
                            "viewDidAppear:",
-                           "viewWillLayoutSubviews"
-            ]
+                           "viewWillLayoutSubviews"]
             
             for oriSel in oriSels {
                 gk_swizzled_instanceMethod("gk", oldClass: self, oldSelector: oriSel, newClass: self)

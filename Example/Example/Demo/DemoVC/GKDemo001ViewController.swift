@@ -19,6 +19,8 @@ class GKDemo001ViewController: GKBaseViewController {
         } else {
             self.automaticallyAdjustsScrollViewInsets = false
         }
+        scrollView.gk_openGestureHandle = true
+        
         
         let scrollW = scrollView.frame.size.width
         let scrollH = scrollView.frame.size.height

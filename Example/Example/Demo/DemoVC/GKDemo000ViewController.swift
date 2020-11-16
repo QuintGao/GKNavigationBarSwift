@@ -38,6 +38,9 @@ class GKDemo000ViewController: GKBaseViewController {
     @IBOutlet weak var moreItemLabel: UILabel!
     @IBOutlet weak var moreItemSwitch: UISwitch!
     
+    @IBOutlet weak var fullScreenInterceptLabel: UILabel!
+    @IBOutlet weak var fullScreenInterceptSwitch: UISwitch!
+    
     @IBOutlet weak var fullScreenDistanceLabel: UILabel!
     @IBOutlet weak var fullScreenDistanceSlider: UISlider!
     
@@ -90,6 +93,7 @@ class GKDemo000ViewController: GKBaseViewController {
         
         self.leftPushSwitch.isOn = false
         self.moreItemSwitch.isOn = false
+        self.fullScreenInterceptSwitch.isOn = false
         self.fullScreenDistanceSlider.minimumValue = 0
         self.fullScreenDistanceSlider.maximumValue = Float(self.view.frame.size.width)
         if self.gk_maxPopDistance == 0 {
@@ -177,6 +181,16 @@ class GKDemo000ViewController: GKBaseViewController {
         self.moreItemLabel.text = "多个导航按钮：" + (self.moreItemSwitch.isOn ? "开" : "关")
     }
     
+    @IBAction func fullScreenInterceptAction(_ sender: Any) {
+        if self.fullScreenInterceptSwitch.isOn {
+            self.gk_popDelegate = self
+        }else {
+            self.gk_popDelegate = nil
+        }
+        self.fullScreenInterceptLabel.text = "全屏返回手势拦截：" + (self.fullScreenInterceptSwitch.isOn ? "开" : "关")
+    }
+    
+    
     @IBAction func maxDistanceAction(_ sender: Any) {
         self.gk_maxPopDistance = CGFloat(self.fullScreenDistanceSlider.value)
         
@@ -187,6 +201,18 @@ class GKDemo000ViewController: GKBaseViewController {
         self.gk_navBarAlpha = CGFloat(self.navBarAlphaSlider.value)
         
         self.navBarAlphaLabel.text = "导航栏透明度：\(self.gk_navBarAlpha)"
+    }
+}
+
+extension GKDemo000ViewController: GKViewControllerPopDelegate {
+    func viewControllerPopScrollBegan() {
+        let alertVC = UIAlertController(title: "温馨提示", message: "确定要返回吗？", preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "取消", style: .cancel, handler: nil))
+        alertVC.addAction(UIAlertAction(title: "确定", style: .default, handler: { (action) in
+            self.gk_popDelegate = nil
+            self.navigationController?.popViewController(animated: true)
+        }))
+        present(alertVC, animated: true, completion: nil)
     }
 }
 

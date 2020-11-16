@@ -81,13 +81,6 @@
 			remoteGlobalIDString = 79C48E9E2441EC50000B0815;
 			remoteInfo = GKNavigationBarSwift;
 		};
-		796AB5962442E87B00C724D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 796AB58F2442E87B00C724D4 /* GKNavigationBarSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 79C48EA62441EC50000B0815;
-			remoteInfo = GKNavigationBarSwiftTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -339,9 +332,9 @@
 		796AB54C2442E83E00C724D4 /* WYMusic */ = {
 			isa = PBXGroup;
 			children = (
+				796AB54F2442E83E00C724D4 /* GKWYMusicViewController.swift */,
 				796AB54D2442E83E00C724D4 /* GKWYMusicDetailViewController.swift */,
 				796AB54E2442E83E00C724D4 /* GKWYMusicFriendViewController.swift */,
-				796AB54F2442E83E00C724D4 /* GKWYMusicViewController.swift */,
 				796AB5502442E83E00C724D4 /* GKWYMusicAccountViewController.swift */,
 				796AB5512442E83E00C724D4 /* GKWYMusicFindViewController.swift */,
 				796AB5522442E83E00C724D4 /* GKWYMusicMineViewController.swift */,
@@ -405,7 +398,6 @@
 			isa = PBXGroup;
 			children = (
 				796AB5952442E87B00C724D4 /* GKNavigationBarSwift.framework */,
-				796AB5972442E87B00C724D4 /* GKNavigationBarSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -485,13 +477,6 @@
 			fileType = wrapper.framework;
 			path = GKNavigationBarSwift.framework;
 			remoteRef = 796AB5942442E87B00C724D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		796AB5972442E87B00C724D4 /* GKNavigationBarSwiftTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = GKNavigationBarSwiftTests.xctest;
-			remoteRef = 796AB5962442E87B00C724D4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
