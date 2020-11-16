@@ -35,8 +35,19 @@ class GKMainViewController: GKBaseViewController {
         self.gk_statusBarStyle = .lightContent
         self.gk_navTitleFont = UIFont.systemFont(ofSize: 18)
         self.gk_navTitleColor = .white
+        self.gk_navRightBarButtonItem = UIBarButtonItem.gk_item(title: "切换根控制器", target: self, action: #selector(switchAction))
         
         setupTableView()
+    }
+    
+    deinit {
+        print("GKMainViewController deinit")
+    }
+    
+    @objc func switchAction() {
+        let keywindow = UIApplication.shared.delegate?.window
+        
+        keywindow!?.rootViewController = GKWXViewController()
     }
     
     override func viewWillAppear(_ animated: Bool) {

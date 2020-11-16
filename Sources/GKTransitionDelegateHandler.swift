@@ -12,7 +12,7 @@ class GKNavigationControllerDelegateHandler: NSObject {
     var isGesturePush: Bool = false
     var pushTransition: UIPercentDrivenInteractiveTransition?
     var popTransition: UIPercentDrivenInteractiveTransition?
-    var navigationController: UINavigationController!
+    weak var navigationController: UINavigationController!
     
     // MARK: - 滑动手势处理
     @objc public func panGestureAction(_ gesture: UIPanGestureRecognizer) {
