@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		601456BC24FCAAA500918F0E /* GKNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601456BB24FCAAA400918F0E /* GKNavViewController.swift */; };
 		602E1B352547AF3900ABC246 /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B182547AF3800ABC246 /* TZImageCropManager.m */; };
 		602E1B362547AF3900ABC246 /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B1A2547AF3800ABC246 /* TZAssetCell.m */; };
 		602E1B372547AF3900ABC246 /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B1B2547AF3800ABC246 /* TZVideoPlayerController.m */; };
@@ -31,6 +30,7 @@
 		608FC7282546AA39003DB82F /* GKWXDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FC7272546AA39003DB82F /* GKWXDetailViewController.swift */; };
 		608FC72B2546AB81003DB82F /* GKFloatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FC72A2546AB81003DB82F /* GKFloatView.swift */; };
 		608FC72D2546AB99003DB82F /* GKFloatTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FC72C2546AB99003DB82F /* GKFloatTransition.swift */; };
+		60B70DA42570D1D0008D62FC /* GKDemoTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B70DA32570D1D0008D62FC /* GKDemoTransitionViewController.swift */; };
 		796AB5192442E7C400C724D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796AB5182442E7C400C724D4 /* Assets.xcassets */; };
 		796AB51C2442E7C400C724D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796AB51A2442E7C400C724D4 /* LaunchScreen.storyboard */; };
 		796AB56A2442E83E00C724D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB53F2442E83E00C724D4 /* AppDelegate.swift */; };
@@ -98,7 +98,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		601456BB24FCAAA400918F0E /* GKNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKNavViewController.swift; sourceTree = "<group>"; };
 		602E1B142547AEFF00ABC246 /* Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		602E1B162547AF3800ABC246 /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
 		602E1B172547AF3800ABC246 /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
@@ -138,6 +137,7 @@
 		608FC7272546AA39003DB82F /* GKWXDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKWXDetailViewController.swift; sourceTree = "<group>"; };
 		608FC72A2546AB81003DB82F /* GKFloatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKFloatView.swift; sourceTree = "<group>"; };
 		608FC72C2546AB99003DB82F /* GKFloatTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKFloatTransition.swift; sourceTree = "<group>"; };
+		60B70DA32570D1D0008D62FC /* GKDemoTransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKDemoTransitionViewController.swift; sourceTree = "<group>"; };
 		796AB50C2442E7C200C724D4 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		796AB5182442E7C400C724D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		796AB51B2442E7C400C724D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -311,7 +311,6 @@
 				796AB5422442E83E00C724D4 /* GKDemoBaseViewController.swift */,
 				796AB5432442E83E00C724D4 /* GKTabBaseViewController.swift */,
 				796AB5442442E83E00C724D4 /* GKBaseViewController.swift */,
-				601456BB24FCAAA400918F0E /* GKNavViewController.swift */,
 			);
 			path = BaseVC;
 			sourceTree = "<group>";
@@ -376,6 +375,7 @@
 				796AB5662442E83E00C724D4 /* GKDemo001ViewController.swift */,
 				796AB5652442E83E00C724D4 /* GKDemo002ViewController.swift */,
 				796AB5642442E83E00C724D4 /* GKDemo003ViewController.swift */,
+				60B70DA32570D1D0008D62FC /* GKDemoTransitionViewController.swift */,
 				796AB5682442E83E00C724D4 /* GKDemoWebViewController.swift */,
 				796AB5692442E83E00C724D4 /* web.txt */,
 			);
@@ -544,13 +544,13 @@
 				796AB56A2442E83E00C724D4 /* AppDelegate.swift in Sources */,
 				602E1B352547AF3900ABC246 /* TZImageCropManager.m in Sources */,
 				608FC72D2546AB99003DB82F /* GKFloatTransition.swift in Sources */,
+				60B70DA42570D1D0008D62FC /* GKDemoTransitionViewController.swift in Sources */,
 				796AB5842442E83F00C724D4 /* GKWYNewsVideoViewController.swift in Sources */,
 				796AB56E2442E83F00C724D4 /* GKToutiaoMicroViewController.swift in Sources */,
 				796AB57E2442E83F00C724D4 /* GKMainViewController.swift in Sources */,
 				796AB56F2442E83F00C724D4 /* GKToutiaoMineViewController.swift in Sources */,
 				796AB5892442E83F00C724D4 /* GKDemo002ViewController.swift in Sources */,
 				796AB5822442E83F00C724D4 /* GKWYNewsNewViewController.swift in Sources */,
-				601456BC24FCAAA500918F0E /* GKNavViewController.swift in Sources */,
 				608FC7262546AA2E003DB82F /* GKWXMineViewController.swift in Sources */,
 				602E1B442547AF3900ABC246 /* TZImageRequestOperation.m in Sources */,
 				602E1B3A2547AF3900ABC246 /* UIView+Layout.m in Sources */,

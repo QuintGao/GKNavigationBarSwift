@@ -16,7 +16,7 @@ class GKMainViewController: GKBaseViewController {
     var dataSource: [String] = {
         return ["导航功能测试",
                 "UIScrollView使用（手势冲突）",
-                "相册使用",
+                "TZImagePickerController使用",
                 "系统导航",
                 "抖音左右滑动",
                 "今日头条",
@@ -45,8 +45,10 @@ class GKMainViewController: GKBaseViewController {
     }
     
     @objc func switchAction() {
-        let keywindow = UIApplication.shared.delegate?.window
+        self.tableView?.dataSource = nil;
+        self.tableView?.delegate = nil;
         
+        let keywindow = UIApplication.shared.delegate?.window
         keywindow!?.rootViewController = GKWXViewController()
     }
     

@@ -47,11 +47,13 @@ class GKDemo000ViewController: GKBaseViewController {
     @IBOutlet weak var navBarAlphaLabel: UILabel!
     @IBOutlet weak var navBarAlphaSlider: UISlider!
     
+    var disableBack = false
+    
     lazy var moreItem: UIBarButtonItem = {
         let btn = UIButton()
         btn.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
         btn.setTitle("更多", for: .normal)
-        btn.backgroundColor = .black
+//        btn.backgroundColor = .black
         btn.setTitleColor(.white, for: .normal)
         
         return UIBarButtonItem(customView: btn)
@@ -88,7 +90,7 @@ class GKDemo000ViewController: GKBaseViewController {
         self.gk_navShadowColor = .black
         self.gk_backStyle = .white
         self.gk_navLineHidden = true
-        self.gk_navItemRightSpace = 0;
+//        self.gk_navItemRightSpace = 0;
         self.gk_navRightBarButtonItem = self.moreItem
         
         self.leftPushSwitch.isOn = false
@@ -104,6 +106,16 @@ class GKDemo000ViewController: GKBaseViewController {
         
         self.navBarAlphaSlider.value = Float(self.gk_navBarAlpha)
         self.navBarAlphaLabel.text = "导航栏透明度：\(self.gk_navBarAlpha)"
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated);
+        
+        self.gk_pushDelegate = nil;
+    }
+    
+    deinit {
+        print("GKDemo000ViewController deinit")
     }
     
     @IBAction func interactiveAction(_ sender: Any) {
@@ -144,7 +156,7 @@ class GKDemo000ViewController: GKBaseViewController {
             self.gk_navBackgroundColor = .blue
         }
         
-        self.navBarBackgroundLabel.text = "导航栏背景色" + (self.navBarBackgroundSwitch.isOn ? "红色" : "蓝色")
+        self.navBarBackgroundLabel.text = "导航栏背景色：" + (self.navBarBackgroundSwitch.isOn ? "红色" : "蓝色")
     }
     
     @IBAction func navbarLineHiddenAction(_ sender: Any) {
@@ -183,11 +195,11 @@ class GKDemo000ViewController: GKBaseViewController {
     
     @IBAction func fullScreenInterceptAction(_ sender: Any) {
         if self.fullScreenInterceptSwitch.isOn {
-            self.gk_popDelegate = self
+            self.disableBack = true
         }else {
-            self.gk_popDelegate = nil
+            self.disableBack = false
         }
-        self.fullScreenInterceptLabel.text = "全屏返回手势拦截：" + (self.fullScreenInterceptSwitch.isOn ? "开" : "关")
+        self.fullScreenInterceptLabel.text = "返回拦截：" + (self.fullScreenInterceptSwitch.isOn ? "开" : "关")
     }
     
     
@@ -204,12 +216,28 @@ class GKDemo000ViewController: GKBaseViewController {
     }
 }
 
-extension GKDemo000ViewController: GKViewControllerPopDelegate {
-    func viewControllerPopScrollBegan() {
+extension GKDemo000ViewController: GKGesturePopHandlerProtocol {
+    func navigationShouldPopOnGesture() -> Bool {
+        if self.disableBack {
+            self.showBackAlert()
+        }
+        
+        return !self.disableBack
+    }
+    
+    override func backItemClick(_ sender: Any) {
+        if self.disableBack {
+            self.showBackAlert()
+            return
+        }
+        super.backItemClick(sender)
+    }
+    
+    func showBackAlert() {
         let alertVC = UIAlertController(title: "温馨提示", message: "确定要返回吗？", preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "取消", style: .cancel, handler: nil))
         alertVC.addAction(UIAlertAction(title: "确定", style: .default, handler: { (action) in
-            self.gk_popDelegate = nil
+            self.disableBack = false
             self.navigationController?.popViewController(animated: true)
         }))
         present(alertVC, animated: true, completion: nil)

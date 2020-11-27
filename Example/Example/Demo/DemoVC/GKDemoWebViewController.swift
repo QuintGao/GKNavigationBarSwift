@@ -28,6 +28,7 @@ class GKDemoWebViewController: GKBaseViewController {
         if #available(iOS 11.0, *) {
             webView.scrollView.contentInsetAdjustmentBehavior = .never
         }
+        webView.scrollView.gk_openGestureHandle = true
         webView.navigationDelegate = self
         
         return webView

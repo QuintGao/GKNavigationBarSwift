@@ -7,18 +7,23 @@
 //
 
 import UIKit
+import GKNavigationBarSwift
 
 class GKDemo003ViewController: GKBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = .white
         self.navigationItem.title = "系统导航"
         
         self.gk_navItemRightSpace = 20;
-        let rightItem = UIBarButtonItem.gk_item(title: "跳转", target: self, action: #selector(click))
-        rightItem.customView?.backgroundColor = .red
+        let rightItem = UIBarButtonItem.gk_item(title: "push", target: self, action: #selector(click))
+        rightItem.customView?.backgroundColor = .black
         self.navigationItem.rightBarButtonItem = rightItem
+        
+        self.gk_pushDelegate = self
+        self.gk_popDelegate = self
     }
     
     @objc func click() {
@@ -30,5 +35,44 @@ class GKDemo003ViewController: GKBaseViewController {
         super.viewWillAppear(animated)
         
         self.navigationController?.isNavigationBarHidden = false
+    }
+}
+
+extension GKDemo003ViewController: GKViewControllerPushDelegate {
+    func pushToNextViewController() {
+        let webVC = GKDemoTransitionViewController()
+        self.navigationController?.pushViewController(webVC, animated: true)
+    }
+    
+    func viewControllerPushScrollBegan() {
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
+    func viewControllerPushScrollUpdate(progress: CGFloat) {
+        self.navigationController?.navigationBar.alpha = 1 - progress
+    }
+    
+    func viewControllerPushScrollEnded(finished: Bool) {
+        self.navigationController?.navigationBar.alpha = 1
+        self.navigationController?.isNavigationBarHidden = finished
+    }
+}
+
+extension GKDemo003ViewController: GKViewControllerPopDelegate {
+    func viewControllerPopScrollBegan() {
+        
+    }
+    
+    func viewControllerPopScrollUpdate(progress: CGFloat) {
+        // 由于已经出栈，所以self.navigationController为nil，不能直接获取到导航控制器
+        let vc = GKConfigure.visibleViewController()
+        vc?.navigationController?.navigationBar.alpha = 1 - progress
+    }
+    
+    func viewControllerPopScrollEnded(finished: Bool) {
+        // 由于已经出栈，所以self.navigationController为nil，不能直接获取到导航控制器
+        let vc = GKConfigure.visibleViewController()
+        vc?.navigationController?.navigationBar.alpha = 1
+        vc?.navigationController?.isNavigationBarHidden = finished
     }
 }

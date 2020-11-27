@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60B70D9D257090DD008D62FC /* GKNavigationInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B70D9C257090DD008D62FC /* GKNavigationInteractiveTransition.swift */; };
 		79C48F152441F16A000B0815 /* GKBaseAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F042441F169000B0815 /* GKBaseAnimatedTransition.swift */; };
 		79C48F162441F16A000B0815 /* GKPopAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F052441F169000B0815 /* GKPopAnimatedTransition.swift */; };
 		79C48F192441F16A000B0815 /* GKNavigationBarSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F082441F169000B0815 /* GKNavigationBarSwift.swift */; };
 		79C48F1B2441F16A000B0815 /* GKPushAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F0A2441F169000B0815 /* GKPushAnimatedTransition.swift */; };
 		79C48F1C2441F16A000B0815 /* GKNavigationBarDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F0B2441F169000B0815 /* GKNavigationBarDefine.swift */; };
 		79C48F1E2441F16A000B0815 /* GKNavigationBarSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C48F0D2441F169000B0815 /* GKNavigationBarSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79C48F202441F16A000B0815 /* GKTransitionDelegateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F0F2441F169000B0815 /* GKTransitionDelegateHandler.swift */; };
 		79C48F222441F16A000B0815 /* GKNavigationBarConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F112441F16A000B0815 /* GKNavigationBarConfigure.swift */; };
 		79C48F232441F16A000B0815 /* GKNavigationBarSwift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79C48F122441F16A000B0815 /* GKNavigationBarSwift.bundle */; };
 		79C48F3224420207000B0815 /* UINavigationItem+GKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F2C24420207000B0815 /* UINavigationItem+GKExtension.swift */; };
@@ -25,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60B70D9C257090DD008D62FC /* GKNavigationInteractiveTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKNavigationInteractiveTransition.swift; sourceTree = "<group>"; };
 		79C48E692441EBEC000B0815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79C48E6B2441EBEC000B0815 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		79C48E6D2441EBEC000B0815 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		79C48F0B2441F169000B0815 /* GKNavigationBarDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKNavigationBarDefine.swift; sourceTree = "<group>"; };
 		79C48F0C2441F169000B0815 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79C48F0D2441F169000B0815 /* GKNavigationBarSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNavigationBarSwift.h; sourceTree = "<group>"; };
-		79C48F0F2441F169000B0815 /* GKTransitionDelegateHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKTransitionDelegateHandler.swift; sourceTree = "<group>"; };
 		79C48F112441F16A000B0815 /* GKNavigationBarConfigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKNavigationBarConfigure.swift; sourceTree = "<group>"; };
 		79C48F122441F16A000B0815 /* GKNavigationBarSwift.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GKNavigationBarSwift.bundle; sourceTree = "<group>"; };
 		79C48F2C24420207000B0815 /* UINavigationItem+GKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationItem+GKExtension.swift"; path = "Sources/UINavigationItem+GKExtension.swift"; sourceTree = SOURCE_ROOT; };
@@ -154,7 +154,7 @@
 		79C48F292441F2B2000B0815 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
-				79C48F0F2441F169000B0815 /* GKTransitionDelegateHandler.swift */,
+				60B70D9C257090DD008D62FC /* GKNavigationInteractiveTransition.swift */,
 				79C48F042441F169000B0815 /* GKBaseAnimatedTransition.swift */,
 				79C48F0A2441F169000B0815 /* GKPushAnimatedTransition.swift */,
 				79C48F052441F169000B0815 /* GKPopAnimatedTransition.swift */,
@@ -245,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79C48F1C2441F16A000B0815 /* GKNavigationBarDefine.swift in Sources */,
+				60B70D9D257090DD008D62FC /* GKNavigationInteractiveTransition.swift in Sources */,
 				79C48F3724420207000B0815 /* UIImage+GKExtension.swift in Sources */,
 				79C48F3324420207000B0815 /* UIScrollView+GKExtension.swift in Sources */,
 				79C48F192441F16A000B0815 /* GKNavigationBarSwift.swift in Sources */,
@@ -256,7 +257,6 @@
 				79C48F152441F16A000B0815 /* GKBaseAnimatedTransition.swift in Sources */,
 				79C48F222441F16A000B0815 /* GKNavigationBarConfigure.swift in Sources */,
 				79C48F162441F16A000B0815 /* GKPopAnimatedTransition.swift in Sources */,
-				79C48F202441F16A000B0815 /* GKTransitionDelegateHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

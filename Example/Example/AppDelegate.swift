@@ -26,7 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             configure.gk_navItemLeftSpace = 12.0
             configure.gk_navItemRightSpace = 12.0
             
-            configure.shiledItemSpaceVCs = ["GKMainViewController"]
+            configure.shiledItemSpaceVCs = ["TZ"]
+            configure.shiledItemSpaceVCs = ["TZ"]
         }
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
@@ -34,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
         let nav = UINavigationController(rootVC: GKMainViewController())
         nav.gk_openScrollLeftPush = true
-        
+        nav.gk_openSystemNavHandle = true
         self.window?.rootViewController = nav
         self.window?.makeKeyAndVisible()
         
