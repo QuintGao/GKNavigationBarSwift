@@ -24,6 +24,8 @@ class GKWYNewsHomeViewController: GKTabBaseViewController {
     }
     
     @objc func pageAction() {
+        self.gk_pushTransition = GKPushAnimatedTransition(scale: false)
+        
         let detailVC = GKWYNewsDetailViewController()
         detailVC.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(detailVC, animated: true)

@@ -17,7 +17,7 @@ class GKWYNewsDetailViewController: GKTabBaseViewController {
         self.gk_navTitle = "详情"
         self.gk_navTitleColor = .black
         self.gk_navBackgroundColor = .white
-        
+        self.gk_systemGestureHandleDisabled = true
         self.gk_pushDelegate = self
         
         let pageImage = UIImageView(frame: CGRect(x: 0, y: GK_STATUSBAR_NAVBAR_HEIGHT, width: GK_SCREEN_WIDTH, height: GK_SCREEN_HEIGHT - GK_STATUSBAR_NAVBAR_HEIGHT - GK_TABBAR_HEIGHT))

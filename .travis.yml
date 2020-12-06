@@ -3,4 +3,4 @@ osx_image: xcode12.1
 xcode_sdk: iphonesimulator12.0
 script:
     - set -o pipefail
-    - travis_retry xcodebuild -workspace GKNavigationBarSwift.xcworkspace -scheme "Example" -destination "platform=iOS Simulator,name=iPhone 6"
+    - travis_retry xcodebuild -workspace GKNavigationBarSwift.xcworkspace -scheme "Example" -destination "platform=iOS Simulator,name=iPhone 12"
