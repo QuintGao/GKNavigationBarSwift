@@ -152,8 +152,6 @@ extension UIViewController: GKAwakeProtocol {
         }
         set {
             objc_setAssociatedObject(self, &AssociatedKeys.gkPushDelegate, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            
-            postPropertyChangeNotification()
         }
     }
     
@@ -163,8 +161,6 @@ extension UIViewController: GKAwakeProtocol {
         }
         set {
             objc_setAssociatedObject(self, &AssociatedKeys.gkPopDelegate, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            
-            postPropertyChangeNotification()
         }
     }
     
