@@ -106,6 +106,9 @@ class GKDemo000ViewController: GKBaseViewController {
         
         self.navBarAlphaSlider.value = Float(self.gk_navBarAlpha)
         self.navBarAlphaLabel.text = "导航栏透明度：\(self.gk_navBarAlpha)"
+        
+        self.gk_systemGestureHandleDisabled = true
+        self.gk_popDelegate = self
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -216,12 +219,11 @@ class GKDemo000ViewController: GKBaseViewController {
     }
 }
 
-extension GKDemo000ViewController: GKGesturePopHandlerProtocol {
-    func navigationShouldPopOnGesture() -> Bool {
+extension GKDemo000ViewController {
+    override func navigationShouldPopOnGesture() -> Bool {
         if self.disableBack {
             self.showBackAlert()
         }
-        
         return !self.disableBack
     }
     
@@ -248,5 +250,19 @@ extension GKDemo000ViewController: GKViewControllerPushDelegate {
     func pushToNextViewController() {
         let webVC = GKDemoWebViewController()
         self.navigationController?.pushViewController(webVC, animated: true)
+    }
+}
+
+extension GKDemo000ViewController: GKViewControllerPopDelegate {
+    func viewControllerPopScrollBegan() {
+        print("滑动开始")
+    }
+    
+    func viewControllerPopScrollUpdate(progress: CGFloat) {
+        print("滑动进度更新:\(progress)")
+    }
+    
+    func viewControllerPopScrollEnded(finished: Bool) {
+        print("滑动结束：" + (finished ? "完成" : "取消"))
     }
 }
