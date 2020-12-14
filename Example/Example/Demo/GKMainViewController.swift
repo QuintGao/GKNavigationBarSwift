@@ -18,6 +18,7 @@ class GKMainViewController: GKBaseViewController {
                 "UIScrollView使用（手势冲突）",
                 "TZImagePickerController使用",
                 "系统导航",
+                "网易新闻push",
                 "抖音左右滑动",
                 "今日头条",
                 "网易云音乐",
@@ -102,25 +103,28 @@ extension GKMainViewController: UITableViewDataSource, UITableViewDelegate {
             self.navigationController?.pushViewController(vc, animated: true)
         }else {
             if indexPath.row == 4 {
+                let wyNewsVC = GKWYNewsViewController()
+                self.navigationController?.pushViewController(wyNewsVC, animated: true)
+            }else if indexPath.row == 5 {
                 let nav = UINavigationController(rootVC: GKDouyinHomeViewController())
                 nav.gk_openScrollLeftPush = true
                 nav.modalPresentationStyle = .fullScreen
                 
                 self.present(nav, animated: true, completion: nil)
                 return
-            }else if indexPath.row == 5 {
+            }else if indexPath.row == 6 {
                 let toutiaoVC = GKToutiaoViewController()
                 toutiaoVC.modalPresentationStyle = .fullScreen
                 self.present(toutiaoVC, animated: true, completion: nil)
-            }else if indexPath.row == 6 {
+            }else if indexPath.row == 7 {
                 let wyMusicVC = GKWYMusicViewController()
                 wyMusicVC.modalPresentationStyle = .fullScreen
                 self.present(wyMusicVC, animated: true, completion: nil)
-            }else if indexPath.row == 7 {
+            }else if indexPath.row == 8 {
                 let wyNewsVC = GKWYNewsViewController()
                 wyNewsVC.modalPresentationStyle = .fullScreen
                 self.present(wyNewsVC, animated: true, completion: nil)
-            }else if indexPath.row == 8 {
+            }else if indexPath.row == 9 {
                 let wxVC = GKWXViewController()
                 wxVC.modalPresentationStyle = .fullScreen
                 self.present(wxVC, animated: true, completion: nil)
