@@ -242,8 +242,7 @@ extension GKNavigationInteractiveTransition: UIGestureRecognizerDelegate {
             
             if maxAllowDistance > 0 && beginningLocation.x > maxAllowDistance { return false }
         }else {
-            // 解决根控制器可能出现卡死的情况
-            if self.navigationController.viewControllers.count <= 1 { return false }
+            return false
         }
         
         // 忽略导航控制器正在做转场动画
