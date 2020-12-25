@@ -138,7 +138,11 @@ class GKDemo000ViewController: GKBaseViewController {
             if self.statusBarStyleSwitch.isOn {
                 self.gk_statusBarStyle = .lightContent
             }else {
-                self.gk_statusBarStyle = .default
+                if #available(iOS 13.0, *) {
+                    self.gk_statusBarStyle = .darkContent
+                } else {
+                    self.gk_statusBarStyle = .default
+                }
             }
             self.statusBarStyleLabel.text = "状态栏样式：" + (self.statusBarStyleSwitch.isOn ? "LightContent" : "Default")
         }
