@@ -708,7 +708,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.gknavigationbarswift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = aystfm_dev_test;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gaokun/mine/GKNavigationBarSwift/Example/Example/Example-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/Example-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -732,7 +732,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.gknavigationbarswift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = aystfm_dev_test;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gaokun/mine/GKNavigationBarSwift/Example/Example/Example-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/Example-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
