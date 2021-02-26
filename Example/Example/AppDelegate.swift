@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
     
-        let nav = UINavigationController(rootVC: GKMainViewController())
+        let nav = UINavigationController(rootVC: GKMainViewController())z
         nav.gk_openScrollLeftPush = true
         nav.gk_openSystemNavHandle = true
         self.window?.rootViewController = nav
