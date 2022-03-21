@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		60B70D9D257090DD008D62FC /* GKNavigationInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B70D9C257090DD008D62FC /* GKNavigationInteractiveTransition.swift */; };
+		60C7D8E927E4689500D7BD64 /* UIViewController+GKGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C7D8E827E4689500D7BD64 /* UIViewController+GKGesture.swift */; };
+		60C7D8EB27E468BD00D7BD64 /* UINavigationController+GKGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C7D8EA27E468BD00D7BD64 /* UINavigationController+GKGesture.swift */; };
 		79C48F152441F16A000B0815 /* GKBaseAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F042441F169000B0815 /* GKBaseAnimatedTransition.swift */; };
 		79C48F162441F16A000B0815 /* GKPopAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F052441F169000B0815 /* GKPopAnimatedTransition.swift */; };
 		79C48F192441F16A000B0815 /* GKNavigationBarSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C48F082441F169000B0815 /* GKNavigationBarSwift.swift */; };
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		60B70D9C257090DD008D62FC /* GKNavigationInteractiveTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKNavigationInteractiveTransition.swift; sourceTree = "<group>"; };
+		60C7D8E827E4689500D7BD64 /* UIViewController+GKGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+GKGesture.swift"; sourceTree = "<group>"; };
+		60C7D8EA27E468BD00D7BD64 /* UINavigationController+GKGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+GKGesture.swift"; sourceTree = "<group>"; };
 		79C48E692441EBEC000B0815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79C48E6B2441EBEC000B0815 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		79C48E6D2441EBEC000B0815 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 				79C48F2D24420207000B0815 /* UIScrollView+GKExtension.swift */,
 				79C48F2F24420207000B0815 /* UIBarButtonItem+GKExtension.swift */,
 				79C48F3124420207000B0815 /* UIImage+GKExtension.swift */,
+				60C7D8E827E4689500D7BD64 /* UIViewController+GKGesture.swift */,
+				60C7D8EA27E468BD00D7BD64 /* UINavigationController+GKGesture.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -201,7 +207,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = QuintGao;
 				TargetAttributes = {
 					79C48E9D2441EC50000B0815 = {
@@ -253,9 +259,11 @@
 				79C48F3524420207000B0815 /* UIBarButtonItem+GKExtension.swift in Sources */,
 				79C48F3624420207000B0815 /* UIViewController+GKExtension.swift in Sources */,
 				79C48F3224420207000B0815 /* UINavigationItem+GKExtension.swift in Sources */,
+				60C7D8EB27E468BD00D7BD64 /* UINavigationController+GKGesture.swift in Sources */,
 				79C48F3424420207000B0815 /* UINavigationController+GKExtension.swift in Sources */,
 				79C48F152441F16A000B0815 /* GKBaseAnimatedTransition.swift in Sources */,
 				79C48F222441F16A000B0815 /* GKNavigationBarConfigure.swift in Sources */,
+				60C7D8E927E4689500D7BD64 /* UIViewController+GKGesture.swift in Sources */,
 				79C48F162441F16A000B0815 /* GKPopAnimatedTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

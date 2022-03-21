@@ -55,7 +55,7 @@ class GKDemo000ViewController: GKBaseViewController {
         btn.setTitle("更多", for: .normal)
 //        btn.backgroundColor = .black
         btn.setTitleColor(.white, for: .normal)
-        
+        btn.addTarget(self, action: #selector(moreAction), for: .touchUpInside)
         return UIBarButtonItem(customView: btn)
     }()
     
@@ -89,9 +89,30 @@ class GKDemo000ViewController: GKBaseViewController {
         self.gk_navBackgroundColor = .red
         self.gk_navShadowColor = .black
         self.gk_backStyle = .white
-        self.gk_navLineHidden = true
-//        self.gk_navItemRightSpace = 0;
+        self.gk_navItemRightSpace = 0;
+        self.gk_navItemRightSpace = 30
         self.gk_navRightBarButtonItem = self.moreItem
+        self.gk_navBackgroundImage = nil
+        
+        if #available(iOS 13.0, *) {
+            self.gk_navBackgroundColor = UIColor(dynamicProvider: { traitCollection in
+                if traitCollection.userInterfaceStyle == .dark {
+                    return UIColor.white
+                }else {
+                    return UIColor.red
+                }
+            })
+            self.gk_navTitleColor = UIColor(dynamicProvider: { traitCollection in
+                if traitCollection.userInterfaceStyle == .dark {
+                    return UIColor.black
+                }else {
+                    return UIColor.white
+                }
+            })
+        }else {
+            self.gk_navBackgroundColor = .red
+            self.gk_navTitleColor = .white
+        }
         
         self.leftPushSwitch.isOn = false
         self.moreItemSwitch.isOn = false
@@ -109,12 +130,11 @@ class GKDemo000ViewController: GKBaseViewController {
         
         self.gk_systemGestureHandleDisabled = true
         self.gk_popDelegate = self
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated);
         
-        self.gk_pushDelegate = nil;
+        let vc = UIViewController()
+        vc.view.isUserInteractionEnabled = false
+        self.view.addSubview(vc.view)
+        self.addChild(vc)
     }
     
     deinit {
@@ -221,22 +241,27 @@ class GKDemo000ViewController: GKBaseViewController {
         
         self.navBarAlphaLabel.text = "导航栏透明度：\(self.gk_navBarAlpha)"
     }
+    
+    @objc func moreAction() {
+        let textToShare = "GKNavigationBar是一个自定义导航栏"
+        let imageToShare = UIImage(named: "Activity_selected")
+        let urlToShare = NSURL(string: "https://github.com/QuintGao/GKNavigationBarSwift")
+        
+        let activityItems: [Any] = [textToShare, imageToShare!, urlToShare!]
+        
+        let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+        activityVC.excludedActivityTypes = [.print, .copyToPasteboard, .assignToContact, .saveToCameraRoll]
+        
+        self.present(activityVC, animated: true, completion: nil)
+    }
 }
 
 extension GKDemo000ViewController {
-    override func navigationShouldPopOnGesture() -> Bool {
+    override func navigationShouldPop() -> Bool {
         if self.disableBack {
-            self.showBackAlert()
+            showBackAlert()
         }
         return !self.disableBack
-    }
-    
-    override func backItemClick(_ sender: Any) {
-        if self.disableBack {
-            self.showBackAlert()
-            return
-        }
-        super.backItemClick(sender)
     }
     
     func showBackAlert() {

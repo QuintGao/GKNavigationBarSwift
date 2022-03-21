@@ -58,7 +58,7 @@ class GKFloatTransition: GKBaseAnimatedTransition {
                 view = self.fromViewController.view
             }
             if view != nil {
-                let captureImage = getCapture(with: view!)
+                let captureImage = GKConfigure.getCapture(with: view!)
                 let captureView = UIImageView(image: captureImage)
                 captureView.frame = CGRect(x: 0, y: 0, width: GK_SCREEN_WIDTH, height: GK_SCREEN_HEIGHT)
                 containerView.addSubview(captureView)

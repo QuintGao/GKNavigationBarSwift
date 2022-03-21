@@ -33,17 +33,10 @@ class GKDemo002ViewController: GKBaseViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let pickerVC = TZImagePickerController(maxImagesCount: 9, delegate: self)
         pickerVC?.allowCrop = true
-        pickerVC?.modalPresentationStyle = .fullScreen
         present(pickerVC!, animated: true, completion: nil)
     }
 }
 
 extension GKDemo002ViewController: TZImagePickerControllerDelegate {
-    func tz_imagePickerControllerDidCancel(_ picker: TZImagePickerController!) {
-//        GKConfigure.gk_disableFixSpace = false
-    }
     
-    func imagePickerController(_ picker: TZImagePickerController!, didFinishPickingPhotos photos: [UIImage]!, sourceAssets assets: [Any]!, isSelectOriginalPhoto: Bool) {
-//        GKConfigure.gk_disableFixSpace = false
-    }
 }

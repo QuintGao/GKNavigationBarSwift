@@ -17,7 +17,7 @@ class GKDemo003ViewController: GKBaseViewController {
         self.view.backgroundColor = .white
         self.navigationItem.title = "系统导航"
         
-        self.gk_navItemRightSpace = 20;
+        self.gk_navItemRightSpace = 40;
         let rightItem = UIBarButtonItem.gk_item(title: "push", target: self, action: #selector(click))
         rightItem.customView?.backgroundColor = .black
         self.navigationItem.rightBarButtonItem = rightItem
@@ -34,7 +34,7 @@ class GKDemo003ViewController: GKBaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.navigationController?.isNavigationBarHidden = false
+//        self.navigationController?.isNavigationBarHidden = false
     }
 }
 
@@ -74,5 +74,12 @@ extension GKDemo003ViewController: GKViewControllerPopDelegate {
         let vc = GKConfigure.visibleViewController()
         vc?.navigationController?.navigationBar.alpha = 1
         vc?.navigationController?.isNavigationBarHidden = finished
+    }
+}
+
+extension GKDemo003ViewController {
+    func navigationShouldPopOnClick() -> Bool {
+        self.navigationController?.navigationBar.isHidden = true
+        return true
     }
 }

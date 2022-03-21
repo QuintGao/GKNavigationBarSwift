@@ -32,11 +32,9 @@ class GKMainViewController: GKBaseViewController {
 
         self.view.backgroundColor = .white
         self.gk_navigationItem.title = "MainVC"
-        self.gk_navBackgroundColor = .red
         self.gk_statusBarStyle = .lightContent
         self.gk_navTitleFont = UIFont.systemFont(ofSize: 18)
         self.gk_navTitleColor = .white
-        self.gk_navRightBarButtonItem = UIBarButtonItem.gk_item(title: "切换根控制器", target: self, action: #selector(switchAction))
         
         setupTableView()
     }
@@ -69,7 +67,7 @@ class GKMainViewController: GKBaseViewController {
             self.automaticallyAdjustsScrollViewInsets = false
         }
         self.view.addSubview(self.tableView!)
-        self.tableView?.frame = CGRect(x: 0, y: GK_STATUSBAR_NAVBAR_HEIGHT, width: GK_SCREEN_WIDTH, height: GK_SCREEN_HEIGHT - GK_STATUSBAR_NAVBAR_HEIGHT)
+        self.tableView?.frame = CGRect(x: 0, y: GKDevice.statusBarNavBarHeight(), width: GK_SCREEN_WIDTH, height: GK_SCREEN_HEIGHT - GKDevice.statusBarNavBarHeight())
         self.tableView?.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "cell")
     }
 }

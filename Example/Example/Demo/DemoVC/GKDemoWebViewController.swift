@@ -56,12 +56,12 @@ class GKDemoWebViewController: GKBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.gk_navTitle = "WebVie测试"
+        self.gk_navTitle = "WebView测试"
         self.gk_navLeftBarButtonItem = self.backBtn
         self.gk_navRightBarButtonItem = self.closeBtn
         
         self.view.addSubview(self.webView)
-        self.webView.frame = CGRect(x: 0, y: GK_STATUSBAR_NAVBAR_HEIGHT, width: GK_SCREEN_WIDTH, height: GK_SCREEN_HEIGHT - GK_STATUSBAR_NAVBAR_HEIGHT)
+        self.webView.frame = CGRect(x: 0, y: GKDevice.statusBarNavBarHeight(), width: GK_SCREEN_WIDTH, height: GK_SCREEN_HEIGHT - GKDevice.statusBarNavBarHeight())
         
         let filePath = Bundle.main.path(forResource: "web", ofType: "txt")
         

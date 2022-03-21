@@ -3,26 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		602E1B352547AF3900ABC246 /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B182547AF3800ABC246 /* TZImageCropManager.m */; };
-		602E1B362547AF3900ABC246 /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B1A2547AF3800ABC246 /* TZAssetCell.m */; };
-		602E1B372547AF3900ABC246 /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B1B2547AF3800ABC246 /* TZVideoPlayerController.m */; };
-		602E1B382547AF3900ABC246 /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B1C2547AF3800ABC246 /* TZAssetModel.m */; };
-		602E1B392547AF3900ABC246 /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B1D2547AF3800ABC246 /* NSBundle+TZImagePicker.m */; };
-		602E1B3A2547AF3900ABC246 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B202547AF3800ABC246 /* UIView+Layout.m */; };
-		602E1B3B2547AF3900ABC246 /* TZPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B212547AF3800ABC246 /* TZPhotoPreviewController.m */; };
-		602E1B3C2547AF3900ABC246 /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 602E1B222547AF3900ABC246 /* TZImagePickerController.bundle */; };
-		602E1B3D2547AF3900ABC246 /* TZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B232547AF3900ABC246 /* TZProgressView.m */; };
-		602E1B3E2547AF3900ABC246 /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B272547AF3900ABC246 /* TZImageManager.m */; };
-		602E1B3F2547AF3900ABC246 /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B292547AF3900ABC246 /* TZPhotoPickerController.m */; };
-		602E1B402547AF3900ABC246 /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B2A2547AF3900ABC246 /* TZPhotoPreviewCell.m */; };
-		602E1B412547AF3900ABC246 /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B302547AF3900ABC246 /* TZImagePickerController.m */; };
-		602E1B422547AF3900ABC246 /* TZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B312547AF3900ABC246 /* TZLocationManager.m */; };
-		602E1B432547AF3900ABC246 /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B322547AF3900ABC246 /* TZGifPhotoPreviewController.m */; };
-		602E1B442547AF3900ABC246 /* TZImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E1B332547AF3900ABC246 /* TZImageRequestOperation.m */; };
+		4CA5EFB202910AFA7416BB5F /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34ABAF9BDED111FFC6E33C2 /* Pods_Example.framework */; };
 		608FC7202546A9F1003DB82F /* GKWXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FC71F2546A9F1003DB82F /* GKWXViewController.swift */; };
 		608FC7222546AA20003DB82F /* GKWXHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FC7212546AA20003DB82F /* GKWXHomeViewController.swift */; };
 		608FC7242546AA27003DB82F /* GKWXFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FC7232546AA27003DB82F /* GKWXFindViewController.swift */; };
@@ -31,6 +16,7 @@
 		608FC72B2546AB81003DB82F /* GKFloatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FC72A2546AB81003DB82F /* GKFloatView.swift */; };
 		608FC72D2546AB99003DB82F /* GKFloatTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FC72C2546AB99003DB82F /* GKFloatTransition.swift */; };
 		60B70DA42570D1D0008D62FC /* GKDemoTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B70DA32570D1D0008D62FC /* GKDemoTransitionViewController.swift */; };
+		60C7D94F27E817EF00D7BD64 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C7D94E27E817EF00D7BD64 /* UIView+Extension.swift */; };
 		796AB5192442E7C400C724D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796AB5182442E7C400C724D4 /* Assets.xcassets */; };
 		796AB51C2442E7C400C724D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796AB51A2442E7C400C724D4 /* LaunchScreen.storyboard */; };
 		796AB56A2442E83E00C724D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB53F2442E83E00C724D4 /* AppDelegate.swift */; };
@@ -69,19 +55,7 @@
 		796AB58B2442E83F00C724D4 /* GKDemo000ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5672442E83E00C724D4 /* GKDemo000ViewController.swift */; };
 		796AB58C2442E83F00C724D4 /* GKDemoWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5682442E83E00C724D4 /* GKDemoWebViewController.swift */; };
 		796AB58D2442E83F00C724D4 /* web.txt in Resources */ = {isa = PBXBuildFile; fileRef = 796AB5692442E83E00C724D4 /* web.txt */; };
-		796AB5992442E88600C724D4 /* GKNavigationBarSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796AB5952442E87B00C724D4 /* GKNavigationBarSwift.framework */; };
-		796AB59A2442E88600C724D4 /* GKNavigationBarSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 796AB5952442E87B00C724D4 /* GKNavigationBarSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		796AB5942442E87B00C724D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 796AB58F2442E87B00C724D4 /* GKNavigationBarSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 79C48E9E2441EC50000B0815;
-			remoteInfo = GKNavigationBarSwift;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		796AB59B2442E88600C724D4 /* Embed Frameworks */ = {
@@ -90,7 +64,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				796AB59A2442E88600C724D4 /* GKNavigationBarSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,37 +72,6 @@
 
 /* Begin PBXFileReference section */
 		602E1B142547AEFF00ABC246 /* Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		602E1B162547AF3800ABC246 /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
-		602E1B172547AF3800ABC246 /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
-		602E1B182547AF3800ABC246 /* TZImageCropManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageCropManager.m; sourceTree = "<group>"; };
-		602E1B192547AF3800ABC246 /* TZImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageManager.h; sourceTree = "<group>"; };
-		602E1B1A2547AF3800ABC246 /* TZAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetCell.m; sourceTree = "<group>"; };
-		602E1B1B2547AF3800ABC246 /* TZVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZVideoPlayerController.m; sourceTree = "<group>"; };
-		602E1B1C2547AF3800ABC246 /* TZAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetModel.m; sourceTree = "<group>"; };
-		602E1B1D2547AF3800ABC246 /* NSBundle+TZImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TZImagePicker.m"; sourceTree = "<group>"; };
-		602E1B1E2547AF3800ABC246 /* TZLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZLocationManager.h; sourceTree = "<group>"; };
-		602E1B1F2547AF3800ABC246 /* TZImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImagePickerController.h; sourceTree = "<group>"; };
-		602E1B202547AF3800ABC246 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
-		602E1B212547AF3800ABC246 /* TZPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewController.m; sourceTree = "<group>"; };
-		602E1B222547AF3900ABC246 /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TZImagePickerController.bundle; sourceTree = "<group>"; };
-		602E1B232547AF3900ABC246 /* TZProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZProgressView.m; sourceTree = "<group>"; };
-		602E1B242547AF3900ABC246 /* TZGifPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZGifPhotoPreviewController.h; sourceTree = "<group>"; };
-		602E1B252547AF3900ABC246 /* TZImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageRequestOperation.h; sourceTree = "<group>"; };
-		602E1B262547AF3900ABC246 /* TZAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetCell.h; sourceTree = "<group>"; };
-		602E1B272547AF3900ABC246 /* TZImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageManager.m; sourceTree = "<group>"; };
-		602E1B282547AF3900ABC246 /* TZImageCropManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageCropManager.h; sourceTree = "<group>"; };
-		602E1B292547AF3900ABC246 /* TZPhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPickerController.m; sourceTree = "<group>"; };
-		602E1B2A2547AF3900ABC246 /* TZPhotoPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewCell.m; sourceTree = "<group>"; };
-		602E1B2B2547AF3900ABC246 /* NSBundle+TZImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TZImagePicker.h"; sourceTree = "<group>"; };
-		602E1B2C2547AF3900ABC246 /* TZAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetModel.h; sourceTree = "<group>"; };
-		602E1B2D2547AF3900ABC246 /* TZVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZVideoPlayerController.h; sourceTree = "<group>"; };
-		602E1B2E2547AF3900ABC246 /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewController.h; sourceTree = "<group>"; };
-		602E1B2F2547AF3900ABC246 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
-		602E1B302547AF3900ABC246 /* TZImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImagePickerController.m; sourceTree = "<group>"; };
-		602E1B312547AF3900ABC246 /* TZLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZLocationManager.m; sourceTree = "<group>"; };
-		602E1B322547AF3900ABC246 /* TZGifPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZGifPhotoPreviewController.m; sourceTree = "<group>"; };
-		602E1B332547AF3900ABC246 /* TZImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageRequestOperation.m; sourceTree = "<group>"; };
-		602E1B342547AF3900ABC246 /* TZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZProgressView.h; sourceTree = "<group>"; };
 		608FC71F2546A9F1003DB82F /* GKWXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKWXViewController.swift; sourceTree = "<group>"; };
 		608FC7212546AA20003DB82F /* GKWXHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKWXHomeViewController.swift; sourceTree = "<group>"; };
 		608FC7232546AA27003DB82F /* GKWXFindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKWXFindViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +80,8 @@
 		608FC72A2546AB81003DB82F /* GKFloatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKFloatView.swift; sourceTree = "<group>"; };
 		608FC72C2546AB99003DB82F /* GKFloatTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKFloatTransition.swift; sourceTree = "<group>"; };
 		60B70DA32570D1D0008D62FC /* GKDemoTransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKDemoTransitionViewController.swift; sourceTree = "<group>"; };
+		60C7D94E27E817EF00D7BD64 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		724484E913864ED66B092AC7 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		796AB50C2442E7C200C724D4 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		796AB5182442E7C400C724D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		796AB51B2442E7C400C724D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -178,8 +122,8 @@
 		796AB5672442E83E00C724D4 /* GKDemo000ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDemo000ViewController.swift; sourceTree = "<group>"; };
 		796AB5682442E83E00C724D4 /* GKDemoWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDemoWebViewController.swift; sourceTree = "<group>"; };
 		796AB5692442E83E00C724D4 /* web.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = web.txt; sourceTree = "<group>"; };
-		796AB58F2442E87B00C724D4 /* GKNavigationBarSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GKNavigationBarSwift.xcodeproj; path = ../GKNavigationBarSwift.xcodeproj; sourceTree = "<group>"; };
 		D34ABAF9BDED111FFC6E33C2 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3259CD44342A10D43715F11 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,59 +131,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				796AB5992442E88600C724D4 /* GKNavigationBarSwift.framework in Frameworks */,
+				4CA5EFB202910AFA7416BB5F /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		602E1ADA2547AD9C00ABC246 /* ThirdParty */ = {
-			isa = PBXGroup;
-			children = (
-				602E1B152547AF3800ABC246 /* TZImagePickerController */,
-			);
-			path = ThirdParty;
-			sourceTree = "<group>";
-		};
-		602E1B152547AF3800ABC246 /* TZImagePickerController */ = {
-			isa = PBXGroup;
-			children = (
-				602E1B162547AF3800ABC246 /* TZPhotoPreviewCell.h */,
-				602E1B172547AF3800ABC246 /* TZPhotoPickerController.h */,
-				602E1B182547AF3800ABC246 /* TZImageCropManager.m */,
-				602E1B192547AF3800ABC246 /* TZImageManager.h */,
-				602E1B1A2547AF3800ABC246 /* TZAssetCell.m */,
-				602E1B1B2547AF3800ABC246 /* TZVideoPlayerController.m */,
-				602E1B1C2547AF3800ABC246 /* TZAssetModel.m */,
-				602E1B1D2547AF3800ABC246 /* NSBundle+TZImagePicker.m */,
-				602E1B1E2547AF3800ABC246 /* TZLocationManager.h */,
-				602E1B1F2547AF3800ABC246 /* TZImagePickerController.h */,
-				602E1B202547AF3800ABC246 /* UIView+Layout.m */,
-				602E1B212547AF3800ABC246 /* TZPhotoPreviewController.m */,
-				602E1B222547AF3900ABC246 /* TZImagePickerController.bundle */,
-				602E1B232547AF3900ABC246 /* TZProgressView.m */,
-				602E1B242547AF3900ABC246 /* TZGifPhotoPreviewController.h */,
-				602E1B252547AF3900ABC246 /* TZImageRequestOperation.h */,
-				602E1B262547AF3900ABC246 /* TZAssetCell.h */,
-				602E1B272547AF3900ABC246 /* TZImageManager.m */,
-				602E1B282547AF3900ABC246 /* TZImageCropManager.h */,
-				602E1B292547AF3900ABC246 /* TZPhotoPickerController.m */,
-				602E1B2A2547AF3900ABC246 /* TZPhotoPreviewCell.m */,
-				602E1B2B2547AF3900ABC246 /* NSBundle+TZImagePicker.h */,
-				602E1B2C2547AF3900ABC246 /* TZAssetModel.h */,
-				602E1B2D2547AF3900ABC246 /* TZVideoPlayerController.h */,
-				602E1B2E2547AF3900ABC246 /* TZPhotoPreviewController.h */,
-				602E1B2F2547AF3900ABC246 /* UIView+Layout.h */,
-				602E1B302547AF3900ABC246 /* TZImagePickerController.m */,
-				602E1B312547AF3900ABC246 /* TZLocationManager.m */,
-				602E1B322547AF3900ABC246 /* TZGifPhotoPreviewController.m */,
-				602E1B332547AF3900ABC246 /* TZImageRequestOperation.m */,
-				602E1B342547AF3900ABC246 /* TZProgressView.h */,
-			);
-			path = TZImagePickerController;
-			sourceTree = "<group>";
-		};
 		608FC71C2546A9D1003DB82F /* WX */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,13 +160,22 @@
 			path = GKFloatView;
 			sourceTree = "<group>";
 		};
+		6DA3636690858741A0D30A45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				724484E913864ED66B092AC7 /* Pods-Example.debug.xcconfig */,
+				E3259CD44342A10D43715F11 /* Pods-Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		796AB5032442E7C200C724D4 = {
 			isa = PBXGroup;
 			children = (
 				796AB50E2442E7C200C724D4 /* Example */,
 				796AB50D2442E7C200C724D4 /* Products */,
-				796AB58F2442E87B00C724D4 /* GKNavigationBarSwift.xcodeproj */,
 				D0D8CD080B2F14DF98ECE25F /* Frameworks */,
+				6DA3636690858741A0D30A45 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -300,7 +207,6 @@
 				796AB54C2442E83E00C724D4 /* WYMusic */,
 				796AB5592442E83E00C724D4 /* WYNews */,
 				608FC71C2546A9D1003DB82F /* WX */,
-				602E1ADA2547AD9C00ABC246 /* ThirdParty */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -311,6 +217,7 @@
 				796AB5422442E83E00C724D4 /* GKDemoBaseViewController.swift */,
 				796AB5432442E83E00C724D4 /* GKTabBaseViewController.swift */,
 				796AB5442442E83E00C724D4 /* GKBaseViewController.swift */,
+				60C7D94E27E817EF00D7BD64 /* UIView+Extension.swift */,
 			);
 			path = BaseVC;
 			sourceTree = "<group>";
@@ -394,14 +301,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		796AB5902442E87B00C724D4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				796AB5952442E87B00C724D4 /* GKNavigationBarSwift.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		D0D8CD080B2F14DF98ECE25F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -417,10 +316,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 796AB5362442E7C400C724D4 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
+				92D496802DAC9765E6E04269 /* [CP] Check Pods Manifest.lock */,
 				796AB5082442E7C200C724D4 /* Sources */,
 				796AB5092442E7C200C724D4 /* Frameworks */,
 				796AB50A2442E7C200C724D4 /* Resources */,
 				796AB59B2442E88600C724D4 /* Embed Frameworks */,
+				A7CFC82C383FD1A0D84EA9C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -438,7 +339,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = QuintGao;
 				TargetAttributes = {
 					796AB50B2442E7C200C724D4 = {
@@ -458,28 +359,12 @@
 			mainGroup = 796AB5032442E7C200C724D4;
 			productRefGroup = 796AB50D2442E7C200C724D4 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 796AB5902442E87B00C724D4 /* Products */;
-					ProjectRef = 796AB58F2442E87B00C724D4 /* GKNavigationBarSwift.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				796AB50B2442E7C200C724D4 /* Example */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		796AB5952442E87B00C724D4 /* GKNavigationBarSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GKNavigationBarSwift.framework;
-			remoteRef = 796AB5942442E87B00C724D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		796AB50A2442E7C200C724D4 /* Resources */ = {
@@ -488,13 +373,54 @@
 			files = (
 				796AB51C2442E7C400C724D4 /* LaunchScreen.storyboard in Resources */,
 				796AB5192442E7C400C724D4 /* Assets.xcassets in Resources */,
-				602E1B3C2547AF3900ABC246 /* TZImagePickerController.bundle in Resources */,
 				796AB5872442E83F00C724D4 /* GKDemo000ViewController.xib in Resources */,
 				796AB58D2442E83F00C724D4 /* web.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92D496802DAC9765E6E04269 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7CFC82C383FD1A0D84EA9C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		796AB5082442E7C200C724D4 /* Sources */ = {
@@ -503,19 +429,13 @@
 			files = (
 				796AB57A2442E83F00C724D4 /* GKDouyinHomeViewController.swift in Sources */,
 				796AB5772442E83F00C724D4 /* GKWYMusicAccountViewController.swift in Sources */,
-				602E1B382547AF3900ABC246 /* TZAssetModel.m in Sources */,
-				602E1B362547AF3900ABC246 /* TZAssetCell.m in Sources */,
-				602E1B3E2547AF3900ABC246 /* TZImageManager.m in Sources */,
 				796AB5732442E83F00C724D4 /* GKToutiaoViewController.swift in Sources */,
 				796AB5782442E83F00C724D4 /* GKWYMusicFindViewController.swift in Sources */,
 				608FC7282546AA39003DB82F /* GKWXDetailViewController.swift in Sources */,
-				602E1B422547AF3900ABC246 /* TZLocationManager.m in Sources */,
 				796AB5812442E83F00C724D4 /* GKWYNewsHomeViewController.swift in Sources */,
-				602E1B3B2547AF3900ABC246 /* TZPhotoPreviewController.m in Sources */,
-				602E1B3F2547AF3900ABC246 /* TZPhotoPickerController.m in Sources */,
-				602E1B432547AF3900ABC246 /* TZGifPhotoPreviewController.m in Sources */,
 				796AB5882442E83F00C724D4 /* GKDemo003ViewController.swift in Sources */,
 				796AB5762442E83F00C724D4 /* GKWYMusicViewController.swift in Sources */,
+				60C7D94F27E817EF00D7BD64 /* UIView+Extension.swift in Sources */,
 				796AB5862442E83F00C724D4 /* GKWYNewsCommentViewController.swift in Sources */,
 				796AB5832442E83F00C724D4 /* GKWYNewsDetailViewController.swift in Sources */,
 				796AB5802442E83F00C724D4 /* GKWYNewsViewController.swift in Sources */,
@@ -528,21 +448,17 @@
 				796AB57D2442E83F00C724D4 /* GKDouyinPlayerViewController.swift in Sources */,
 				796AB56B2442E83F00C724D4 /* GKDemoBaseViewController.swift in Sources */,
 				796AB5722442E83F00C724D4 /* GKToutiaoDetailViewController.swift in Sources */,
-				602E1B412547AF3900ABC246 /* TZImagePickerController.m in Sources */,
 				796AB5752442E83F00C724D4 /* GKWYMusicFriendViewController.swift in Sources */,
 				796AB58C2442E83F00C724D4 /* GKDemoWebViewController.swift in Sources */,
 				796AB57B2442E83F00C724D4 /* GKDouyinSearchViewController.swift in Sources */,
-				602E1B402547AF3900ABC246 /* TZPhotoPreviewCell.m in Sources */,
 				796AB5712442E83F00C724D4 /* GKToutiaoVideoViewController.swift in Sources */,
 				608FC7222546AA20003DB82F /* GKWXHomeViewController.swift in Sources */,
 				796AB56D2442E83F00C724D4 /* GKBaseViewController.swift in Sources */,
 				796AB58B2442E83F00C724D4 /* GKDemo000ViewController.swift in Sources */,
 				796AB5742442E83F00C724D4 /* GKWYMusicDetailViewController.swift in Sources */,
-				602E1B392547AF3900ABC246 /* NSBundle+TZImagePicker.m in Sources */,
 				796AB56C2442E83F00C724D4 /* GKTabBaseViewController.swift in Sources */,
 				796AB57C2442E83F00C724D4 /* GKDouyinPersonalViewController.swift in Sources */,
 				796AB56A2442E83E00C724D4 /* AppDelegate.swift in Sources */,
-				602E1B352547AF3900ABC246 /* TZImageCropManager.m in Sources */,
 				608FC72D2546AB99003DB82F /* GKFloatTransition.swift in Sources */,
 				60B70DA42570D1D0008D62FC /* GKDemoTransitionViewController.swift in Sources */,
 				796AB5842442E83F00C724D4 /* GKWYNewsVideoViewController.swift in Sources */,
@@ -552,12 +468,8 @@
 				796AB5892442E83F00C724D4 /* GKDemo002ViewController.swift in Sources */,
 				796AB5822442E83F00C724D4 /* GKWYNewsNewViewController.swift in Sources */,
 				608FC7262546AA2E003DB82F /* GKWXMineViewController.swift in Sources */,
-				602E1B442547AF3900ABC246 /* TZImageRequestOperation.m in Sources */,
-				602E1B3A2547AF3900ABC246 /* UIView+Layout.m in Sources */,
 				608FC7242546AA27003DB82F /* GKWXFindViewController.swift in Sources */,
-				602E1B3D2547AF3900ABC246 /* TZProgressView.m in Sources */,
 				796AB58A2442E83F00C724D4 /* GKDemo001ViewController.swift in Sources */,
-				602E1B372547AF3900ABC246 /* TZVideoPlayerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,6 +605,7 @@
 		};
 		796AB5372442E7C400C724D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 724484E913864ED66B092AC7 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -717,6 +630,7 @@
 		};
 		796AB5382442E7C400C724D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3259CD44342A10D43715F11 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
