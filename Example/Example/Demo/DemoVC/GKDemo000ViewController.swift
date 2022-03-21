@@ -89,7 +89,7 @@ class GKDemo000ViewController: GKBaseViewController {
         self.gk_navBackgroundColor = .red
         self.gk_navShadowColor = .black
         self.gk_backStyle = .white
-        self.gk_navItemRightSpace = 0;
+        self.gk_navItemLeftSpace = 0;
         self.gk_navItemRightSpace = 30
         self.gk_navRightBarButtonItem = self.moreItem
         self.gk_navBackgroundImage = nil

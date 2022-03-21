@@ -13,6 +13,7 @@ extension UIViewController: GKAwakeProtocol {
     fileprivate struct AssociatedKeys {
         static var gkNavBarAlpha: CGFloat = 1
         static var gkNavBarInit: Bool = false
+        static var gkNavBarAdded: Bool = false
         static var gkNavigationBar: GKNavigationBar = GKNavigationBar()
         static var gkNavigationItem: UINavigationItem = UINavigationItem()
         static var gkStatusBarHidden: Bool = GKConfigure.statusBarHidden
@@ -65,12 +66,21 @@ extension UIViewController: GKAwakeProtocol {
         }
     }
     
+    fileprivate var gk_navBarAdded: Bool {
+        get {
+            guard let added = objc_getAssociatedObject(self, &AssociatedKeys.gkNavBarAdded) as? Bool else { return false }
+            return added
+        }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.gkNavBarAdded, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    
     public var gk_navigationBar: GKNavigationBar {
         get {
             var navigationBar = objc_getAssociatedObject(self, &AssociatedKeys.gkNavigationBar) as? GKNavigationBar
             if navigationBar == nil {
                 navigationBar = GKNavigationBar()
-                self.view.addSubview(navigationBar!)
                 
                 self.gk_navBarInit = true
                 self.gk_navigationBar = navigationBar!
@@ -81,8 +91,15 @@ extension UIViewController: GKAwakeProtocol {
         set {
             objc_setAssociatedObject(self, &AssociatedKeys.gkNavigationBar, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             
+            self.gk_disableFixNavItemSpace = GKConfigure.disableFixSpace
+            self.gk_openFixNavItemSpace = true
             setupNavBarAppearance()
             setupNavBarFrame()
+            
+            if self.isViewLoaded && !self.gk_navBarAdded {
+                self.view.addSubview(newValue)
+                self.gk_navBarAdded = true
+            }
         }
     }
     
@@ -421,8 +438,6 @@ extension UIViewController: GKAwakeProtocol {
                            "viewWillAppear:",
                            "viewDidAppear:",
                            "viewWillLayoutSubviews",
-//                           "prefersStatusBarHidden",
-//                           "preferredStatusBarStyle",
                            "traitCollectionDidChange:"]
             
             for oriSel in oriSels {
@@ -647,6 +662,11 @@ extension UIViewController: GKAwakeProtocol {
         if self.gk_navBarInit {
             return true
         }
+        
+        if self.isKind(of: UITabBarController.classForCoder()) {
+            return false
+        }
+        
         if let vc = self.parent, vc.isKind(of: UINavigationController.classForCoder()) {
             return true
         }
