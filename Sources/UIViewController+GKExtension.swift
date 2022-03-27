@@ -758,7 +758,7 @@ extension UIViewController: GKAwakeProtocol {
         let gkStatusBarH = GKDevice.statusBarFrame().size.height
         let gkStatusBarNavBarH = gkStatusBarH + gkNavBarH
         
-        if GKDevice.isIPad() { // iPad
+        if GKDevice.isIPad { // iPad
             if isNonFullScreen {
                 navBarH = gkNavBarHNFS
                 self.gk_navigationBar.gk_nonFullScreen = true
@@ -772,7 +772,7 @@ extension UIViewController: GKAwakeProtocol {
                 navBarH = gkNavBarHNFS
                 self.gk_navigationBar.gk_nonFullScreen = true
             }else {
-                if GKDevice.isNotchedScreen() { // 刘海屏手机
+                if GKDevice.isNotchedScreen { // 刘海屏手机
                     navBarH = GKDevice.safeAreaInsets().top + gkNavBarH
                 }else {
                     navBarH = self.gk_statusBarHidden ? gkNavBarH : gkStatusBarNavBarH

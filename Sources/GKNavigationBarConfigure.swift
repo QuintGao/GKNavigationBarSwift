@@ -9,9 +9,6 @@
 import UIKit
 
 public let GKConfigure = GKNavigationBarConfigure.shared
-let GK_DEVICE_WIDTH = min(UIScreen.main.bounds.size.width, UIScreen.main.bounds.size.height)
-let GK_DEVICE_HEIGHT = max(UIScreen.main.bounds.size.width, UIScreen.main.bounds.size.height)
-let GK_SYSTEM_VERSION = Double(UIDevice.current.systemVersion)
 
 // 配置类宏定义
 open class GKNavigationBarConfigure : NSObject {
@@ -179,10 +176,8 @@ open class GKNavigationBarConfigure : NSObject {
     /// 获取当前item修复间距
     open func gk_fixedSpace() -> CGFloat {
         // 经测试发现iPhone 12，iPhone 12，默认导航栏间距是16，需要单独处理
-        if GKDevice.is61InchScreenAndiPhone12Later() {
-            return 16
-        }
-        return GK_DEVICE_WIDTH > 375.0 ? 20 : 16
+        if GKDevice.is61InchScreenAndiPhone12Later { return 16 }
+        return GKDevice.width > 375.0 ? 20 : 16
     }
     
     /// 获取Bundle
@@ -213,8 +208,8 @@ open class GKNavigationBarConfigure : NSObject {
 }
 
 open class GKDevice {
-    public class func deviceModel() -> String {
-        if self.isSimulator(), let identifier = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] {
+    public static let deviceModel: String = {
+        if isSimulator, let identifier = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] {
             return identifier
         }
         var systemInfo = utsname()
@@ -225,12 +220,10 @@ open class GKDevice {
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
         return identifier
-    }
+    }()
     
-    public class func isZoomedMode() -> Bool {
-        if !self.isIPhone() {
-            return false
-        }
+    public static func isZoomedMode() -> Bool {
+        if !isIPhone { return false }
         let nativeScale = UIScreen.main.nativeScale
         var scale = UIScreen.main.scale
         
@@ -242,29 +235,29 @@ open class GKDevice {
         return nativeScale > scale
     }
     
-    public class func isIPad() -> Bool {
+    public static let isIPad: Bool = {
         return UI_USER_INTERFACE_IDIOM() == .pad
-    }
+    }()
     
-    public class func isIPod() -> Bool {
+    public static let isIPod: Bool = {
         let model = UIDevice.current.model as NSString
         return model.range(of: "iPod touch").location != NSNotFound
-    }
+    }()
     
-    public class func isIPhone() -> Bool {
+    public static let isIPhone: Bool = {
         let model = UIDevice.current.model as NSString
         return model.range(of: "iPhone").location != NSNotFound
-    }
+    }()
     
-    public class func isSimulator() -> Bool {
+    public static let isSimulator: Bool = {
 #if targetEnvironment(simulator)
         return true
 #else
         return false
 #endif
-    }
+    }()
     
-    public class func isMac() -> Bool {
+    public static let isMac: Bool = {
 #if IOS14_SDK_ALLOWED
         if #available(iOS 14.0, *) {
             return ProcessInfo.processInfo.isiOSAppOnMac || ProcessInfo.processInfo.isMacCatalystApp
@@ -274,10 +267,10 @@ open class GKDevice {
             return ProcessInfo.processInfo.isMacCatalystApp
         }
         return false
-    }
+    }()
     
     /// 带物理凹槽的刘海屏或使用 Home Indicator 类型的设备
-    public class func isNotchedScreen() -> Bool {
+    public static let isNotchedScreen: Bool = {
         if #available(iOS 11.0, *) {
             var window = keyWindow()
             if window == nil {
@@ -296,119 +289,25 @@ open class GKDevice {
             return false
         }
         return false
-    }
+    }()
     
     /// 将屏幕分为普通和紧凑两种，这个方法用于判断普通屏幕（也即大屏幕）
-    public class func isRegularScreen() -> Bool {
-        return isIPad() || (!isZoomedMode() && (is67InchScreen() || is65InchScreen() || is61InchScreen() || is55InchScreen()))
+    public static func isRegularScreen() -> Bool {
+        return isIPad || (!isZoomedMode() && (is67InchScreen || is65InchScreen || is61InchScreen || is55InchScreen))
     }
     
     /// 是否是横屏
-    public class func isLandScape() -> Bool {
+    public static func isLandScape() -> Bool {
         return UIApplication.shared.statusBarOrientation.isLandscape
     }
     
-    // MARK - Screen
-    /// iPhone 12 Pro Max
-    public class func is67InchScreen() -> Bool {
-        return GK_DEVICE_WIDTH == screenSizeFor67Inch().width && GK_DEVICE_HEIGHT == screenSizeFor67Inch().height
-    }
-    
-    /// iPhone XS Max / 11 Pro Max
-    public class func is65InchScreen() -> Bool {
-        // 由于 iPhone XS Max、iPhone 11 Pro Max 这两款机型和 iPhone XR 的屏幕宽高是一致的，我们通过机器的 Identifier 加以区别
-        return (GK_DEVICE_HEIGHT == screenSizeFor65Inch().width && GK_DEVICE_HEIGHT == screenSizeFor65Inch().height && (deviceModel() == "iPhone11,4" || deviceModel() == "iPhone11,6" || deviceModel() == "iPhone12,5"))
-    }
-    
-    /// iPhone 12 / 12 Pro
-    public class func is61InchScreenAndiPhone12Later() -> Bool {
-        return GK_DEVICE_WIDTH == screenSizeFor61InchAndiPhone12Later().width && GK_DEVICE_HEIGHT == screenSizeFor61InchAndiPhone12Later().height
-    }
-    
-    /// iPhone XR / 11
-    public class func is61InchScreen() -> Bool {
-        return (GK_DEVICE_WIDTH == screenSizeFor61Inch().width && GK_DEVICE_HEIGHT == screenSizeFor61Inch().height && (deviceModel() == "iPhone11,8" || deviceModel() == "iPhone12,1"))
-    }
-    
-    /// iPhone X / XS / 11 Pro
-    public class func is58InchScreen() -> Bool {
-        // iPhone XS 和 iPhone X 的物理尺寸是一致的，因此无需比较机器 Identifier
-        return GK_DEVICE_WIDTH == screenSizeFor58Inch().width && GK_DEVICE_HEIGHT == screenSizeFor58Inch().height
-    }
-    
-    /// iPhone 6，6s，7，8 Plus
-    public class func is55InchScreen() -> Bool {
-        return GK_DEVICE_WIDTH == screenSizeFor55Inch().width && GK_DEVICE_HEIGHT == screenSizeFor55Inch().height
-    }
-    
-    /// iPhone 12 mini
-    public class func is54InchScreen() -> Bool {
-        return GK_DEVICE_WIDTH == screenSizeFor54Inch().width && GK_DEVICE_HEIGHT == screenSizeFor54Inch().height
-    }
-    
-    /// iPhone 6，6s，7，8，SE2
-    public class func is47InchScreen() -> Bool {
-        return GK_DEVICE_WIDTH == screenSizeFor47Inch().width && GK_DEVICE_HEIGHT == screenSizeFor47Inch().height
-    }
-    
-    /// iPhone 5，5s，5c，SE
-    public class func is40InchScreen() -> Bool {
-        return GK_DEVICE_WIDTH == screenSizeFor40Inch().width && GK_DEVICE_HEIGHT == screenSizeFor40Inch().height
-    }
-    
-    /// iPhone 4
-    public class func is35InchScreen() -> Bool {
-        return GK_DEVICE_WIDTH == screenSizeFor35Inch().width && GK_DEVICE_HEIGHT == screenSizeFor35Inch().height
-    }
-    
-    // MARK - ScreenSize
-    public class func screenSizeFor67Inch() -> CGSize {
-        return CGSize(width: 428, height: 926)
-    }
-    
-    public class func screenSizeFor65Inch() -> CGSize {
-        return CGSize(width: 414, height: 896)
-    }
-    
-    public class func screenSizeFor61InchAndiPhone12Later() -> CGSize {
-        return CGSize(width: 390, height: 844)
-    }
-    
-    public class func screenSizeFor61Inch() -> CGSize {
-        return CGSize(width: 414, height: 896)
-    }
-    
-    public class func screenSizeFor58Inch() -> CGSize {
-        return CGSize(width: 375, height: 812)
-    }
-    
-    public class func screenSizeFor55Inch() -> CGSize {
-        return CGSize(width: 414, height: 736)
-    }
-    
-    public class func screenSizeFor54Inch() -> CGSize {
-        return CGSize(width: 375, height: 812)
-    }
-    
-    public class func screenSizeFor47Inch() -> CGSize {
-        return CGSize(width: 375, height: 667)
-    }
-    
-    public class func screenSizeFor40Inch() -> CGSize {
-        return CGSize(width: 320, height: 568)
-    }
-    
-    public class func screenSizeFor35Inch() -> CGSize {
-        return CGSize(width: 320, height: 480)
-    }
-    
-    public class func statusBarNavBarHeight() -> CGFloat {
+    public static func statusBarNavBarHeight() -> CGFloat {
         return statusBarFrame().size.height + navBarHeight()
     }
     
-    public class func navBarHeight() -> CGFloat {
-        if isIPad() {
-            if let version = GK_SYSTEM_VERSION, version >= 12.0 {
+    public static func navBarHeight() -> CGFloat {
+        if isIPad {
+            if let version = version, version >= 12.0 {
                 return 50
             }else {
                 return 44
@@ -422,17 +321,17 @@ open class GKDevice {
         }
     }
     
-    public class func navBarHeightNonFullScreen() -> CGFloat {
+    public static func navBarHeightNonFullScreen() -> CGFloat {
         return 56
     }
     
-    public class func tabBarHeight() -> CGFloat {
+    public static func tabBarHeight() -> CGFloat {
         var tabBarHeight: CGFloat = 0
-        if self.isIPad() {
-            if self.isNotchedScreen() {
+        if isIPad {
+            if isNotchedScreen {
                 tabBarHeight = 65
             }else {
-                if let version = GK_SYSTEM_VERSION, version >= 12.0 {
+                if let version = version, version >= 12.0 {
                     tabBarHeight = 50
                 }else {
                     tabBarHeight = 49
@@ -453,7 +352,7 @@ open class GKDevice {
         return tabBarHeight
     }
     
-    public class func safeAreaInsets() -> UIEdgeInsets {
+    public static func safeAreaInsets() -> UIEdgeInsets {
         var safeAreaInsets = UIEdgeInsets.zero
         if #available(iOS 11.0, *) {
             var window = keyWindow()
@@ -470,7 +369,7 @@ open class GKDevice {
         return safeAreaInsets
     }
     
-    public class func statusBarFrame() -> CGRect {
+    public static func statusBarFrame() -> CGRect {
         var statusBarFrame = CGRect.zero
         if #available(iOS 13.0, *) {
             statusBarFrame = keyWindow()?.windowScene?.statusBarManager?.statusBarFrame ?? .zero
@@ -481,14 +380,14 @@ open class GKDevice {
         }
         
         if statusBarFrame == .zero {
-            let statusBarH = isNotchedScreen() ? 44 : 20
+            let statusBarH = isNotchedScreen ? 44 : 20
             statusBarFrame = CGRect(x: 0, y: 0, width: Int(UIScreen.main.bounds.size.width), height: statusBarH)
         }
         
         return statusBarFrame
     }
     
-    public class func keyWindow() -> UIWindow? {
+    public static func keyWindow() -> UIWindow? {
         var window: UIWindow?
         if #available(iOS 13.0, *) {
             window = UIApplication.shared.connectedScenes
@@ -513,12 +412,12 @@ open class GKDevice {
         return window
     }
     
-    public class func safeAreaInsertsForDeviceWithNotch() -> UIEdgeInsets {
-        if !self.isNotchedScreen() {
+    public static func safeAreaInsertsForDeviceWithNotch() -> UIEdgeInsets {
+        if !isNotchedScreen {
             return .zero
         }
         
-        if self.isIPad() {
+        if isIPad {
             return UIEdgeInsets(top: 24, left: 0, bottom: 20, right: 0)
         }
         
@@ -574,11 +473,11 @@ open class GKDevice {
             "iPhone12,5-Zoom": [.portrait: UIEdgeInsets(top: 40, left: 0, bottom: 30 + 2.0 / 3.0, right: 0),
                                 .landscapeLeft: UIEdgeInsets(top: 0, left: 40, bottom: 21, right: 40)]
         ]
-        var deviceKey = self.deviceModel()
+        var deviceKey = deviceModel
         if dict[deviceKey] == nil {
             deviceKey = "iPhone14,2" // 默认按最新的 iPhone 13 Pro处理，因为新出的设备肯定更大概率与上一代设备相似
         }
-        if self.isZoomedMode() {
+        if isZoomedMode() {
             deviceKey = deviceKey + "-Zoom"
         }
         
@@ -604,4 +503,111 @@ open class GKDevice {
         }
         return insets
     }
+}
+
+extension GKDevice {
+    public static let version: Double? = {
+       return Double(UIDevice.current.systemVersion)
+    }()
+    
+    public static let width: CGFloat = {
+        min(UIScreen.main.bounds.size.width, UIScreen.main.bounds.size.height)
+    }()
+    
+    public static let height: CGFloat = {
+        max(UIScreen.main.bounds.size.width, UIScreen.main.bounds.size.height)
+    }()
+    
+    // MARK - Screen
+    /// iPhone 12 Pro Max
+    public static let is67InchScreen: Bool = {
+        return width == _67Inch.width && height == _67Inch.height
+    }()
+    
+    /// iPhone XS Max / 11 Pro Max
+    public static let is65InchScreen: Bool = {
+        // 由于 iPhone XS Max、iPhone 11 Pro Max 这两款机型和 iPhone XR 的屏幕宽高是一致的，我们通过机器的 Identifier 加以区别
+        return (width == _65Inch.width && height == _65Inch.height && (deviceModel == "iPhone11,4" || deviceModel == "iPhone11,6" || deviceModel == "iPhone12,5"))
+    }()
+    
+    /// iPhone 12 / 12 Pro
+    public static let is61InchScreenAndiPhone12Later: Bool = {
+        return width == _61InchAndiPhone12Later.width && height == _61InchAndiPhone12Later.height
+    }()
+    
+    /// iPhone XR / 11
+    public static let is61InchScreen: Bool = {
+        return (width == _61Inch.width && height == _61Inch.height && (deviceModel == "iPhone11,8" || deviceModel == "iPhone12,1"))
+    }()
+    
+    /// iPhone X / XS / 11 Pro
+    public static let is58InchScreen: Bool = {
+        // iPhone XS 和 iPhone X 的物理尺寸是一致的，因此无需比较机器 Identifier
+        return width == _58Inch.width && height == _58Inch.height
+    }()
+    
+    /// iPhone 6，6s，7，8 Plus
+    public static let is55InchScreen: Bool = {
+        return width == _55Inch.width && height == _55Inch.height
+    }()
+    
+    /// iPhone 12 mini
+    public static let is54InchScreen: Bool = {
+        return width == _54Inch.width && height == _54Inch.height
+    }()
+    
+    /// iPhone 6，6s，7，8，SE2
+    public static let is47InchScreen: Bool = {
+        return width == _47Inch.width && height == _47Inch.height
+    }()
+    
+    /// iPhone 5，5s，5c，SE
+    public static let is40InchScreen: Bool = {
+        return width == _40Inch.width && height == _40Inch.height
+    }()
+    
+    /// iPhone 4
+    public static let is35InchScreen: Bool = {
+        return width == _35Inch.width && height == _35Inch.height
+    }()
+    
+    public static let _67Inch: CGSize = {
+        return CGSize(width: 428, height: 926)
+    }()
+    
+    public static let _65Inch: CGSize = {
+        return CGSize(width: 414, height: 896)
+    }()
+    
+    public static let _61InchAndiPhone12Later: CGSize = {
+        return CGSize(width: 390, height: 844)
+    }()
+    
+    public static let _61Inch: CGSize = {
+        return CGSize(width: 414, height: 896)
+    }()
+    
+    public static let _58Inch: CGSize = {
+        return CGSize(width: 375, height: 812)
+    }()
+    
+    public static let _55Inch: CGSize = {
+        return CGSize(width: 414, height: 736)
+    }()
+    
+    public static let _54Inch: CGSize = {
+        return CGSize(width: 375, height: 812)
+    }()
+    
+    public static let _47Inch: CGSize = {
+        return CGSize(width: 375, height: 667)
+    }()
+    
+    public static let _40Inch: CGSize = {
+        return CGSize(width: 320, height: 568)
+    }()
+    
+    public static let _35Inch: CGSize = {
+        return CGSize(width: 320, height: 480)
+    }()
 }
