@@ -236,7 +236,7 @@ open class GKDevice {
     }
     
     public static let isIPad: Bool = {
-        return UI_USER_INTERFACE_IDIOM() == .pad
+        return UIDevice.current.userInterfaceIdiom == .pad
     }()
     
     public static let isIPod: Bool = {
