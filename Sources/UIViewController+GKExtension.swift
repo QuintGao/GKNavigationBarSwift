@@ -889,8 +889,13 @@ extension UIViewController: GKAwakeProtocol {
     fileprivate func setNavBackground(_ image: UIImage?, color: UIColor?) {
         if #available(iOS 13.0, *) {
             let appearance = gk_navigationBar.standardAppearance
+            let shadowColor = appearance.shadowColor
+            let shadowImage = appearance.shadowImage
+            appearance.configureWithTransparentBackground()
             appearance.backgroundImage = image
             appearance.backgroundColor = color
+            appearance.shadowColor = shadowColor
+            appearance.shadowImage = shadowImage
             gk_navigationBar.standardAppearance = appearance
             gk_navigationBar.scrollEdgeAppearance = appearance
         }else {
@@ -903,8 +908,13 @@ extension UIViewController: GKAwakeProtocol {
     fileprivate func setNavShadow(_ image: UIImage?, color: UIColor?) {
         if #available(iOS 13.0, *) {
             let appearance = gk_navigationBar.standardAppearance
+            let backgroundColor = appearance.backgroundColor
+            let backgroundImage = appearance.backgroundImage
+            appearance.configureWithTransparentBackground()
             appearance.shadowImage = image
             appearance.shadowColor = color
+            appearance.backgroundColor = backgroundColor
+            appearance.backgroundImage = backgroundImage
             gk_navigationBar.standardAppearance = appearance
             gk_navigationBar.scrollEdgeAppearance = appearance
         }else {

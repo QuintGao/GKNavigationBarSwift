@@ -49,7 +49,9 @@ class GKDemo001ViewController: GKBaseViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = .white
-        self.gk_navigationBar.isHidden = true
+//        self.gk_navigationBar.isHidden = true
+        gk_navBackgroundColor = .clear
+        gk_navShadowColor = .clear
         self.view.addSubview(scrollView)
     }
 }

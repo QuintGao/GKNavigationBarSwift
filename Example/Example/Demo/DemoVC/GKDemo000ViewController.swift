@@ -84,35 +84,14 @@ class GKDemo000ViewController: GKBaseViewController {
         super.viewDidLoad()
 
         // 设置默认样式
-        self.gk_navTitle = "Demo"
-        self.gk_navTitleColor = .white
-        self.gk_navBackgroundColor = .red
-        self.gk_navShadowColor = .black
-        self.gk_backStyle = .white
-        self.gk_navItemLeftSpace = 0;
-        self.gk_navItemRightSpace = 30
-        self.gk_navRightBarButtonItem = self.moreItem
-        self.gk_navBackgroundImage = nil
-        
-        if #available(iOS 13.0, *) {
-            self.gk_navBackgroundColor = UIColor(dynamicProvider: { traitCollection in
-                if traitCollection.userInterfaceStyle == .dark {
-                    return UIColor.white
-                }else {
-                    return UIColor.red
-                }
-            })
-            self.gk_navTitleColor = UIColor(dynamicProvider: { traitCollection in
-                if traitCollection.userInterfaceStyle == .dark {
-                    return UIColor.black
-                }else {
-                    return UIColor.white
-                }
-            })
-        }else {
-            self.gk_navBackgroundColor = .red
-            self.gk_navTitleColor = .white
-        }
+        gk_navTitle = "Demo"
+        gk_navTitleColor = .white
+        gk_navBackgroundColor = .red
+        gk_navShadowColor = .blue
+        gk_backStyle = .white
+        gk_navItemLeftSpace = 0
+        gk_navItemRightSpace = 30
+        gk_navRightBarButtonItem = moreItem
         
         self.leftPushSwitch.isOn = false
         self.moreItemSwitch.isOn = false
