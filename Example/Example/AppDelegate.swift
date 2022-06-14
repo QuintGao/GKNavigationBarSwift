@@ -16,7 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        GKConfigure.awake()
         GKConfigure.setupCustom { (configure) in
             let view = UIView(frame: CGRect(x: 0, y: 0, width: GK_SCREEN_WIDTH, height: GKDevice.statusBarNavBarHeight()))
             configure.backgroundImage = view.image(with: [UIColor(red: 127.0/255, green: 23.0/255, blue: 135.0/255, alpha: 1.0).cgColor, UIColor(red: 37.0/255, green: 26.0/255, blue: 188.0/255, alpha: 1.0).cgColor])
@@ -47,7 +46,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.backgroundColor = UIColor.white
     
         let nav = UINavigationController(rootVC: GKMainViewController())
-//        nav.getMethodNames()
         nav.gk_openScrollLeftPush = true
         nav.gk_openSystemNavHandle = true
         self.window?.rootViewController = nav

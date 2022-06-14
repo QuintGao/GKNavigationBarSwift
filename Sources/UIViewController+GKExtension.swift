@@ -86,6 +86,11 @@ extension UIViewController: GKAwakeProtocol {
                 self.gk_navigationBar = navigationBar!
             }
             
+            if self.isViewLoaded && !self.gk_navBarAdded {
+                self.view.addSubview(navigationBar!)
+                self.gk_navBarAdded = true
+            }
+            
             return navigationBar!
         }
         set {
@@ -95,11 +100,6 @@ extension UIViewController: GKAwakeProtocol {
             self.gk_openFixNavItemSpace = true
             setupNavBarAppearance()
             setupNavBarFrame()
-            
-            if self.isViewLoaded && !self.gk_navBarAdded {
-                self.view.addSubview(newValue)
-                self.gk_navBarAdded = true
-            }
         }
     }
     
@@ -619,7 +619,7 @@ extension UIViewController: GKAwakeProtocol {
             if self.children.count == 1 && isRoot {
                 return self.children.first?.gk_findCurrentViewController(false)
             }else {
-                var currentVC: UIViewController? = nil
+                var currentVC: UIViewController? = self
                 for obj in self.children {
                     if obj.isViewLoaded {
                         let point = obj.view.convert(CGPoint.zero, to: nil)

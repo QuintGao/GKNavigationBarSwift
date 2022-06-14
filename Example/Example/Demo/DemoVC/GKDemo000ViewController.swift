@@ -256,7 +256,10 @@ extension GKDemo000ViewController {
 
 extension GKDemo000ViewController: GKViewControllerPushDelegate {
     func pushToNextViewController() {
-        let webVC = GKDemoWebViewController()
+//        let webVC = GKDemoWebViewController()
+        let webVC = UIViewController()
+        webVC.gk_navTitle = "Hello"
+        webVC.view.backgroundColor = .red
         self.navigationController?.pushViewController(webVC, animated: true)
     }
 }
