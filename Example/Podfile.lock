@@ -1,5 +1,5 @@
 PODS:
-  - GKNavigationBarSwift (1.4.2)
+  - GKNavigationBarSwift (1.4.7)
   - TZImagePickerController (3.7.6)
 
 DEPENDENCIES:
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GKNavigationBarSwift: a56190b615145878dd69789a99ce3877f0d216f0
+  GKNavigationBarSwift: 4d6b3354e76542cb87df8711630e0e037ee0079e
   TZImagePickerController: fb446ac06ae9c217bc849185646a68465bcd0dd4
 
 PODFILE CHECKSUM: fa035c70e4e48f8486bae986bd811e444f546165

@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## GKNavigationBarSwift
 
-MIT License
+ MIT License
 
 Copyright (c) 2020 QuintGao
 
