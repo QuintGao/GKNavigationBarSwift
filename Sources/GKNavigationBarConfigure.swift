@@ -117,7 +117,7 @@ open class GKNavigationBarConfigure : NSObject {
         return instance
     }()
     
-    private static let awake = {
+    private static let awake: Void = {
         UIViewController.gkAwake()
         UINavigationController.gkChildAwake()
         UINavigationItem.gkAwake()
