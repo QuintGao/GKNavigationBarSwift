@@ -482,8 +482,10 @@ extension UIViewController: GKAwakeProtocol {
         if self.navigationController == nil { return }
         
         if self.gk_navBarInit {
-            self.gk_disableFixNavItemSpace = self.gk_disableFixNavItemSpace
-            self.gk_openFixNavItemSpace = self.gk_openFixNavItemSpace
+            let disableFixNavItemSpace = self.gk_disableFixNavItemSpace
+            let openFixNavItemSpace = self.gk_openFixNavItemSpace
+            self.gk_disableFixNavItemSpace = disableFixNavItemSpace
+            self.gk_openFixNavItemSpace = openFixNavItemSpace
             // 隐藏系统导航栏
             if self.navigationController?.gk_openSystemNavHandle == false {
                 hiddenSystemNavBar()
