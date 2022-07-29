@@ -1,13 +1,24 @@
 PODS:
-  - GKNavigationBarSwift (1.4.7)
+  - GKNavigationBarSwift (1.5.0)
+  - JXSegmentedViewExt/Core (1.0.2)
+  - JXSegmentedViewExt/Indicator/Line (1.0.2):
+    - JXSegmentedViewExt/Core
+  - JXSegmentedViewExt/Title (1.0.2):
+    - JXSegmentedViewExt/Core
+  - SnapKit (4.2.0)
   - TZImagePickerController (3.7.6)
 
 DEPENDENCIES:
   - GKNavigationBarSwift (from `../`)
+  - JXSegmentedViewExt/Indicator/Line
+  - JXSegmentedViewExt/Title
+  - SnapKit
   - TZImagePickerController
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - JXSegmentedViewExt
+    - SnapKit
     - TZImagePickerController
 
 EXTERNAL SOURCES:
@@ -15,9 +26,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GKNavigationBarSwift: 4d6b3354e76542cb87df8711630e0e037ee0079e
+  GKNavigationBarSwift: 70d443ec833868b4787a167d2925d2b619caaf5b
+  JXSegmentedViewExt: 6721a1d54fa31265fa24b9d291934f9908ab41a3
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   TZImagePickerController: fb446ac06ae9c217bc849185646a68465bcd0dd4
 
-PODFILE CHECKSUM: fa035c70e4e48f8486bae986bd811e444f546165
+PODFILE CHECKSUM: 5088cb332f2c53533182fa96356b406293f90534
 
 COCOAPODS: 1.11.3

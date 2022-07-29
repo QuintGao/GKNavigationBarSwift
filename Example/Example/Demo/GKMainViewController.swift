@@ -18,6 +18,10 @@ class GKMainViewController: GKBaseViewController {
                 "UIScrollView使用（手势冲突）",
                 "TZImagePickerController使用",
                 "系统导航",
+                "UITableViewController",
+                "WKWebView",
+                "系统功能",
+                "分类页面",
                 "网易新闻push",
                 "抖音左右滑动",
                 "今日头条",
@@ -68,7 +72,7 @@ class GKMainViewController: GKBaseViewController {
         }
         self.view.addSubview(self.tableView!)
         self.tableView?.frame = CGRect(x: 0, y: GKDevice.statusBarNavBarHeight(), width: GK_SCREEN_WIDTH, height: GK_SCREEN_HEIGHT - GKDevice.statusBarNavBarHeight())
-        self.tableView?.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "cell")
+        self.tableView?.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 }
 
@@ -100,29 +104,29 @@ extension GKMainViewController: UITableViewDataSource, UITableViewDelegate {
             let vc = cls!.init()
             self.navigationController?.pushViewController(vc, animated: true)
         }else {
-            if indexPath.row == 4 {
+            if indexPath.row == 8 {
                 let wyNewsVC = GKWYNewsViewController()
                 self.navigationController?.pushViewController(wyNewsVC, animated: true)
-            }else if indexPath.row == 5 {
+            }else if indexPath.row == 9 {
                 let nav = UINavigationController(rootVC: GKDouyinHomeViewController())
                 nav.gk_openScrollLeftPush = true
                 nav.modalPresentationStyle = .fullScreen
                 
                 self.present(nav, animated: true, completion: nil)
                 return
-            }else if indexPath.row == 6 {
+            }else if indexPath.row == 10 {
                 let toutiaoVC = GKToutiaoViewController()
                 toutiaoVC.modalPresentationStyle = .fullScreen
                 self.present(toutiaoVC, animated: true, completion: nil)
-            }else if indexPath.row == 7 {
+            }else if indexPath.row == 11 {
                 let wyMusicVC = GKWYMusicViewController()
                 wyMusicVC.modalPresentationStyle = .fullScreen
                 self.present(wyMusicVC, animated: true, completion: nil)
-            }else if indexPath.row == 8 {
+            }else if indexPath.row == 12 {
                 let wyNewsVC = GKWYNewsViewController()
                 wyNewsVC.modalPresentationStyle = .fullScreen
                 self.present(wyNewsVC, animated: true, completion: nil)
-            }else if indexPath.row == 9 {
+            }else if indexPath.row == 13 {
                 let wxVC = GKWXViewController()
                 wxVC.modalPresentationStyle = .fullScreen
                 self.present(wxVC, animated: true, completion: nil)

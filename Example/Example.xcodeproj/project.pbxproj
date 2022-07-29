@@ -55,6 +55,11 @@
 		796AB58B2442E83F00C724D4 /* GKDemo000ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5672442E83E00C724D4 /* GKDemo000ViewController.swift */; };
 		796AB58C2442E83F00C724D4 /* GKDemoWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AB5682442E83E00C724D4 /* GKDemoWebViewController.swift */; };
 		796AB58D2442E83F00C724D4 /* web.txt in Resources */ = {isa = PBXBuildFile; fileRef = 796AB5692442E83E00C724D4 /* web.txt */; };
+		79E5722B2893ADCF005EB065 /* GKDemo004ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5722A2893ADCF005EB065 /* GKDemo004ViewController.swift */; };
+		79E5722D2893B114005EB065 /* GKDemo005ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5722C2893B114005EB065 /* GKDemo005ViewController.swift */; };
+		79E5722F2893BCD1005EB065 /* GKDemo006ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5722E2893BCD0005EB065 /* GKDemo006ViewController.swift */; };
+		79E572312893C4C2005EB065 /* GKDemo007ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E572302893C4C2005EB065 /* GKDemo007ViewController.swift */; };
+		79E572332893C5EC005EB065 /* GKDemo007ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E572322893C5EC005EB065 /* GKDemo007ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -122,6 +127,11 @@
 		796AB5672442E83E00C724D4 /* GKDemo000ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDemo000ViewController.swift; sourceTree = "<group>"; };
 		796AB5682442E83E00C724D4 /* GKDemoWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKDemoWebViewController.swift; sourceTree = "<group>"; };
 		796AB5692442E83E00C724D4 /* web.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = web.txt; sourceTree = "<group>"; };
+		79E5722A2893ADCF005EB065 /* GKDemo004ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKDemo004ViewController.swift; sourceTree = "<group>"; };
+		79E5722C2893B114005EB065 /* GKDemo005ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKDemo005ViewController.swift; sourceTree = "<group>"; };
+		79E5722E2893BCD0005EB065 /* GKDemo006ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKDemo006ViewController.swift; sourceTree = "<group>"; };
+		79E572302893C4C2005EB065 /* GKDemo007ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKDemo007ViewController.swift; sourceTree = "<group>"; };
+		79E572322893C5EC005EB065 /* GKDemo007ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKDemo007ListViewController.swift; sourceTree = "<group>"; };
 		D34ABAF9BDED111FFC6E33C2 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3259CD44342A10D43715F11 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -282,6 +292,11 @@
 				796AB5662442E83E00C724D4 /* GKDemo001ViewController.swift */,
 				796AB5652442E83E00C724D4 /* GKDemo002ViewController.swift */,
 				796AB5642442E83E00C724D4 /* GKDemo003ViewController.swift */,
+				79E5722A2893ADCF005EB065 /* GKDemo004ViewController.swift */,
+				79E5722C2893B114005EB065 /* GKDemo005ViewController.swift */,
+				79E5722E2893BCD0005EB065 /* GKDemo006ViewController.swift */,
+				79E572302893C4C2005EB065 /* GKDemo007ViewController.swift */,
+				79E572322893C5EC005EB065 /* GKDemo007ListViewController.swift */,
 				60B70DA32570D1D0008D62FC /* GKDemoTransitionViewController.swift */,
 				796AB5682442E83E00C724D4 /* GKDemoWebViewController.swift */,
 				796AB5692442E83E00C724D4 /* web.txt */,
@@ -429,6 +444,7 @@
 			files = (
 				796AB57A2442E83F00C724D4 /* GKDouyinHomeViewController.swift in Sources */,
 				796AB5772442E83F00C724D4 /* GKWYMusicAccountViewController.swift in Sources */,
+				79E5722F2893BCD1005EB065 /* GKDemo006ViewController.swift in Sources */,
 				796AB5732442E83F00C724D4 /* GKToutiaoViewController.swift in Sources */,
 				796AB5782442E83F00C724D4 /* GKWYMusicFindViewController.swift in Sources */,
 				608FC7282546AA39003DB82F /* GKWXDetailViewController.swift in Sources */,
@@ -441,8 +457,10 @@
 				796AB5802442E83F00C724D4 /* GKWYNewsViewController.swift in Sources */,
 				608FC72B2546AB81003DB82F /* GKFloatView.swift in Sources */,
 				796AB5702442E83F00C724D4 /* GKToutiaoHomeViewController.swift in Sources */,
+				79E572332893C5EC005EB065 /* GKDemo007ListViewController.swift in Sources */,
 				608FC7202546A9F1003DB82F /* GKWXViewController.swift in Sources */,
 				796AB5852442E83F00C724D4 /* GKWYNewsProfileViewController.swift in Sources */,
+				79E5722D2893B114005EB065 /* GKDemo005ViewController.swift in Sources */,
 				796AB57F2442E83F00C724D4 /* GKWYNewsLiveViewController.swift in Sources */,
 				796AB5792442E83F00C724D4 /* GKWYMusicMineViewController.swift in Sources */,
 				796AB57D2442E83F00C724D4 /* GKDouyinPlayerViewController.swift in Sources */,
@@ -452,6 +470,7 @@
 				796AB58C2442E83F00C724D4 /* GKDemoWebViewController.swift in Sources */,
 				796AB57B2442E83F00C724D4 /* GKDouyinSearchViewController.swift in Sources */,
 				796AB5712442E83F00C724D4 /* GKToutiaoVideoViewController.swift in Sources */,
+				79E572312893C4C2005EB065 /* GKDemo007ViewController.swift in Sources */,
 				608FC7222546AA20003DB82F /* GKWXHomeViewController.swift in Sources */,
 				796AB56D2442E83F00C724D4 /* GKBaseViewController.swift in Sources */,
 				796AB58B2442E83F00C724D4 /* GKDemo000ViewController.swift in Sources */,
@@ -469,6 +488,7 @@
 				796AB5822442E83F00C724D4 /* GKWYNewsNewViewController.swift in Sources */,
 				608FC7262546AA2E003DB82F /* GKWXMineViewController.swift in Sources */,
 				608FC7242546AA27003DB82F /* GKWXFindViewController.swift in Sources */,
+				79E5722B2893ADCF005EB065 /* GKDemo004ViewController.swift in Sources */,
 				796AB58A2442E83F00C724D4 /* GKDemo001ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
