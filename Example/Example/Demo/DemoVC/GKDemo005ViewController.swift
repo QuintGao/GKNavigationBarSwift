@@ -22,6 +22,7 @@ class GKDemo005ViewController: GKBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        gk_navTitle = "WKWebView"
         view.addSubview(webView)
         webView.snp.makeConstraints {
             $0.left.right.bottom.equalTo(self.view)

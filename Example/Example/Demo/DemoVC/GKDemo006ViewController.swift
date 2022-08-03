@@ -26,15 +26,34 @@ class GKDemo006ViewController: GKBaseViewController {
         return btn
     }()
     
+    lazy var alertBtn: UIButton = {
+        let btn = UIButton()
+        btn.setTitle("UIAlertController", for: .normal)
+        btn.setTitleColor(UIColor.black, for: .normal)
+        btn.addTarget(self, action: #selector(alertAction(_:)), for: .touchUpInside)
+        return btn
+    }()
+    
+    lazy var noFullBtn: UIButton = {
+        let btn = UIButton()
+        btn.setTitle("非全屏", for: .normal)
+        btn.setTitleColor(UIColor.black, for: .normal)
+        btn.addTarget(self, action: #selector(noFullAction(_:)), for: .touchUpInside)
+        return btn
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         gk_navTitle = "系统功能"
         gk_navRightBarButtonItem = UIBarButtonItem.gk_item(title: "哈哈", target: self, action: #selector(systemAction(_:)))
         gk_navItemRightSpace = 40
+        gk_navItemLeftSpace = 20
         
         view.addSubview(printBtn)
         view.addSubview(shareBtn)
+        view.addSubview(alertBtn)
+        view.addSubview(noFullBtn)
         
         printBtn.snp.makeConstraints {
             $0.centerX.equalTo(self.view)
@@ -48,6 +67,20 @@ class GKDemo006ViewController: GKBaseViewController {
             $0.top.equalTo(printBtn.snp.bottom).offset(50)
             $0.width.equalTo(100.0)
             $0.height.equalTo(40.0)
+        }
+        
+        alertBtn.snp.makeConstraints {
+            $0.centerX.equalTo(self.view)
+            $0.top.equalTo(shareBtn.snp.bottom).offset(50)
+            $0.width.equalTo(200.0)
+            $0.height.equalTo(40.0)
+        }
+        
+        noFullBtn.snp.makeConstraints {
+            $0.centerX.equalTo(self.view)
+            $0.top.equalTo(alertBtn.snp.bottom).offset(50)
+            $0.width.equalTo(200)
+            $0.height.equalTo(40)
         }
     }
     
@@ -99,6 +132,25 @@ class GKDemo006ViewController: GKBaseViewController {
         }
         
         self.present(activityVC, animated: true)
+    }
+    
+    @objc func alertAction(_ sender: Any) {
+        let alertVC = UIAlertController(title: "温馨提示", message: "这是一个弹窗", preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "取消", style: .cancel))
+        alertVC.addAction(UIAlertAction(title: "确定", style: .default))
+        self.present(alertVC, animated: true)
+    }
+    
+    @objc func noFullAction(_ sender: Any) {
+        let vc = UIViewController()
+        vc.gk_navTitle = "alert"
+        vc.view.backgroundColor = .white
+        if #available(iOS 13.0, *) {
+            vc.modalPresentationStyle = .automatic
+        } else {
+            // Fallback on earlier versions
+        }
+        present(vc, animated: true)
     }
     
     @objc func systemAction(_ sender: Any) {
