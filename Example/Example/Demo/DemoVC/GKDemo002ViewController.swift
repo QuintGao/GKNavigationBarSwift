@@ -28,7 +28,14 @@ class GKDemo002ViewController: GKBaseViewController {
         label.sizeToFit()
         label.frame = CGRect(x: 0, y: 200, width: view.frame.size.width, height: label.frame.size.height)
         self.view.addSubview(label)
+        
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(click))
+//        self.view.addGestureRecognizer(tap)
     }
+    
+//    @objc func click() {
+//        print("click")
+//    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let pickerVC = TZImagePickerController(maxImagesCount: 9, delegate: self)

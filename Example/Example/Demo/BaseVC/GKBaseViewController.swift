@@ -15,6 +15,8 @@ class GKBaseViewController: UIViewController {
         
         self.view.backgroundColor = .white
         self.modalPresentationStyle = .fullScreen
+        
+//        self.getMethodNames()
     }
     
     override var prefersStatusBarHidden: Bool {

@@ -38,7 +38,18 @@ class GKMainViewController: GKBaseViewController {
         self.gk_navigationItem.title = "MainVC"
         self.gk_statusBarStyle = .lightContent
         self.gk_navTitleFont = UIFont.systemFont(ofSize: 18)
-        self.gk_navTitleColor = .white
+//        self.gk_navTitleColor = .white
+        if #available(iOS 13.0, *) {
+            self.gk_navTitleColor = UIColor(dynamicProvider: { collection in
+                if collection.userInterfaceStyle == .dark {
+                    return .gray
+                }else {
+                    return .white
+                }
+            })
+        } else {
+            self.gk_navTitleColor = .white
+        }
         
         setupTableView()
     }

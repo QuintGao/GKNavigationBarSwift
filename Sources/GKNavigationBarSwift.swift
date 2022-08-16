@@ -53,6 +53,10 @@ open class GKNavigationBar: UINavigationBar {
     public override init(frame: CGRect) {
         super.init(frame:frame)
         self.gk_navBarBackgroundAlpha = 1.0
+
+        // 添加占位手势，禁止其响应父试图的点击
+        let tap = UITapGestureRecognizer()
+        self.addGestureRecognizer(tap)
     }
     
     required public init?(coder: NSCoder) {
@@ -99,6 +103,25 @@ open class GKNavigationBar: UINavigationBar {
                 view.isHidden = self.gk_navLineHidden
             }
         }
+    }
+}
+
+// 实现touches方法，防止其实现父试图的touches方法
+extension GKNavigationBar {
+    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+    }
+    
+    open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+    }
+    
+    open override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+    }
+    
+    open override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
     }
 }
 

@@ -428,7 +428,9 @@ extension UIViewController: GKAwakeProtocol {
             }
         }
     }
-    
+}
+
+extension UIViewController {
     // MARK: - 重新系统方法
     private static let onceToken = UUID().uuidString
     @objc public static func gkAwake() {
@@ -601,7 +603,7 @@ extension UIViewController: GKAwakeProtocol {
         }
         
         if shouldPop {
-            self.navigationController?.popViewController(animated: true)            
+            self.navigationController?.popViewController(animated: true)
         }
     }
     
