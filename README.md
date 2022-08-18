@@ -83,6 +83,7 @@ self.gk_navBackgroundColor = [UIColor red]
 
 ## 版本记录
 
+* 1.5.3 - 2022.08.18 修复侧滑返回时可能出现导航栏间距不准确问题
 * 1.5.2 - 2022.08.16 屏蔽GKNavigationBar的touches事件和tap事件
 * 1.5.1 - 2022.07.29 1、增加返回手势与其他手势冲突处理代理方法
                      2、当只设置gk_backImage时处理优化

@@ -42,7 +42,7 @@ class GKMainViewController: GKBaseViewController {
         if #available(iOS 13.0, *) {
             self.gk_navTitleColor = UIColor(dynamicProvider: { collection in
                 if collection.userInterfaceStyle == .dark {
-                    return .gray
+                    return .black
                 }else {
                     return .white
                 }
@@ -50,6 +50,7 @@ class GKMainViewController: GKBaseViewController {
         } else {
             self.gk_navTitleColor = .white
         }
+        self.gk_navLeftBarButtonItem = UIBarButtonItem.gk_item(title: "菜单", target: self, action: #selector(menuAction))
         
         setupTableView()
     }
@@ -64,6 +65,10 @@ class GKMainViewController: GKBaseViewController {
         
         let keywindow = UIApplication.shared.delegate?.window
         keywindow!?.rootViewController = GKWXViewController()
+    }
+    
+    @objc func menuAction() {
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

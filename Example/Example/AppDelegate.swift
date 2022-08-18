@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // 状态栏样式
             $0.statusBarStyle = .lightContent
             // 导航栏左右item间距
-            $0.gk_navItemLeftSpace = 0
+            $0.gk_navItemLeftSpace = 10
             $0.gk_navItemRightSpace = 10
             // 是否恢复系统导航
             $0.gk_restoreSystemNavBar = true

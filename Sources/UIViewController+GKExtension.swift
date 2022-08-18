@@ -456,7 +456,6 @@ extension UIViewController {
     @objc func gk_viewDidLoad() {
         // 设置默认状态
         self.gk_disableFixNavItemSpace = true
-        self.gk_openFixNavItemSpace = false
         
         if shouldHandleNavBar() {
             // 设置默认导航栏间距
@@ -466,9 +465,7 @@ extension UIViewController {
         
         // 如果是根控制器，取消返回按钮
         if let nav = self.navigationController, nav.children.count <= 1 {
-            if !self.gk_navBarInit {
-                return
-            }
+            if !self.gk_navBarInit { return }
             self.gk_navLeftBarButtonItem = nil
         }
         gk_viewDidLoad()
