@@ -55,6 +55,18 @@ class GKMainViewController: GKBaseViewController {
         setupTableView()
     }
     
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        if #available(iOS 13.0, *) {
+            if self.traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+                if traitCollection.userInterfaceStyle == .dark {
+                    self.gk_navLeftBarButtonItem = UIBarButtonItem.gk_item(title: "黑色", target: self, action: #selector(menuAction))
+                }else {
+                    self.gk_navLeftBarButtonItem = UIBarButtonItem.gk_item(title: "菜单", target: self, action: #selector(menuAction))
+                }
+            }
+        }
+    }
+    
     deinit {
         print("GKMainViewController deinit")
     }

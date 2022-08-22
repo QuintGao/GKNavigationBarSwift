@@ -456,7 +456,7 @@ extension UIViewController {
     @objc func gk_viewDidLoad() {
         // 设置默认状态
         self.gk_disableFixNavItemSpace = true
-        
+
         if shouldHandleNavBar() {
             // 设置默认导航栏间距
             self.gk_navItemLeftSpace  = GKNavigationBarItemSpace
@@ -919,9 +919,11 @@ extension UIViewController {
             gk_navigationBar.standardAppearance = appearance
             gk_navigationBar.scrollEdgeAppearance = appearance
         }else {
-            guard image == nil, let color = color else { return }
-            let image = UIImage.gk_image(with: color)
-            gk_navigationBar.setBackgroundImage(image, for: .default)
+            var bgImage = image
+            if bgImage == nil, let color = color {
+                bgImage = UIImage.gk_image(with: color)
+            }
+            gk_navigationBar.setBackgroundImage(bgImage, for: .default)
         }
     }
     
@@ -938,9 +940,11 @@ extension UIViewController {
             gk_navigationBar.standardAppearance = appearance
             gk_navigationBar.scrollEdgeAppearance = appearance
         }else {
-            guard image == nil, let color = color else { return }
-            let image = UIImage.gk_change(with: UIImage.gk_image(with: "nav_line"), color: color)
-            gk_navigationBar.shadowImage = image
+            var shadowImage = image
+            if shadowImage == nil, let color = color {
+                shadowImage = UIImage.gk_change(with: UIImage.gk_image(with: "nav_line"), color: color)
+            }
+            gk_navigationBar.shadowImage = shadowImage
         }
     }
     
