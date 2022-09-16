@@ -792,7 +792,10 @@ extension UIViewController {
                 self.gk_navigationBar.gk_nonFullScreen = true
             }else {
                 if GKDevice.isNotchedScreen { // 刘海屏手机
-                    navBarH = GKDevice.safeAreaInsets().top + gkNavBarH
+                    // iPhone 14 Pro 状态栏高度与安全区域高度不一致，这里改为使用状态栏高度
+                    var topH = GKDevice.statusBarFrame().height
+                    if topH == 0 { topH = GKDevice.safeAreaInsets().top }
+                    navBarH = topH + gkNavBarH
                 }else {
                     navBarH = self.gk_statusBarHidden ? gkNavBarH : gkStatusBarNavBarH
                 }

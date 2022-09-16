@@ -17,6 +17,17 @@ class GKDemo003ViewController: GKBaseViewController {
         self.view.backgroundColor = .white
         self.navigationItem.title = "系统导航"
         
+        if #available(iOS 13.0, *) {
+            let appearance = navigationController?.navigationBar.standardAppearance
+            guard let appearance = appearance else { return }
+            appearance.backgroundColor = .red
+            appearance.shadowColor = .black
+            navigationController?.navigationBar.standardAppearance = appearance
+            navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        } else {
+            // Fallback on earlier versions
+        }
+        
         gk_openFixNavItemSpace = true
         self.gk_navItemRightSpace = 40;
         let rightItem = UIBarButtonItem.gk_item(title: "push", target: self, action: #selector(click))

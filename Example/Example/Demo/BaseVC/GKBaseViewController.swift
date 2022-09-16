@@ -19,6 +19,10 @@ class GKBaseViewController: UIViewController {
 //        self.getMethodNames()
     }
     
+    deinit {
+        print(self, "deinit")
+    }
+    
     override var prefersStatusBarHidden: Bool {
         return self.gk_statusBarHidden
     }

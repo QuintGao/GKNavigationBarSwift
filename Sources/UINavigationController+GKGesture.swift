@@ -118,7 +118,6 @@ extension UINavigationController: GKGestureChildAwakeProtocol {
         if self.gk_openGestureHandle {
             NotificationCenter.default.removeObserver(self, name: GKViewControllerPropertyChanged, object: nil)
         }
-        gkNavGesture_dealloc()
     }
     
     @objc func propertyChangeNotification(_ notify: Notification) {
