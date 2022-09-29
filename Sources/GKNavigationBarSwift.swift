@@ -53,10 +53,6 @@ open class GKNavigationBar: UINavigationBar {
     public override init(frame: CGRect) {
         super.init(frame:frame)
         self.gk_navBarBackgroundAlpha = 1.0
-
-        // 添加占位手势，禁止其响应父试图的点击
-        let tap = UITapGestureRecognizer()
-        self.addGestureRecognizer(tap)
     }
     
     required public init?(coder: NSCoder) {
