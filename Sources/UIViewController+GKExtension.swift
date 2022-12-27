@@ -444,12 +444,6 @@ extension UIViewController {
             for oriSel in oriSels {
                 gk_swizzled_instanceMethod("gk", oldClass: self, oldSelector: oriSel, newClass: self)
             }
-            
-            let gestureOriSels = ["viewWillAppear:", "viewDidDisappear:"]
-            
-            for oriSel in gestureOriSels {
-                gk_swizzled_instanceMethod("gkGesture", oldClass: self, oldSelector: oriSel, newClass: self)
-            }
         }
     }
     
