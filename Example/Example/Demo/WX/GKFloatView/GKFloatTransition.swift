@@ -17,6 +17,7 @@ enum GKFloatTransitionType {
 class GKFloatTransition: GKBaseAnimatedTransition {
     var coverView: UIView?
     var type = GKFloatTransitionType.pop
+    var contentView: UIView?
     
     class func transition(type: GKFloatTransitionType) -> GKFloatTransition {
         return GKFloatTransition(type: type)

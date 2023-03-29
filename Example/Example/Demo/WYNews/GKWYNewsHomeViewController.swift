@@ -23,11 +23,21 @@ class GKWYNewsHomeViewController: GKTabBaseViewController {
         self.view.addSubview(pageImage)
         pageImage.isUserInteractionEnabled = true
         pageImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(pageAction)))
+        
+        self.gk_pushDelegate = self
     }
     
     @objc func pageAction() {
         self.gk_pushTransition = GKPushAnimatedTransition(scale: false)
         
+        let detailVC = GKWYNewsDetailViewController()
+        detailVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(detailVC, animated: true)
+    }
+}
+
+extension GKWYNewsHomeViewController: GKViewControllerPushDelegate {
+    func pushToNextViewController() {
         let detailVC = GKWYNewsDetailViewController()
         detailVC.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(detailVC, animated: true)

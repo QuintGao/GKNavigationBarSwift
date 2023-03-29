@@ -450,6 +450,7 @@ extension UIViewController {
     @objc func gk_viewDidLoad() {
         // 设置默认状态
         self.gk_disableFixNavItemSpace = true
+        self.gk_openFixNavItemSpace = false
 
         if shouldHandleNavBar() {
             // 设置默认导航栏间距

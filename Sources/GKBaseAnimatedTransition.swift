@@ -16,7 +16,6 @@ open class GKBaseAnimatedTransition: NSObject {
     open var fromViewController: UIViewController!
     open var toViewController: UIViewController!
     open var isHideTabBar = false
-    open var contentView: UIView?
     
     open class func transition(with scale: Bool) -> GKBaseAnimatedTransition {
         return self.init(scale: scale)

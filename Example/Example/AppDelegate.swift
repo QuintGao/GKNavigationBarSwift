@@ -46,8 +46,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             $0.gk_restoreSystemNavBar = true
             
             // 缩放配置
-            $0.gk_translationX = 15
-            $0.gk_translationY = 20
             $0.gk_scaleX = 0.90
             $0.gk_scaleY = 0.92
             
