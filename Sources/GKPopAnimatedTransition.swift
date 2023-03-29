@@ -23,7 +23,7 @@ open class GKPopAnimatedTransition: GKBaseAnimatedTransition {
         let screenW = self.containerView.bounds.size.width
         let screenH = self.containerView.bounds.size.height
         
-        var toView = UIView(frame: self.containerView.bounds)
+        let toView = UIView(frame: self.containerView.bounds)
         var captureView: UIView? = nil
         
         toView.addSubview(self.toViewController.view)
@@ -72,9 +72,8 @@ open class GKPopAnimatedTransition: GKBaseAnimatedTransition {
                     self.containerView.addSubview(self.toViewController.view)
                 }
                 toView.transform = .identity
-                if (toView != nil) {
-                    toView.removeFromSuperview()
-                }
+                toView.removeFromSuperview()
+                
                 if (captureView != nil) {
                     captureView?.removeFromSuperview()
                     captureView = nil

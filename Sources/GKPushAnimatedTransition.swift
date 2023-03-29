@@ -30,7 +30,7 @@ open class GKPushAnimatedTransition: GKBaseAnimatedTransition {
         let screenW = self.containerView.bounds.size.width
         let screenH = self.containerView.bounds.size.height
         
-        var fromView = UIView(frame: self.containerView.bounds)
+        let fromView = UIView(frame: self.containerView.bounds)
         fromView.addSubview(fromViewController.view)
         
         var captureView: UIView? = nil
@@ -81,9 +81,8 @@ open class GKPushAnimatedTransition: GKBaseAnimatedTransition {
                     self.fromViewController.view.removeFromSuperview()
                 }
                 fromView.transform = .identity
-                if (fromView != nil) {
-                    fromView.removeFromSuperview()
-                }
+                fromView.removeFromSuperview()
+                
                 if (captureView != nil) {
                     captureView?.removeFromSuperview()
                     captureView = nil
