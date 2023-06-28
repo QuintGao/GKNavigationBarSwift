@@ -765,8 +765,6 @@ extension UIViewController {
         let isNonFullScreen = isNonFullScreen()
         var navBarH: CGFloat = 0.0
         
-        let width  = UIScreen.main.bounds.size.width
-        
         let gkNavBarHNFS = GKDevice.navBarHeightNonFullScreen()
         let gkNavBarH = GKDevice.navBarHeight()
         let gkStatusBarH = GKDevice.statusBarFrame().size.height
@@ -796,15 +794,15 @@ extension UIViewController {
                 }
             }
         }
-        self.gk_navigationBar.frame = CGRect(x: 0, y: 0, width: width, height: navBarH)
+        self.gk_navigationBar.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: navBarH)
         self.gk_navigationBar.gk_statusBarHidden = self.gk_statusBarHidden
         self.gk_navigationBar.layoutSubviews()
     }
     
     fileprivate func isNonFullScreen() -> Bool {
         var isNonFullScreen = false
-        var viewW = UIScreen.main.bounds.size.width
-        var viewH = UIScreen.main.bounds.size.height
+        var viewW = self.view.bounds.width
+        var viewH = self.view.bounds.height
         if self.isViewLoaded {
             var parentVC = self
             // 找到最上层的父控制器
@@ -818,7 +816,7 @@ extension UIViewController {
             }
             
             // 如果是通过present方式弹出且高度小于屏幕高度，则认为是非全屏
-            isNonFullScreen = (self.presentingViewController != nil) && viewH < UIScreen.main.bounds.size.height
+            isNonFullScreen = (self.presentingViewController != nil) && viewH < self.view.bounds.height
         }
         return isNonFullScreen
     }

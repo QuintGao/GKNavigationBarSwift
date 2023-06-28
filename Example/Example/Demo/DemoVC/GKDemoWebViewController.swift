@@ -21,7 +21,7 @@ class GKDemoWebViewController: GKBaseViewController {
         let wkWebConfig = WKWebViewConfiguration()
         wkWebConfig.userContentController = wkUController
         
-        let frame = CGRect(x: 0, y: 0, width: GK_SCREEN_WIDTH, height: 0)
+        let frame = CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 0)
         
         let webView = WKWebView(frame: frame, configuration: wkWebConfig)
         webView.scrollView.alwaysBounceVertical = false
@@ -61,7 +61,7 @@ class GKDemoWebViewController: GKBaseViewController {
         self.gk_navRightBarButtonItem = self.closeBtn
         
         self.view.addSubview(self.webView)
-        self.webView.frame = CGRect(x: 0, y: GKDevice.statusBarNavBarHeight(), width: GK_SCREEN_WIDTH, height: GK_SCREEN_HEIGHT - GKDevice.statusBarNavBarHeight())
+        self.webView.frame = CGRect(x: 0, y: GKDevice.statusBarNavBarHeight(), width: view.bounds.width, height: view.bounds.height - GKDevice.statusBarNavBarHeight())
         
         let filePath = Bundle.main.path(forResource: "web", ofType: "txt")
         

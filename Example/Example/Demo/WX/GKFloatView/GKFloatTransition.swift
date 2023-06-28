@@ -61,7 +61,7 @@ class GKFloatTransition: GKBaseAnimatedTransition {
             if view != nil {
                 let captureImage = GKConfigure.getCapture(with: view!)
                 let captureView = UIImageView(image: captureImage)
-                captureView.frame = CGRect(x: 0, y: 0, width: GK_SCREEN_WIDTH, height: GK_SCREEN_HEIGHT)
+                captureView.frame = CGRect(x: 0, y: 0, width: containerView.bounds.width, height: containerView.bounds.height)
                 containerView.addSubview(captureView)
                 fromView = captureView
                 self.fromViewController.gk_captureImage = captureImage
@@ -104,7 +104,7 @@ class GKFloatTransition: GKBaseAnimatedTransition {
         
         if self.isHideTabBar {
             let captureView = UIImageView(image: self.toViewController.gk_captureImage!)
-            captureView.frame = CGRect(x: 0, y: 0, width: GK_SCREEN_WIDTH, height: GK_SCREEN_HEIGHT)
+            captureView.frame = CGRect(x: 0, y: 0, width: containerView.bounds.width, height: containerView.bounds.height)
             self.containerView.insertSubview(captureView, belowSubview: self.fromViewController.view)
             toView = captureView
             self.toViewController.view.isHidden = true
