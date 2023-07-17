@@ -1,5 +1,5 @@
 PODS:
-  - GKNavigationBarSwift (1.5.9)
+  - GKNavigationBarSwift (1.6.1)
   - JXSegmentedViewExt/Core (1.0.2)
   - JXSegmentedViewExt/Indicator/Line (1.0.2):
     - JXSegmentedViewExt/Core
@@ -26,11 +26,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GKNavigationBarSwift: 4a92afd7a3c94f5284c1e84312e57ee32c92987a
+  GKNavigationBarSwift: 12ea60d13fd3a86267002b1b2a83d49e6327a797
   JXSegmentedViewExt: 6721a1d54fa31265fa24b9d291934f9908ab41a3
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   TZImagePickerController: fb446ac06ae9c217bc849185646a68465bcd0dd4
 
-PODFILE CHECKSUM: 453772880743ff7f010d6620d746870f9d70d2ca
+PODFILE CHECKSUM: 5088cb332f2c53533182fa96356b406293f90534
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.12.1

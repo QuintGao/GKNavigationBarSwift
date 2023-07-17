@@ -29,7 +29,7 @@ class GKDemo003ViewController: GKBaseViewController {
         }
         
         gk_openFixNavItemSpace = true
-        self.gk_navItemRightSpace = 40;
+        self.gk_navItemRightSpace = 0;
         let rightItem = UIBarButtonItem.gk_item(title: "push", target: self, action: #selector(click))
         rightItem.customView?.backgroundColor = .black
         self.navigationItem.rightBarButtonItem = rightItem
@@ -46,7 +46,7 @@ class GKDemo003ViewController: GKBaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-//        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.isNavigationBarHidden = false
     }
 }
 

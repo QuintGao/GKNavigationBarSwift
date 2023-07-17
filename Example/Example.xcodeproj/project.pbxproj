@@ -238,9 +238,9 @@
 		796AB5452442E83E00C724D4 /* Toutiao */ = {
 			isa = PBXGroup;
 			children = (
+				796AB5482442E83E00C724D4 /* GKToutiaoHomeViewController.swift */,
 				796AB5462442E83E00C724D4 /* GKToutiaoMicroViewController.swift */,
 				796AB5472442E83E00C724D4 /* GKToutiaoMineViewController.swift */,
-				796AB5482442E83E00C724D4 /* GKToutiaoHomeViewController.swift */,
 				796AB5492442E83E00C724D4 /* GKToutiaoVideoViewController.swift */,
 				796AB54A2442E83E00C724D4 /* GKToutiaoDetailViewController.swift */,
 				796AB54B2442E83E00C724D4 /* GKToutiaoViewController.swift */,

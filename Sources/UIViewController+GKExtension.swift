@@ -449,8 +449,10 @@ extension UIViewController {
     
     @objc func gk_viewDidLoad() {
         // 设置默认状态
-        self.gk_disableFixNavItemSpace = true
-        self.gk_openFixNavItemSpace = false
+        if let nav = self.navigationController, nav == self.parent {
+            self.gk_disableFixNavItemSpace = true
+            self.gk_openFixNavItemSpace = false
+        }
 
         if shouldHandleNavBar() {
             // 设置默认导航栏间距
@@ -490,14 +492,14 @@ extension UIViewController {
                 self.view.bringSubviewToFront(self.gk_navigationBar)
             }
         }else {
-            if let nav = navigationController, !nav.isNavigationBarHidden, !isNonFullScreen() {
+            if let nav = self.navigationController, nav == self.parent, !nav.isNavigationBarHidden, !isNonFullScreen() {
                 self.gk_disableFixNavItemSpace = self.gk_disableFixNavItemSpace
                 self.gk_openFixNavItemSpace = self.gk_openFixNavItemSpace
             }
             restoreSystemNavBar()
         }
         
-        // 当创建了gk_navigationBar或者福控制器是导航控制器的时候才去调整导航栏间距
+        // 当创建了gk_navigationBar或者父控制器是导航控制器的时候才去调整导航栏间距
         if self.shouldFixItemSpace() {
             // 每次控制器出现的时候重置导航栏间距
             if self.gk_navItemLeftSpace == GKNavigationBarItemSpace {
