@@ -37,7 +37,7 @@ class GKDemo007ViewController: GKBaseViewController {
         super.viewDidLoad()
 
         gk_navTitle = "分类"
-        gk_navItemRightSpace = 30
+        gk_navItemRightSpace = 0
         gk_navRightBarButtonItem = UIBarButtonItem.gk_item(title: "更多", target: self, action: #selector(moreAction))
         
         view.addSubview(segmentedView)
