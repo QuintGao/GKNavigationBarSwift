@@ -12,7 +12,6 @@
 		0288CFF97F1E0C14FD2780A6D971F622 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CF3EE348FA03DE9261DD120BF0A049 /* Photos.framework */; };
 		0796336CEFF601AE1247F220908D6122 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E0FE51EFAEA1D53D3A74961D955A59 /* LayoutConstraintItem.swift */; };
 		07C2A8D8E0CC8EAB5F37E03332631748 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B55B8451FB7C7CDCB3D9F2962BC24AD /* ConstraintMakerExtendable.swift */; };
-		07E3160ABA0295E72EB78CDD10A46706 /* GKNavigationBarSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF98AA15CF3B57A6FDF29489538DAD5 /* GKNavigationBarSwift.swift */; };
 		0832E6E2FAFE65ED21D4D5B05D3D3E1E /* TZImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 314B1CEA8A8624E5488618920274B508 /* TZImageRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E2C6CFD8D743F20FAA9BAF2B2BCD0B1 /* TZImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D4EEC61985373358BF5E8C05B88426 /* TZImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1155EE8CFAA52F7FDBEFE171A88ED4B4 /* TZProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = E91E4FAB4B262A55D0C4C8527A6FD755 /* TZProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,33 +22,40 @@
 		189EEC9F437E6D8576D85C90916F7B81 /* TZAssetCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5681A6B031AE8D1D16DC25EE2BF017BC /* TZAssetCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19464E5871366D267456CAAF81B2E2D6 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB38E5304A18D2C5B87398CE3CE93976 /* ConstraintMakerEditable.swift */; };
 		1D4A8B5B3CFE8E7FC77191105FB19BD6 /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */; };
+		226C335B6E8F65D0D9898E3343F16921 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7D3A1DC66305E0DFF78E6A3046A809 /* Foundation.framework */; };
 		24AED108806F65EA9BBEED416751D5FF /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04700E51694785DB4A2A2D8CA9031D9 /* ConstraintRelatableTarget.swift */; };
 		27978C5A4998F14F5A36531D3508F382 /* TZImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EFE9C82A75AB91871B095046AC4063 /* TZImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		29F87DB5ED5C0C2F0B054AFF171DABD0 /* GKNavigationBarConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1081231A1307948483012BE6853B275 /* GKNavigationBarConfigure.swift */; };
 		2DFC82DED8FF7133A3B89A8DDD702563 /* JXSegmentedRTLLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE0F2F63F86B09D0E686984F6CEB889 /* JXSegmentedRTLLayout.swift */; };
 		31CB0E17706E0922E4E694012195751C /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEA73E1C0DB75848A4E5720B6930156 /* ConstraintMultiplierTarget.swift */; };
-		3300F7C7CB4E91B7E63A97C6BCABC22A /* GKNavigationBarSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDEFC9D4BF7712BDA61D865F3BAA08C5 /* GKNavigationBarSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35FB78B2F8BD0E0A1F1DAB88DD5F6525 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3289511AE222291018671C08F8A96710 /* ConstraintConstantTarget.swift */; };
 		36E3317EDE9829C3622AE63D3B5D0D1D /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394DE8484E17B1E441A352838897B1B /* ConstraintLayoutGuide.swift */; };
 		370D212EBD0FAD872AB655CFBC10A837 /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F00AEE635302DFD86F38F687EDF3BFB0 /* TZPhotoPreviewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		381B8C01242C38D68F9F498E362413D6 /* JXSegmentedViewExt-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD4BF1EF5138BDB3539F460A8B7CD830 /* JXSegmentedViewExt-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A687DE0E5B1E1EA2E878CE84B05A244 /* GKNavigationBarSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EE4A32FC70F80EC8617CF15678429 /* GKNavigationBarSwift-dummy.m */; };
 		3AD3BE671BD40FE62762F7D9E49E6CE9 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F694E768508D43D3CCBBCCB06F6DDD82 /* ConstraintDescription.swift */; };
 		3DA7F2036E043FF51EE42486C64A9F57 /* JXSegmentedBaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140FCF680E63863D9C6432DF665822E /* JXSegmentedBaseDataSource.swift */; };
 		4191804D5A370C0748EFDDC35A30E2E9 /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		441B24D9189D26152CC0DA97B741E833 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDDA4EC7B7107D6DFB2119DC347E748 /* ConstraintLayoutSupport.swift */; };
 		4547C9DF97C334A65FB6D7D9815ED009 /* TZPhotoPreviewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 321ADB690C1C78FFDF021E91471DD62E /* TZPhotoPreviewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45940CC7CB8561893AE9F47E2EFDE986 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF5C41597C21A950823A4F2F74E0E9B /* ConstraintInsets.swift */; };
+		464CE6603700A4146CC9203547248918 /* UIViewController+GKGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DF56C1E348A88B9B97C86108920E5 /* UIViewController+GKGesture.swift */; };
 		468C7838D0806615EB279CFE359B9E7C /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E04042520AFF4AB87BA11DA5ACE72 /* ConstraintMaker.swift */; };
 		46914E49E8B39F271CD11F5FB30FD166 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFBFBDD181FF90FA19CC3EEA7D777C /* ConstraintLayoutGuideDSL.swift */; };
 		4783B1DF3D35A8BEE4C843827491E4A2 /* TZVideoEditedPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02853682547F3632D5BBA5BA6DE48C69 /* TZVideoEditedPreviewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4C883954DDB93FEB5AD2FDFCDFBF413C /* UINavigationItem+GKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5E968CB013786C81F661140351E35 /* UINavigationItem+GKExtension.swift */; };
 		5249AFD7B0046BF72621CA25E7FAF8DF /* TZImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = FEC60264F1727927C891DADE99EA2CFD /* TZImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		525E445D6A1EF6B67EF4D0455FC5AAFA /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6062BDC6B2D904637ADB9C7165915DA1 /* Debugging.swift */; };
-		54A30A9E4347B108DB534CFF714E3E55 /* GKNavigationBarSwift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46D1ECEC33F45C84AC6A3DBE27758C4F /* GKNavigationBarSwift.bundle */; };
 		59897FB33CF64C9CAB4C4D1247E544BB /* TZVideoCropController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4F721EAF17BEAACEA5463BBD3BD510 /* TZVideoCropController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		59942A273C6B960D0F4A4AD3EADC7F66 /* JXSegmentedTitleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5727E6F99FF4D25F9AFAE22FF7876BE3 /* JXSegmentedTitleItemModel.swift */; };
 		5DB1FF84889AC83568060F0FD9738FD0 /* JXSegmentedTitleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14561550A8115FA39F8AE68CF758BC36 /* JXSegmentedTitleDataSource.swift */; };
 		646B67B0107D573DD5D643855CC4B87F /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07646B97EACE5D69E2022A49C6BBDBDD /* TZAssetCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		659249183F0F97FD9D9FF24021067244 /* TZVideoCropController.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F0CDDE7A159580CEE8EAD7DF9A3496 /* TZVideoCropController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		662C76B3C09F5651BBC516FB2475211A /* GKNavigationInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDACAF55F90D1E82041F090D4E7C3354 /* GKNavigationInteractiveTransition.swift */; };
 		6745DB6230CD1C85BF8EFCCB781552C1 /* JXSegmentedViewExt-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8E6CFA3BB1EE07D0CA66CA6374E15 /* JXSegmentedViewExt-dummy.m */; };
+		68968ADE0F6A62712D9BCA50A77ADEA0 /* UIBarButtonItem+GKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66875F9E0F1E1BEEFD53B058E75029F5 /* UIBarButtonItem+GKExtension.swift */; };
+		6C1924EFB1B6E5C9EC29D455DD4B2A5E /* GKPopAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870F606A1A154FD59B8C1472BED3AB1 /* GKPopAnimatedTransition.swift */; };
+		6DEBAE7A361C236C71500B5C21178D15 /* GKNavigationBarSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8719B33C4DE8E7DEFE4C0A44AA96FD /* GKNavigationBarSwift.swift */; };
 		6F9166A36F9B95936D9EF251698D9D65 /* TZLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D34BD5BED4872CAE8C1D487A07C3B38 /* TZLocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FCEC1D82466A0640C067970C142D6FC /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5BA1C59052E4375324EE0E9E228A15 /* ConstraintMakerFinalizable.swift */; };
 		6FDF2EF49D1F5CCE5A84C6E4B8FF0B93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7D3A1DC66305E0DFF78E6A3046A809 /* Foundation.framework */; };
@@ -60,44 +66,40 @@
 		7CFE8C5EF5C3EAB15FF1C4B24052875F /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6912359C5A01438DE7E2AEE4781E199F /* ConstraintOffsetTarget.swift */; };
 		7DD7B1F16A0835E47886ADF2E58D2D1E /* TZImagePickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8E0E0CB7A3910C5DF65417516E92D /* TZImagePickerController-dummy.m */; };
 		8245ADE4821F7DA44FAC7C363AD47104 /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB144828485829AC48ECE026EED6BE5E /* TZAssetModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8424FE0A10B84E92566083F40BF4DDA1 /* GKBaseAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FF622EAB7430C8A0AEC0CC6FA2F70 /* GKBaseAnimatedTransition.swift */; };
 		84A4A536139EBAD6518A98FFB34E04CC /* TZVideoPlayerController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA1060128E27C0A4B6DAF7F08C822183 /* TZVideoPlayerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84BBED65BCCD0E0F04A1E13680389487 /* TZGifPhotoPreviewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E23C76B3A3221D0E7C5DF6C0D4EC3AD /* TZGifPhotoPreviewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88D4FBD570C169F27D019B3191B6D3EC /* GKPushAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904C28B00F273078E6920815BA8F0A3 /* GKPushAnimatedTransition.swift */; };
 		8E4642DE4DB304FB66028A899A378F66 /* TZVideoEditedPreviewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 90DFCDA3FE70C97CA2EF6FE9C49B5D40 /* TZVideoEditedPreviewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F488574ECEADDC9413AE8903A76AFDA /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C878161733DDCB7281546026E9628 /* ConstraintLayoutGuide+Extensions.swift */; };
 		90E6C628EB7DE441600D1407083419A5 /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4D8E3F3B94FF275291E659AA36453B /* TZImageManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		921B54733B777C785FEDDF54AC6FCCC5 /* UIScrollView+GKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B121898D447AD5701B85FEAC6EB55F35 /* UIScrollView+GKExtension.swift */; };
 		93F78075420F687639ED37B793BAC9CD /* JXSegmentedListContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7463F9AB0FC62A7738BE0AD799E3B /* JXSegmentedListContainerView.swift */; };
-		9450FB438DE0A36B64FD45044C7649E0 /* UINavigationController+GKGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98371AB7313FD47564A47FFF14C11320 /* UINavigationController+GKGesture.swift */; };
 		94FE297EF5474933073D62936D9A7224 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25720F3B015A4A2C3F7D378E8AEA53BF /* ConstraintPriority.swift */; };
 		9825456B68AAF3CD9F1137377D738A9D /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A8DA76419106B5B5823CA23B9A1198 /* Constraint.swift */; };
 		98E649786D2BD2E7EDB7E4087BA00D6F /* JXSegmentedIndicatorBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1339C4E2332B6261B85DBECDC5113D4 /* JXSegmentedIndicatorBaseView.swift */; };
+		99082A5EB0C5683DCB37C60A01BBCBFB /* UIImage+GKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22DD5A35FFDAEE0BF43B053018BFAA2 /* UIImage+GKExtension.swift */; };
 		99BA19092DA09C3A52F275A0B367EC04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7D3A1DC66305E0DFF78E6A3046A809 /* Foundation.framework */; };
 		9AD08B51D408D58639348CC577DD988B /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A0B5E57C09BD82F6817976E29E1D78 /* ConstraintView+Extensions.swift */; };
-		9B98F3E95D0B060F94795EA1AB4E07E4 /* UINavigationController+GKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAFA78CB4B8541148E16F179420B1D3 /* UINavigationController+GKExtension.swift */; };
 		9C0A3ED1F524AA4C4147169AD20D9078 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0A1B877DB7B959E4ACC0165FA2F0BF /* Typealiases.swift */; };
 		9CA292C1D5E11F7C619AC849E7EA129B /* JXSegmentedViewTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911FBD5AFC4B3CB456394B01393F2F54 /* JXSegmentedViewTool.swift */; };
 		9DD4C0F03B9DC78C8640E4BDAA776485 /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C20D3A328509CDEF26151BA1A6F87 /* TZGifPhotoPreviewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		9E37B4239FE9864936AE9DA0A959AE6F /* UIBarButtonItem+GKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C1D1F1226533CB8A47CC847FD3863 /* UIBarButtonItem+GKExtension.swift */; };
-		A4665F5DDA7BE50B14F13F3A9955E172 /* GKNavigationBarSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC131CFA46FE3FC14B3BBF55FC24B228 /* GKNavigationBarSwift-dummy.m */; };
+		A0DCE6922823CDA5727F0879704A3A65 /* GKBaseAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5331295BCD069A01A28736A2C2E776 /* GKBaseAnimatedTransition.swift */; };
 		A5ABF96C97F9AF97F974FB9821B70945 /* TZAssetModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F544DFB5E67E3784DC2FC6C9059B2012 /* TZAssetModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A65A34E9107E30296823445F5A1805DF /* GKPopAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA48A2ACD5D4E8215A388CDDC675C8 /* GKPopAnimatedTransition.swift */; };
 		A8D62FB2DCD20114129953F7A01F74B4 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9768A51F6F84B84C6B01D6C247B1EE /* ConstraintLayoutSupportDSL.swift */; };
-		AA81E3A3FBFC484CCD04FC209B21F74F /* GKNavigationBarDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798E17369BF269253DF3AD460C04F13E /* GKNavigationBarDefine.swift */; };
 		AAB090AD1FD1728FC84792F0AACDEE75 /* NSBundle+TZImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C75A4FF062FF777BDF0C29DCA972226 /* NSBundle+TZImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0058763899D7A236DE33E6E54CE54D3 /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CE1CA93D5C7EA96D220E343EE77208 /* TZImagePickerController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		B12C95D41E832CE5C6540A13D8C40FB4 /* GKNavigationBarConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3AF24F85F57F22276414F9F11CBAA1 /* GKNavigationBarConfigure.swift */; };
 		B1509FCA4372F57D9C26725DEBAAFAF4 /* JXSegmentedBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5589EDEEDA26064FA101C1E2E0A985C2 /* JXSegmentedBaseCell.swift */; };
 		B197B2B88A4E00F5611E5C3B0BC0EC52 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B72EADB07FD1F281ABACFD7B21F5B6 /* ConstraintItem.swift */; };
 		B1FEAE05B9719F946E0C8C5D200A5946 /* TZPhotoPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = B8C64F23DE428E35E616B03D41D087B6 /* TZPhotoPickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B223C71D626CA287B6C9642150D8731A /* UINavigationItem+GKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB72DA5DC937CFF7FA2A5600646CE6 /* UINavigationItem+GKExtension.swift */; };
 		B3D0611AA8C8396216B7647FE6F7A939 /* TZImageCropManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CC21CD5B023C12C51E42E6218CAE5F8 /* TZImageCropManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B40EAC72315BCA791B252B2677387FEB /* GKNavigationBarSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5290D78678F4A8FEDF4B4242DCA7DF73 /* GKNavigationBarSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6600A7FA07908F5CBC4E5D90331AA53 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ABFF437449A909B3DC88A9B85C8AB3 /* ConstraintRelation.swift */; };
+		B6A026870D13874FD5E80827A05192EB /* UIViewController+GKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED9D5C4D38C02FE79832C3B3098413F /* UIViewController+GKExtension.swift */; };
 		B6EFA04BB20C00FBAB47C8A465789579 /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C778F645026900A555B819654BE844B3 /* NSBundle+TZImagePicker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BAFA6BCAE25EA854C43BF22B965E30B8 /* UINavigationController+GKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D052EB5C05A904F4F4D1FD5D0775B7B9 /* UINavigationController+GKExtension.swift */; };
 		BBF7B32FB70AEDE982CDA068ED3578BA /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE0C27679431F40410D112C33C65E3B5 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC765FCACC828CF87EE7AD5A682757D5 /* GKNavigationBarSwift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 802BB1D0E5E229A80615CF1102DE836F /* GKNavigationBarSwift.bundle */; };
 		C121586285E888BA84F3C0A92337FFE5 /* TZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C745F05B818DABB1B9213C26B534680 /* TZLocationManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C6FB2AC98163383A5DE03A82D2EB50CB /* UIViewController+GKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2A7F73A5A869B3B832AC6E1B706616 /* UIViewController+GKExtension.swift */; };
+		C3E0E5D57DD39A8D50D2F9B12CBE5B15 /* GKNavigationBarDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0B018B85939F4446DF32C07AE0688A /* GKNavigationBarDefine.swift */; };
+		C7FC685D0F4DADADBCD1C2483519A00E /* UINavigationController+GKGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A895EDA3870EDD433D1865C3FC2AC5 /* UINavigationController+GKGesture.swift */; };
 		C8C3A545A6E9E868EF124D8637A0F7EA /* JXSegmentedAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D33F46A7F1C5713E00E261C8F0B1F /* JXSegmentedAnimator.swift */; };
 		CA842066278CE847041400F76F0B41E9 /* TZPhotoPreviewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 48FFF27F6EED57A6779DA50C38DE47C8 /* TZPhotoPreviewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA8FA5F0A87F60DD13DD4D2A1821E56E /* JXSegmentedTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B62795EF30659B6242EBF903440EE /* JXSegmentedTitleCell.swift */; };
@@ -109,14 +111,13 @@
 		DB620214101AACB74605B54EEB3313A4 /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8773A96529A918F870671EE8C183389 /* TZVideoPlayerController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DC4424F1C3EDE2DFD10159ED87048E99 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1585038E57270BBB0C8A8289C493C1 /* ConstraintDSL.swift */; };
 		DF492F9374F6983205ED60DA218FD4F2 /* JXSegmentedIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216B865751142BC7B9A9A61759E0350B /* JXSegmentedIndicatorProtocol.swift */; };
-		E92F0A95A08D22FDBEDB7D3736A437CF /* GKNavigationInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536C507DB67658625F029AA1C46448E /* GKNavigationInteractiveTransition.swift */; };
-		E9DFAF5BDA748688CB14E2395210F481 /* UIImage+GKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B697D307CC8531A232DC34334A85350 /* UIImage+GKExtension.swift */; };
+		E66A9C077FBFAB80284DCA9855991227 /* Bundle+GKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB3AC4A0C5CCEBE13764461F397F43D /* Bundle+GKExtension.swift */; };
 		F06DEE04C3F69189E10763F512F042AF /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FA2DEA2747B75A2A410D4EE41831DE /* TZImageCropManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F073EB03B558B79D89A536130C6FFBF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7D3A1DC66305E0DFF78E6A3046A809 /* Foundation.framework */; };
 		F10BCCE529E8FF2F1B163826E38179A6 /* TZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCAF4C68774E0F7613ED078AA0C965E /* TZProgressView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F135E0849C384E373872C7405509D43C /* TZPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BBED23213134E16230A476C2BD4A9E /* TZPhotoPreviewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F2F56D8FF5E623FBA4FDB901BDB6ECDB /* GKPushAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9F79154D98E3A65838821B39FC84D7 /* GKPushAnimatedTransition.swift */; };
+		F5122C31CD7A7D5AAD09B4E5D1AF7F97 /* UIScrollView+GKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB522A2DF2600BE8D14EF94D4CF456B /* UIScrollView+GKExtension.swift */; };
 		F54F8C250560F240CA0B894703628449 /* UIView+TZLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A654FA5DFF2BF3A034574DBB025958 /* UIView+TZLayout.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F58AAAC3637E48B3F71D3EDD41FBC5F7 /* UIViewController+GKGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A7440323CC1A4BE4D0767A1B23468 /* UIViewController+GKGesture.swift */; };
 		F64213220213FD9F6AEB344C7541869A /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421234FBED961F023CC67F12C4143D2A /* ConstraintMakerPriortizable.swift */; };
 		F74B5978371D6E071955B81535B7BFEE /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BD803DCD015EA00DADB61E3021A9F /* ConstraintPriorityTarget.swift */; };
 		F7ADF88139C23B1186F5784FA590E92C /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CEB3BCC69AD7D28B414780DE7306B /* ConstraintAttributes.swift */; };
@@ -127,33 +128,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		184F67AEC275F75236B65E69BE1FD22D /* PBXContainerItemProxy */ = {
+		192A2FDD73D65DAB815431A58F028EF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A96BBB982D62BB807B5BD10774BE2D07;
-			remoteInfo = TZImagePickerController;
+			remoteGlobalIDString = 022392C231A8BD1A2CE9BD6FB8E8ADA6;
+			remoteInfo = JXSegmentedViewExt;
 		};
-		9776600619D90127971ED3C153C04385 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
-			remoteInfo = SnapKit;
-		};
-		9B0897736914540CCF542A2D2CEFD86D /* PBXContainerItemProxy */ = {
+		6EF65C04B9BE085E255BC33E6E50F73E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4C27A49A311B0BA0FC773E1CE87E4251;
 			remoteInfo = GKNavigationBarSwift;
 		};
-		EC94EB4F6DED50D6C886ABCEE13EDEC3 /* PBXContainerItemProxy */ = {
+		8A0FAC821C07DFBC45180AAFAC59F6FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 022392C231A8BD1A2CE9BD6FB8E8ADA6;
-			remoteInfo = JXSegmentedViewExt;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		F9A7AA6C9AFFEF60994C3FC8101D0F42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A96BBB982D62BB807B5BD10774BE2D07;
+			remoteInfo = TZImagePickerController;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -162,9 +163,11 @@
 		02853682547F3632D5BBA5BA6DE48C69 /* TZVideoEditedPreviewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZVideoEditedPreviewController.m; path = TZImagePickerController/TZImagePickerController/TZVideoEditedPreviewController.m; sourceTree = "<group>"; };
 		06ABFF437449A909B3DC88A9B85C8AB3 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
 		07646B97EACE5D69E2022A49C6BBDBDD /* TZAssetCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZAssetCell.m; path = TZImagePickerController/TZImagePickerController/TZAssetCell.m; sourceTree = "<group>"; };
+		0A495D280C64B7BD9A5DA87ED7BB7ADF /* GKNavigationBarSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GKNavigationBarSwift.modulemap; sourceTree = "<group>"; };
+		0AB3AC4A0C5CCEBE13764461F397F43D /* Bundle+GKExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+GKExtension.swift"; path = "Sources/Bundle+GKExtension.swift"; sourceTree = "<group>"; };
 		0AE8E6CFA3BB1EE07D0CA66CA6374E15 /* JXSegmentedViewExt-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXSegmentedViewExt-dummy.m"; sourceTree = "<group>"; };
-		0D3ED16E95DC1EDDCC6E2721958757F2 /* GKNavigationBarSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GKNavigationBarSwift.modulemap; sourceTree = "<group>"; };
 		11AE793856EF7A311DF94E59A54AA725 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		12598CB347D5AA44F5910BEB5C73D3CE /* GKNavigationBarSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GKNavigationBarSwift.release.xcconfig; sourceTree = "<group>"; };
 		14561550A8115FA39F8AE68CF758BC36 /* JXSegmentedTitleDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXSegmentedTitleDataSource.swift; path = JXSegmentedView/Title/JXSegmentedTitleDataSource.swift; sourceTree = "<group>"; };
 		179D710DC0980400C664D5F611EBB2E5 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
 		17BBED23213134E16230A476C2BD4A9E /* TZPhotoPreviewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZPhotoPreviewController.m; path = TZImagePickerController/TZImagePickerController/TZPhotoPreviewController.m; sourceTree = "<group>"; };
@@ -179,9 +182,11 @@
 		2803D9BA5C1530FD32A51725C849F02C /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		283354091879BB5A14217671C9186D27 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
 		29C211CF4D401B5AE41706477D9EBCD9 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		2B8719B33C4DE8E7DEFE4C0A44AA96FD /* GKNavigationBarSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GKNavigationBarSwift.swift; path = Sources/GKNavigationBarSwift.swift; sourceTree = "<group>"; };
 		313D85D5059E71C9C55F320C41A3D967 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		314B1CEA8A8624E5488618920274B508 /* TZImageRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZImageRequestOperation.h; path = TZImagePickerController/TZImagePickerController/TZImageRequestOperation.h; sourceTree = "<group>"; };
 		31C1D37707DFAA5E6A164BCC07834264 /* Pods-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-Info.plist"; sourceTree = "<group>"; };
+		31CCF95E80F7C65356246AC3BB407862 /* GKNavigationBarSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GKNavigationBarSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		321ADB690C1C78FFDF021E91471DD62E /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZPhotoPreviewController.h; path = TZImagePickerController/TZImagePickerController/TZPhotoPreviewController.h; sourceTree = "<group>"; };
 		3289511AE222291018671C08F8A96710 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
 		329E04042520AFF4AB87BA11DA5ACE72 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
@@ -189,60 +194,52 @@
 		35C305D3797C284E6F5BAA1D3E6F9BF8 /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
 		36B8E1D02D7D4693931E38697120145F /* TZImagePickerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TZImagePickerController.release.xcconfig; sourceTree = "<group>"; };
 		36FA2DEA2747B75A2A410D4EE41831DE /* TZImageCropManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZImageCropManager.m; path = TZImagePickerController/TZImagePickerController/TZImageCropManager.m; sourceTree = "<group>"; };
-		3904C28B00F273078E6920815BA8F0A3 /* GKPushAnimatedTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GKPushAnimatedTransition.swift; path = Sources/GKPushAnimatedTransition.swift; sourceTree = "<group>"; };
-		3C2A7440323CC1A4BE4D0767A1B23468 /* UIViewController+GKGesture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+GKGesture.swift"; path = "Sources/UIViewController+GKGesture.swift"; sourceTree = "<group>"; };
 		3CCAF4C68774E0F7613ED078AA0C965E /* TZProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZProgressView.m; path = TZImagePickerController/TZImagePickerController/TZProgressView.m; sourceTree = "<group>"; };
-		3FA039D11604CD05FFC7CD4165CE9AC7 /* GKNavigationBarSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GKNavigationBarSwift.release.xcconfig; sourceTree = "<group>"; };
 		421234FBED961F023CC67F12C4143D2A /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
 		441854E35F81731E63E53DC7E4EEAD9D /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		46A0B5E57C09BD82F6817976E29E1D78 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
-		46D1ECEC33F45C84AC6A3DBE27758C4F /* GKNavigationBarSwift.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GKNavigationBarSwift.bundle; path = Sources/GKNavigationBarSwift.bundle; sourceTree = "<group>"; };
 		47A654FA5DFF2BF3A034574DBB025958 /* UIView+TZLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TZLayout.m"; path = "TZImagePickerController/TZImagePickerController/UIView+TZLayout.m"; sourceTree = "<group>"; };
 		48FFF27F6EED57A6779DA50C38DE47C8 /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZPhotoPreviewCell.h; path = TZImagePickerController/TZImagePickerController/TZPhotoPreviewCell.h; sourceTree = "<group>"; };
-		4938093F676E7B7AB69C1252853860D1 /* GKNavigationBarSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKNavigationBarSwift-prefix.pch"; sourceTree = "<group>"; };
 		4A0DDEA58EBA27B5C5AA692451FFE830 /* JXSegmentedIndicatorLineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXSegmentedIndicatorLineView.swift; path = JXSegmentedView/Indicator/Line/JXSegmentedIndicatorLineView.swift; sourceTree = "<group>"; };
+		4BF5E968CB013786C81F661140351E35 /* UINavigationItem+GKExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationItem+GKExtension.swift"; path = "Sources/UINavigationItem+GKExtension.swift"; sourceTree = "<group>"; };
 		4CC21CD5B023C12C51E42E6218CAE5F8 /* TZImageCropManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZImageCropManager.h; path = TZImagePickerController/TZImagePickerController/TZImageCropManager.h; sourceTree = "<group>"; };
 		4DF5C41597C21A950823A4F2F74E0E9B /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		4E0B018B85939F4446DF32C07AE0688A /* GKNavigationBarDefine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GKNavigationBarDefine.swift; path = Sources/GKNavigationBarDefine.swift; sourceTree = "<group>"; };
+		4E0EE4A32FC70F80EC8617CF15678429 /* GKNavigationBarSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GKNavigationBarSwift-dummy.m"; sourceTree = "<group>"; };
 		4EC27B2694FEB56E1BAEC9216875A0DD /* TZPhotoPickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZPhotoPickerController.m; path = TZImagePickerController/TZImagePickerController/TZPhotoPickerController.m; sourceTree = "<group>"; };
-		504CB9A724F8954368ACE2FD6D2AF43D /* GKNavigationBarSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GKNavigationBarSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5290D78678F4A8FEDF4B4242DCA7DF73 /* GKNavigationBarSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKNavigationBarSwift-umbrella.h"; sourceTree = "<group>"; };
 		5589EDEEDA26064FA101C1E2E0A985C2 /* JXSegmentedBaseCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXSegmentedBaseCell.swift; path = JXSegmentedView/Core/Base/JXSegmentedBaseCell.swift; sourceTree = "<group>"; };
 		55CF3EE348FA03DE9261DD120BF0A049 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
 		5681A6B031AE8D1D16DC25EE2BF017BC /* TZAssetCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZAssetCell.h; path = TZImagePickerController/TZImagePickerController/TZAssetCell.h; sourceTree = "<group>"; };
 		5727E6F99FF4D25F9AFAE22FF7876BE3 /* JXSegmentedTitleItemModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXSegmentedTitleItemModel.swift; path = JXSegmentedView/Title/JXSegmentedTitleItemModel.swift; sourceTree = "<group>"; };
-		5B3AF24F85F57F22276414F9F11CBAA1 /* GKNavigationBarConfigure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GKNavigationBarConfigure.swift; path = Sources/GKNavigationBarConfigure.swift; sourceTree = "<group>"; };
+		588DF56C1E348A88B9B97C86108920E5 /* UIViewController+GKGesture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+GKGesture.swift"; path = "Sources/UIViewController+GKGesture.swift"; sourceTree = "<group>"; };
 		5B5D33F46A7F1C5713E00E261C8F0B1F /* JXSegmentedAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXSegmentedAnimator.swift; path = JXSegmentedView/Core/Common/JXSegmentedAnimator.swift; sourceTree = "<group>"; };
 		5FDDA4EC7B7107D6DFB2119DC347E748 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		5FE16525DC52B4F5EE14E7386C0C1543 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		6062BDC6B2D904637ADB9C7165915DA1 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
 		63F1348EB30C3CA04EADBEF9FFA4CEEA /* GKNavigationBarSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GKNavigationBarSwift; path = GKNavigationBarSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66875F9E0F1E1BEEFD53B058E75029F5 /* UIBarButtonItem+GKExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem+GKExtension.swift"; path = "Sources/UIBarButtonItem+GKExtension.swift"; sourceTree = "<group>"; };
 		67A3D20A72E33C0E3D7638ECE73A287D /* TZImagePickerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TZImagePickerController.debug.xcconfig; sourceTree = "<group>"; };
 		6912359C5A01438DE7E2AEE4781E199F /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		6D5BA1C59052E4375324EE0E9E228A15 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 		6E4ED52A2ADC8EFA757F7222AB198A10 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
 		6F212B87B0A953EACFC3262708A3CD45 /* JXSegmentedViewExt.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JXSegmentedViewExt.modulemap; sourceTree = "<group>"; };
 		70FC030F527C3DC1CC65805EA5D2CBAB /* JXSegmentedViewExt-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JXSegmentedViewExt-Info.plist"; sourceTree = "<group>"; };
-		7536C507DB67658625F029AA1C46448E /* GKNavigationInteractiveTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GKNavigationInteractiveTransition.swift; path = Sources/GKNavigationInteractiveTransition.swift; sourceTree = "<group>"; };
 		77A8E0E0CB7A3910C5DF65417516E92D /* TZImagePickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TZImagePickerController-dummy.m"; sourceTree = "<group>"; };
-		77AFD572069E2012A8F18EFD84C03735 /* GKNavigationBarSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GKNavigationBarSwift-Info.plist"; sourceTree = "<group>"; };
 		77EFE9C82A75AB91871B095046AC4063 /* TZImageRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZImageRequestOperation.m; path = TZImagePickerController/TZImagePickerController/TZImageRequestOperation.m; sourceTree = "<group>"; };
 		7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
 		78B72EADB07FD1F281ABACFD7B21F5B6 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
-		798E17369BF269253DF3AD460C04F13E /* GKNavigationBarDefine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GKNavigationBarDefine.swift; path = Sources/GKNavigationBarDefine.swift; sourceTree = "<group>"; };
 		7A4A63A7D3C6FC8307F4E64B0C03BD13 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
-		7B697D307CC8531A232DC34334A85350 /* UIImage+GKExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+GKExtension.swift"; path = "Sources/UIImage+GKExtension.swift"; sourceTree = "<group>"; };
-		7B95C0719BA020A54465A36ED4F4D3E5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		7D34BD5BED4872CAE8C1D487A07C3B38 /* TZLocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZLocationManager.h; path = TZImagePickerController/TZImagePickerController/TZLocationManager.h; sourceTree = "<group>"; };
 		7E23C76B3A3221D0E7C5DF6C0D4EC3AD /* TZGifPhotoPreviewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZGifPhotoPreviewController.h; path = TZImagePickerController/TZImagePickerController/TZGifPhotoPreviewController.h; sourceTree = "<group>"; };
+		802BB1D0E5E229A80615CF1102DE836F /* GKNavigationBarSwift.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GKNavigationBarSwift.bundle; path = Sources/GKNavigationBarSwift.bundle; sourceTree = "<group>"; };
 		81449B0349EEF30ED5EB8A12CC5972C9 /* JXSegmentedViewExt-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXSegmentedViewExt-prefix.pch"; sourceTree = "<group>"; };
 		81E41772973F69D6B4D2098EE5816B2B /* JXSegmentedBaseItemModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXSegmentedBaseItemModel.swift; path = JXSegmentedView/Core/Base/JXSegmentedBaseItemModel.swift; sourceTree = "<group>"; };
-		8397EE905253A34A1E73835105458826 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		871965BD10CECF271298BFC72526A691 /* JXSegmentedViewExt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXSegmentedViewExt.debug.xcconfig; sourceTree = "<group>"; };
 		879F94DC2BF4192B206D797E5A30F831 /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
 		88C200A6599B3890E17E1B641FD9722F /* TZImagePickerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TZImagePickerController.modulemap; sourceTree = "<group>"; };
 		891D21E72F061019B74322850A81BBA8 /* JXSegmentedIndicatorParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXSegmentedIndicatorParams.swift; path = JXSegmentedView/Core/Indicator/JXSegmentedIndicatorParams.swift; sourceTree = "<group>"; };
-		8AF98AA15CF3B57A6FDF29489538DAD5 /* GKNavigationBarSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GKNavigationBarSwift.swift; path = Sources/GKNavigationBarSwift.swift; sourceTree = "<group>"; };
 		8B3CEB3BCC69AD7D28B414780DE7306B /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
-		8CBB72DA5DC937CFF7FA2A5600646CE6 /* UINavigationItem+GKExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationItem+GKExtension.swift"; path = "Sources/UINavigationItem+GKExtension.swift"; sourceTree = "<group>"; };
 		8CE7463F9AB0FC62A7738BE0AD799E3B /* JXSegmentedListContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXSegmentedListContainerView.swift; path = JXSegmentedView/Core/Common/JXSegmentedListContainerView.swift; sourceTree = "<group>"; };
 		8E1D5C0FCA0D872C3F21E87F25420681 /* TZImagePickerController */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TZImagePickerController; path = TZImagePickerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FEA73E1C0DB75848A4E5720B6930156 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
@@ -252,13 +249,12 @@
 		94F5BBDA1B43CE57018528DB83F2ECD9 /* JXSegmentedCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXSegmentedCollectionView.swift; path = JXSegmentedView/Core/Base/JXSegmentedCollectionView.swift; sourceTree = "<group>"; };
 		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		980125724D2062A8161C5CDB9B0C2D17 /* JXSegmentedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXSegmentedView.swift; path = JXSegmentedView/Core/Base/JXSegmentedView.swift; sourceTree = "<group>"; };
-		98371AB7313FD47564A47FFF14C11320 /* UINavigationController+GKGesture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationController+GKGesture.swift"; path = "Sources/UINavigationController+GKGesture.swift"; sourceTree = "<group>"; };
 		99CB5CE90965D35D67D84E585F183B97 /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		9A9F79154D98E3A65838821B39FC84D7 /* GKPushAnimatedTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GKPushAnimatedTransition.swift; path = Sources/GKPushAnimatedTransition.swift; sourceTree = "<group>"; };
 		9B0A1B877DB7B959E4ACC0165FA2F0BF /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
 		9B55B8451FB7C7CDCB3D9F2962BC24AD /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E8C20D3A328509CDEF26151BA1A6F87 /* TZGifPhotoPreviewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZGifPhotoPreviewController.m; path = TZImagePickerController/TZImagePickerController/TZGifPhotoPreviewController.m; sourceTree = "<group>"; };
-		9F4C1D1F1226533CB8A47CC847FD3863 /* UIBarButtonItem+GKExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem+GKExtension.swift"; path = "Sources/UIBarButtonItem+GKExtension.swift"; sourceTree = "<group>"; };
 		A6A2DC420B750A1CDBAA02DABF43E42F /* TZImagePickerController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TZImagePickerController-Info.plist"; sourceTree = "<group>"; };
 		A7F0CDDE7A159580CEE8EAD7DF9A3496 /* TZVideoCropController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZVideoCropController.h; path = TZImagePickerController/TZImagePickerController/TZVideoCropController.h; sourceTree = "<group>"; };
 		AA1060128E27C0A4B6DAF7F08C822183 /* TZVideoPlayerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZVideoPlayerController.h; path = TZImagePickerController/TZImagePickerController/TZVideoPlayerController.h; sourceTree = "<group>"; };
@@ -266,36 +262,42 @@
 		AC5BD803DCD015EA00DADB61E3021A9F /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
 		ACE0F2F63F86B09D0E686984F6CEB889 /* JXSegmentedRTLLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXSegmentedRTLLayout.swift; path = JXSegmentedView/Core/Common/JXSegmentedRTLLayout.swift; sourceTree = "<group>"; };
 		AE0C27679431F40410D112C33C65E3B5 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
-		AFAFA78CB4B8541148E16F179420B1D3 /* UINavigationController+GKExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationController+GKExtension.swift"; path = "Sources/UINavigationController+GKExtension.swift"; sourceTree = "<group>"; };
 		AFECBC24E09D0D25F822C27BD944AFD4 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
-		B121898D447AD5701B85FEAC6EB55F35 /* UIScrollView+GKExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+GKExtension.swift"; path = "Sources/UIScrollView+GKExtension.swift"; sourceTree = "<group>"; };
 		B40C878161733DDCB7281546026E9628 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
 		B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B4A895EDA3870EDD433D1865C3FC2AC5 /* UINavigationController+GKGesture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationController+GKGesture.swift"; path = "Sources/UINavigationController+GKGesture.swift"; sourceTree = "<group>"; };
 		B63B62795EF30659B6242EBF903440EE /* JXSegmentedTitleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXSegmentedTitleCell.swift; path = JXSegmentedView/Title/JXSegmentedTitleCell.swift; sourceTree = "<group>"; };
+		B6A1B08246273B125B916591891B47FD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		B8C64F23DE428E35E616B03D41D087B6 /* TZPhotoPickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZPhotoPickerController.h; path = TZImagePickerController/TZImagePickerController/TZPhotoPickerController.h; sourceTree = "<group>"; };
 		BB38E5304A18D2C5B87398CE3CE93976 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
 		BC4F721EAF17BEAACEA5463BBD3BD510 /* TZVideoCropController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZVideoCropController.m; path = TZImagePickerController/TZImagePickerController/TZVideoCropController.m; sourceTree = "<group>"; };
 		BD4BF1EF5138BDB3539F460A8B7CD830 /* JXSegmentedViewExt-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXSegmentedViewExt-umbrella.h"; sourceTree = "<group>"; };
-		C4B49D44A398A3D4A10FBAEE68746182 /* GKNavigationBarSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GKNavigationBarSwift.debug.xcconfig; sourceTree = "<group>"; };
+		BDACAF55F90D1E82041F090D4E7C3354 /* GKNavigationInteractiveTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GKNavigationInteractiveTransition.swift; path = Sources/GKNavigationInteractiveTransition.swift; sourceTree = "<group>"; };
+		BEEAC56A80588C29EB0C2AB5EFA194B7 /* GKNavigationBarSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKNavigationBarSwift-prefix.pch"; sourceTree = "<group>"; };
+		BFB522A2DF2600BE8D14EF94D4CF456B /* UIScrollView+GKExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+GKExtension.swift"; path = "Sources/UIScrollView+GKExtension.swift"; sourceTree = "<group>"; };
 		C778F645026900A555B819654BE844B3 /* NSBundle+TZImagePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+TZImagePicker.m"; path = "TZImagePickerController/TZImagePickerController/NSBundle+TZImagePicker.m"; sourceTree = "<group>"; };
 		CF17A8EF2D5C6FACE168D35AC43BAF94 /* UIView+TZLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TZLayout.h"; path = "TZImagePickerController/TZImagePickerController/UIView+TZLayout.h"; sourceTree = "<group>"; };
 		D04700E51694785DB4A2A2D8CA9031D9 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		D052EB5C05A904F4F4D1FD5D0775B7B9 /* UINavigationController+GKExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationController+GKExtension.swift"; path = "Sources/UINavigationController+GKExtension.swift"; sourceTree = "<group>"; };
 		D140FCF680E63863D9C6432DF665822E /* JXSegmentedBaseDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXSegmentedBaseDataSource.swift; path = JXSegmentedView/Core/Base/JXSegmentedBaseDataSource.swift; sourceTree = "<group>"; };
-		D65FF622EAB7430C8A0AEC0CC6FA2F70 /* GKBaseAnimatedTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GKBaseAnimatedTransition.swift; path = Sources/GKBaseAnimatedTransition.swift; sourceTree = "<group>"; };
+		D22DD5A35FFDAEE0BF43B053018BFAA2 /* UIImage+GKExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+GKExtension.swift"; path = "Sources/UIImage+GKExtension.swift"; sourceTree = "<group>"; };
 		D6AFED6673F5EE576A71304A364B082D /* TZImagePickerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TZImagePickerController-umbrella.h"; sourceTree = "<group>"; };
 		D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
 		D7A8DA76419106B5B5823CA23B9A1198 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		D870F606A1A154FD59B8C1472BED3AB1 /* GKPopAnimatedTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GKPopAnimatedTransition.swift; path = Sources/GKPopAnimatedTransition.swift; sourceTree = "<group>"; };
+		DA5331295BCD069A01A28736A2C2E776 /* GKBaseAnimatedTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GKBaseAnimatedTransition.swift; path = Sources/GKBaseAnimatedTransition.swift; sourceTree = "<group>"; };
 		DB9768A51F6F84B84C6B01D6C247B1EE /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
 		DD4261C9474497FC58EA8CE56ABE5734 /* TZImagePickerController.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TZImagePickerController.bundle; path = TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle; sourceTree = "<group>"; };
 		DECFBFBDD181FF90FA19CC3EEA7D777C /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		E068A1EEC354F3DCE51B06060CCBA470 /* GKNavigationBarSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GKNavigationBarSwift.debug.xcconfig; sourceTree = "<group>"; };
+		E1081231A1307948483012BE6853B275 /* GKNavigationBarConfigure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GKNavigationBarConfigure.swift; path = Sources/GKNavigationBarConfigure.swift; sourceTree = "<group>"; };
 		E8773A96529A918F870671EE8C183389 /* TZVideoPlayerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZVideoPlayerController.m; path = TZImagePickerController/TZImagePickerController/TZVideoPlayerController.m; sourceTree = "<group>"; };
 		E91E4FAB4B262A55D0C4C8527A6FD755 /* TZProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZProgressView.h; path = TZImagePickerController/TZImagePickerController/TZProgressView.h; sourceTree = "<group>"; };
 		EA21B344259B58996DB73382B1B1521F /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		EA2A7F73A5A869B3B832AC6E1B706616 /* UIViewController+GKExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+GKExtension.swift"; path = "Sources/UIViewController+GKExtension.swift"; sourceTree = "<group>"; };
 		EB4D8E3F3B94FF275291E659AA36453B /* TZImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZImageManager.m; path = TZImagePickerController/TZImagePickerController/TZImageManager.m; sourceTree = "<group>"; };
-		EC131CFA46FE3FC14B3BBF55FC24B228 /* GKNavigationBarSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GKNavigationBarSwift-dummy.m"; sourceTree = "<group>"; };
 		ED1585038E57270BBB0C8A8289C493C1 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
-		EDEA48A2ACD5D4E8215A388CDDC675C8 /* GKPopAnimatedTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GKPopAnimatedTransition.swift; path = Sources/GKPopAnimatedTransition.swift; sourceTree = "<group>"; };
+		EE85940F120725777A7C6FE3F7A0013B /* GKNavigationBarSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GKNavigationBarSwift-Info.plist"; sourceTree = "<group>"; };
+		EED9D5C4D38C02FE79832C3B3098413F /* UIViewController+GKExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+GKExtension.swift"; path = "Sources/UIViewController+GKExtension.swift"; sourceTree = "<group>"; };
 		F00AEE635302DFD86F38F687EDF3BFB0 /* TZPhotoPreviewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZPhotoPreviewCell.m; path = TZImagePickerController/TZImagePickerController/TZPhotoPreviewCell.m; sourceTree = "<group>"; };
 		F0E0FE51EFAEA1D53D3A74961D955A59 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		F1339C4E2332B6261B85DBECDC5113D4 /* JXSegmentedIndicatorBaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXSegmentedIndicatorBaseView.swift; path = JXSegmentedView/Core/Indicator/JXSegmentedIndicatorBaseView.swift; sourceTree = "<group>"; };
@@ -304,12 +306,20 @@
 		F544DFB5E67E3784DC2FC6C9059B2012 /* TZAssetModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZAssetModel.h; path = TZImagePickerController/TZImagePickerController/TZAssetModel.h; sourceTree = "<group>"; };
 		F694E768508D43D3CCBBCCB06F6DDD82 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
 		F7844D4CFD73AEEF6F0CA90DCF567B32 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
-		FDEFC9D4BF7712BDA61D865F3BAA08C5 /* GKNavigationBarSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKNavigationBarSwift-umbrella.h"; sourceTree = "<group>"; };
 		FEC60264F1727927C891DADE99EA2CFD /* TZImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZImagePickerController.h; path = TZImagePickerController/TZImagePickerController/TZImagePickerController.h; sourceTree = "<group>"; };
+		FF0B5B329112F92098BB04690E4E4B85 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		FF7D3A1DC66305E0DFF78E6A3046A809 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2AAE0463F66ABDBCCB8FF8E38BBDAAB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226C335B6E8F65D0D9898E3343F16921 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		353C46695FBD196BB4BD706D390A018C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,14 +333,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FDF2EF49D1F5CCE5A84C6E4B8FF0B93 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		47FE7428071D6CE2F3F5643138F63913 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F073EB03B558B79D89A536130C6FFBF9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +439,33 @@
 			path = "../Target Support Files/TZImagePickerController";
 			sourceTree = "<group>";
 		};
+		5D3DFEF9A68D0F7D5E710CD421B865ED /* GKNavigationBarSwift */ = {
+			isa = PBXGroup;
+			children = (
+				0AB3AC4A0C5CCEBE13764461F397F43D /* Bundle+GKExtension.swift */,
+				DA5331295BCD069A01A28736A2C2E776 /* GKBaseAnimatedTransition.swift */,
+				E1081231A1307948483012BE6853B275 /* GKNavigationBarConfigure.swift */,
+				4E0B018B85939F4446DF32C07AE0688A /* GKNavigationBarDefine.swift */,
+				802BB1D0E5E229A80615CF1102DE836F /* GKNavigationBarSwift.bundle */,
+				2B8719B33C4DE8E7DEFE4C0A44AA96FD /* GKNavigationBarSwift.swift */,
+				BDACAF55F90D1E82041F090D4E7C3354 /* GKNavigationInteractiveTransition.swift */,
+				D870F606A1A154FD59B8C1472BED3AB1 /* GKPopAnimatedTransition.swift */,
+				9A9F79154D98E3A65838821B39FC84D7 /* GKPushAnimatedTransition.swift */,
+				66875F9E0F1E1BEEFD53B058E75029F5 /* UIBarButtonItem+GKExtension.swift */,
+				D22DD5A35FFDAEE0BF43B053018BFAA2 /* UIImage+GKExtension.swift */,
+				D052EB5C05A904F4F4D1FD5D0775B7B9 /* UINavigationController+GKExtension.swift */,
+				B4A895EDA3870EDD433D1865C3FC2AC5 /* UINavigationController+GKGesture.swift */,
+				4BF5E968CB013786C81F661140351E35 /* UINavigationItem+GKExtension.swift */,
+				BFB522A2DF2600BE8D14EF94D4CF456B /* UIScrollView+GKExtension.swift */,
+				EED9D5C4D38C02FE79832C3B3098413F /* UIViewController+GKExtension.swift */,
+				588DF56C1E348A88B9B97C86108920E5 /* UIViewController+GKGesture.swift */,
+				D45BC935BEFB0FD58C216A11A6B17626 /* Pod */,
+				78CEC79AD24A0B6C5AC49BD1682D9562 /* Support Files */,
+			);
+			name = GKNavigationBarSwift;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		602EA56C2C39249C9BFB926702F4E21C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -520,6 +549,21 @@
 			path = "../Target Support Files/SnapKit";
 			sourceTree = "<group>";
 		};
+		78CEC79AD24A0B6C5AC49BD1682D9562 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A495D280C64B7BD9A5DA87ED7BB7ADF /* GKNavigationBarSwift.modulemap */,
+				4E0EE4A32FC70F80EC8617CF15678429 /* GKNavigationBarSwift-dummy.m */,
+				EE85940F120725777A7C6FE3F7A0013B /* GKNavigationBarSwift-Info.plist */,
+				BEEAC56A80588C29EB0C2AB5EFA194B7 /* GKNavigationBarSwift-prefix.pch */,
+				5290D78678F4A8FEDF4B4242DCA7DF73 /* GKNavigationBarSwift-umbrella.h */,
+				E068A1EEC354F3DCE51B06060CCBA470 /* GKNavigationBarSwift.debug.xcconfig */,
+				12598CB347D5AA44F5910BEB5C73D3CE /* GKNavigationBarSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GKNavigationBarSwift";
+			sourceTree = "<group>";
+		};
 		7E8E4AF83AC2ADD0B024F3C65A4B8941 /* Indicator */ = {
 			isa = PBXGroup;
 			children = (
@@ -562,32 +606,6 @@
 				911FBD5AFC4B3CB456394B01393F2F54 /* JXSegmentedViewTool.swift */,
 			);
 			name = Core;
-			sourceTree = "<group>";
-		};
-		C11D73B96FCB85D7BF66E106D3E18EE4 /* GKNavigationBarSwift */ = {
-			isa = PBXGroup;
-			children = (
-				D65FF622EAB7430C8A0AEC0CC6FA2F70 /* GKBaseAnimatedTransition.swift */,
-				5B3AF24F85F57F22276414F9F11CBAA1 /* GKNavigationBarConfigure.swift */,
-				798E17369BF269253DF3AD460C04F13E /* GKNavigationBarDefine.swift */,
-				46D1ECEC33F45C84AC6A3DBE27758C4F /* GKNavigationBarSwift.bundle */,
-				8AF98AA15CF3B57A6FDF29489538DAD5 /* GKNavigationBarSwift.swift */,
-				7536C507DB67658625F029AA1C46448E /* GKNavigationInteractiveTransition.swift */,
-				EDEA48A2ACD5D4E8215A388CDDC675C8 /* GKPopAnimatedTransition.swift */,
-				3904C28B00F273078E6920815BA8F0A3 /* GKPushAnimatedTransition.swift */,
-				9F4C1D1F1226533CB8A47CC847FD3863 /* UIBarButtonItem+GKExtension.swift */,
-				7B697D307CC8531A232DC34334A85350 /* UIImage+GKExtension.swift */,
-				AFAFA78CB4B8541148E16F179420B1D3 /* UINavigationController+GKExtension.swift */,
-				98371AB7313FD47564A47FFF14C11320 /* UINavigationController+GKGesture.swift */,
-				8CBB72DA5DC937CFF7FA2A5600646CE6 /* UINavigationItem+GKExtension.swift */,
-				B121898D447AD5701B85FEAC6EB55F35 /* UIScrollView+GKExtension.swift */,
-				EA2A7F73A5A869B3B832AC6E1B706616 /* UIViewController+GKExtension.swift */,
-				3C2A7440323CC1A4BE4D0767A1B23468 /* UIViewController+GKGesture.swift */,
-				D2190236D887E85FA925566C4BC8BB55 /* Pod */,
-				F07AD08F9F454696233885E2DCAB6B89 /* Support Files */,
-			);
-			name = GKNavigationBarSwift;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		C4C14CCF97D7CA3595D49BFD0BA76484 /* iOS */ = {
@@ -645,7 +663,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D1D3662608A4DF4752A03C5F3829FCE6 /* Development Pods */,
+				F7A9FA0920281C3D5D61FF80E07049BF /* Development Pods */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				CE936AFA208F1B44612DA76911C61188 /* Pods */,
 				C980F133F5CF9C662FD15FB7A60C95B9 /* Products */,
@@ -653,37 +671,22 @@
 			);
 			sourceTree = "<group>";
 		};
-		D1D3662608A4DF4752A03C5F3829FCE6 /* Development Pods */ = {
+		D45BC935BEFB0FD58C216A11A6B17626 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				C11D73B96FCB85D7BF66E106D3E18EE4 /* GKNavigationBarSwift */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		D2190236D887E85FA925566C4BC8BB55 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				504CB9A724F8954368ACE2FD6D2AF43D /* GKNavigationBarSwift.podspec */,
-				7B95C0719BA020A54465A36ED4F4D3E5 /* LICENSE */,
-				8397EE905253A34A1E73835105458826 /* README.md */,
+				31CCF95E80F7C65356246AC3BB407862 /* GKNavigationBarSwift.podspec */,
+				B6A1B08246273B125B916591891B47FD /* LICENSE */,
+				FF0B5B329112F92098BB04690E4E4B85 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		F07AD08F9F454696233885E2DCAB6B89 /* Support Files */ = {
+		F7A9FA0920281C3D5D61FF80E07049BF /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0D3ED16E95DC1EDDCC6E2721958757F2 /* GKNavigationBarSwift.modulemap */,
-				EC131CFA46FE3FC14B3BBF55FC24B228 /* GKNavigationBarSwift-dummy.m */,
-				77AFD572069E2012A8F18EFD84C03735 /* GKNavigationBarSwift-Info.plist */,
-				4938093F676E7B7AB69C1252853860D1 /* GKNavigationBarSwift-prefix.pch */,
-				FDEFC9D4BF7712BDA61D865F3BAA08C5 /* GKNavigationBarSwift-umbrella.h */,
-				C4B49D44A398A3D4A10FBAEE68746182 /* GKNavigationBarSwift.debug.xcconfig */,
-				3FA039D11604CD05FFC7CD4165CE9AC7 /* GKNavigationBarSwift.release.xcconfig */,
+				5D3DFEF9A68D0F7D5E710CD421B865ED /* GKNavigationBarSwift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/GKNavigationBarSwift";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -694,14 +697,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4191804D5A370C0748EFDDC35A30E2E9 /* Pods-Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2698372252090A1F686C6EE7AE791938 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3300F7C7CB4E91B7E63A97C6BCABC22A /* GKNavigationBarSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,6 +741,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA3975EC5D8663866290AAC9578B95A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40EAC72315BCA791B252B2677387FEB /* GKNavigationBarSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -779,10 +782,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				E87F26C056BF2189FE8C83241C5A0322 /* PBXTargetDependency */,
-				75FD43291C2F62E994697F3DDE1D652D /* PBXTargetDependency */,
-				1F39F8857CA933252EFE3EA5986085CB /* PBXTargetDependency */,
-				F5831B4AEB65E7B84CEF40980779B674 /* PBXTargetDependency */,
+				A218E08BE966C31D29590E983DF58335 /* PBXTargetDependency */,
+				BFE5CF036B6DF224EBCCF074D97FA969 /* PBXTargetDependency */,
+				910B518D2168E762B50D0204683D0ECB /* PBXTargetDependency */,
+				CB6FEEE2C3BFC2A39367D0A55BA7918E /* PBXTargetDependency */,
 			);
 			name = "Pods-Example";
 			productName = Pods_Example;
@@ -809,12 +812,12 @@
 		};
 		4C27A49A311B0BA0FC773E1CE87E4251 /* GKNavigationBarSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6D19DC25E30E9B7B479EF7F0AEA5717D /* Build configuration list for PBXNativeTarget "GKNavigationBarSwift" */;
+			buildConfigurationList = 564350EABE4C49B356281AD403294EC5 /* Build configuration list for PBXNativeTarget "GKNavigationBarSwift" */;
 			buildPhases = (
-				2698372252090A1F686C6EE7AE791938 /* Headers */,
-				E402E1F6D58F1C6AFB423531384659FB /* Sources */,
-				47FE7428071D6CE2F3F5643138F63913 /* Frameworks */,
-				DAA9DE6E8E87AA2EE392F07EDDF6C84A /* Resources */,
+				EA3975EC5D8663866290AAC9578B95A2 /* Headers */,
+				127DBDA923C818F9B439500CC7DA2619 /* Sources */,
+				2AAE0463F66ABDBCCB8FF8E38BBDAAB5 /* Frameworks */,
+				CFD7870C390A9F12C71CD0A065047B4D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -904,11 +907,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DAA9DE6E8E87AA2EE392F07EDDF6C84A /* Resources */ = {
+		CFD7870C390A9F12C71CD0A065047B4D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54A30A9E4347B108DB534CFF714E3E55 /* GKNavigationBarSwift.bundle in Resources */,
+				BC765FCACC828CF87EE7AD5A682757D5 /* GKNavigationBarSwift.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -920,6 +923,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D4A8B5B3CFE8E7FC77191105FB19BD6 /* Pods-Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		127DBDA923C818F9B439500CC7DA2619 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66A9C077FBFAB80284DCA9855991227 /* Bundle+GKExtension.swift in Sources */,
+				A0DCE6922823CDA5727F0879704A3A65 /* GKBaseAnimatedTransition.swift in Sources */,
+				29F87DB5ED5C0C2F0B054AFF171DABD0 /* GKNavigationBarConfigure.swift in Sources */,
+				C3E0E5D57DD39A8D50D2F9B12CBE5B15 /* GKNavigationBarDefine.swift in Sources */,
+				6DEBAE7A361C236C71500B5C21178D15 /* GKNavigationBarSwift.swift in Sources */,
+				3A687DE0E5B1E1EA2E878CE84B05A244 /* GKNavigationBarSwift-dummy.m in Sources */,
+				662C76B3C09F5651BBC516FB2475211A /* GKNavigationInteractiveTransition.swift in Sources */,
+				6C1924EFB1B6E5C9EC29D455DD4B2A5E /* GKPopAnimatedTransition.swift in Sources */,
+				F2F56D8FF5E623FBA4FDB901BDB6ECDB /* GKPushAnimatedTransition.swift in Sources */,
+				68968ADE0F6A62712D9BCA50A77ADEA0 /* UIBarButtonItem+GKExtension.swift in Sources */,
+				99082A5EB0C5683DCB37C60A01BBCBFB /* UIImage+GKExtension.swift in Sources */,
+				BAFA6BCAE25EA854C43BF22B965E30B8 /* UINavigationController+GKExtension.swift in Sources */,
+				C7FC685D0F4DADADBCD1C2483519A00E /* UINavigationController+GKGesture.swift in Sources */,
+				4C883954DDB93FEB5AD2FDFCDFBF413C /* UINavigationItem+GKExtension.swift in Sources */,
+				F5122C31CD7A7D5AAD09B4E5D1AF7F97 /* UIScrollView+GKExtension.swift in Sources */,
+				B6A026870D13874FD5E80827A05192EB /* UIViewController+GKExtension.swift in Sources */,
+				464CE6603700A4146CC9203547248918 /* UIViewController+GKGesture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1014,55 +1041,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E402E1F6D58F1C6AFB423531384659FB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8424FE0A10B84E92566083F40BF4DDA1 /* GKBaseAnimatedTransition.swift in Sources */,
-				B12C95D41E832CE5C6540A13D8C40FB4 /* GKNavigationBarConfigure.swift in Sources */,
-				AA81E3A3FBFC484CCD04FC209B21F74F /* GKNavigationBarDefine.swift in Sources */,
-				07E3160ABA0295E72EB78CDD10A46706 /* GKNavigationBarSwift.swift in Sources */,
-				A4665F5DDA7BE50B14F13F3A9955E172 /* GKNavigationBarSwift-dummy.m in Sources */,
-				E92F0A95A08D22FDBEDB7D3736A437CF /* GKNavigationInteractiveTransition.swift in Sources */,
-				A65A34E9107E30296823445F5A1805DF /* GKPopAnimatedTransition.swift in Sources */,
-				88D4FBD570C169F27D019B3191B6D3EC /* GKPushAnimatedTransition.swift in Sources */,
-				9E37B4239FE9864936AE9DA0A959AE6F /* UIBarButtonItem+GKExtension.swift in Sources */,
-				E9DFAF5BDA748688CB14E2395210F481 /* UIImage+GKExtension.swift in Sources */,
-				9B98F3E95D0B060F94795EA1AB4E07E4 /* UINavigationController+GKExtension.swift in Sources */,
-				9450FB438DE0A36B64FD45044C7649E0 /* UINavigationController+GKGesture.swift in Sources */,
-				B223C71D626CA287B6C9642150D8731A /* UINavigationItem+GKExtension.swift in Sources */,
-				921B54733B777C785FEDDF54AC6FCCC5 /* UIScrollView+GKExtension.swift in Sources */,
-				C6FB2AC98163383A5DE03A82D2EB50CB /* UIViewController+GKExtension.swift in Sources */,
-				F58AAAC3637E48B3F71D3EDD41FBC5F7 /* UIViewController+GKGesture.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1F39F8857CA933252EFE3EA5986085CB /* PBXTargetDependency */ = {
+		910B518D2168E762B50D0204683D0ECB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
 			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
-			targetProxy = 9776600619D90127971ED3C153C04385 /* PBXContainerItemProxy */;
+			targetProxy = 8A0FAC821C07DFBC45180AAFAC59F6FF /* PBXContainerItemProxy */;
 		};
-		75FD43291C2F62E994697F3DDE1D652D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JXSegmentedViewExt;
-			target = 022392C231A8BD1A2CE9BD6FB8E8ADA6 /* JXSegmentedViewExt */;
-			targetProxy = EC94EB4F6DED50D6C886ABCEE13EDEC3 /* PBXContainerItemProxy */;
-		};
-		E87F26C056BF2189FE8C83241C5A0322 /* PBXTargetDependency */ = {
+		A218E08BE966C31D29590E983DF58335 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GKNavigationBarSwift;
 			target = 4C27A49A311B0BA0FC773E1CE87E4251 /* GKNavigationBarSwift */;
-			targetProxy = 9B0897736914540CCF542A2D2CEFD86D /* PBXContainerItemProxy */;
+			targetProxy = 6EF65C04B9BE085E255BC33E6E50F73E /* PBXContainerItemProxy */;
 		};
-		F5831B4AEB65E7B84CEF40980779B674 /* PBXTargetDependency */ = {
+		BFE5CF036B6DF224EBCCF074D97FA969 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JXSegmentedViewExt;
+			target = 022392C231A8BD1A2CE9BD6FB8E8ADA6 /* JXSegmentedViewExt */;
+			targetProxy = 192A2FDD73D65DAB815431A58F028EF4 /* PBXContainerItemProxy */;
+		};
+		CB6FEEE2C3BFC2A39367D0A55BA7918E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TZImagePickerController;
 			target = A96BBB982D62BB807B5BD10774BE2D07 /* TZImagePickerController */;
-			targetProxy = 184F67AEC275F75236B65E69BE1FD22D /* PBXContainerItemProxy */;
+			targetProxy = F9A7AA6C9AFFEF60994C3FC8101D0F42 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1238,43 +1242,9 @@
 			};
 			name = Debug;
 		};
-		58AB913501182AA17CE346055F61C834 /* Debug */ = {
+		6D9225ED399F0C643E7165D612C82942 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4B49D44A398A3D4A10FBAEE68746182 /* GKNavigationBarSwift.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GKNavigationBarSwift/GKNavigationBarSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GKNavigationBarSwift/GKNavigationBarSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/GKNavigationBarSwift/GKNavigationBarSwift.modulemap";
-				PRODUCT_MODULE_NAME = GKNavigationBarSwift;
-				PRODUCT_NAME = GKNavigationBarSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		877CEF57A1C7592330916A2298414C17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FA039D11604CD05FFC7CD4165CE9AC7 /* GKNavigationBarSwift.release.xcconfig */;
+			baseConfigurationReference = 12598CB347D5AA44F5910BEB5C73D3CE /* GKNavigationBarSwift.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1441,6 +1411,40 @@
 			};
 			name = Release;
 		};
+		DAB3B3F82162DA14DE9612662FDBE6E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E068A1EEC354F3DCE51B06060CCBA470 /* GKNavigationBarSwift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GKNavigationBarSwift/GKNavigationBarSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GKNavigationBarSwift/GKNavigationBarSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GKNavigationBarSwift/GKNavigationBarSwift.modulemap";
+				PRODUCT_MODULE_NAME = GKNavigationBarSwift;
+				PRODUCT_NAME = GKNavigationBarSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		DFA126C1F44C3FDA2FCB9DE914D780A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 99CB5CE90965D35D67D84E585F183B97 /* SnapKit.debug.xcconfig */;
@@ -1556,11 +1560,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6D19DC25E30E9B7B479EF7F0AEA5717D /* Build configuration list for PBXNativeTarget "GKNavigationBarSwift" */ = {
+		564350EABE4C49B356281AD403294EC5 /* Build configuration list for PBXNativeTarget "GKNavigationBarSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				58AB913501182AA17CE346055F61C834 /* Debug */,
-				877CEF57A1C7592330916A2298414C17 /* Release */,
+				DAB3B3F82162DA14DE9612662FDBE6E6 /* Debug */,
+				6D9225ED399F0C643E7165D612C82942 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

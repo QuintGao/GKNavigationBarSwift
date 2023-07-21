@@ -11,10 +11,14 @@ import UIKit
 extension UIImage {
     
     public class func gk_image(with name: String) -> UIImage {
-        guard let bundle = GKConfigure.gk_libraryBundle() else { return UIImage(named: name)! }
-        var image = UIImage(named: name, in: bundle, compatibleWith: nil)
-        if image == nil { image = UIImage(named: name) }
-        return image!
+        var image: UIImage?
+        if let bundle = Bundle.gk_bundle {
+            image = UIImage(named: name, in: bundle, compatibleWith: nil)
+        }
+        if image == nil {
+            image = UIImage(named: name)
+        }
+        return image ?? UIImage()
     }
     
     public class func gk_image(with color: UIColor) -> UIImage {

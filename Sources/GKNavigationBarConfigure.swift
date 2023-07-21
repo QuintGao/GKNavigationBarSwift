@@ -178,14 +178,6 @@ open class GKNavigationBarConfigure : NSObject {
         return GKDevice.width > 375.0 ? 20 : 16
     }
     
-    /// 获取Bundle
-    open func gk_libraryBundle() -> Bundle? {
-        let bundle = Bundle(for: self.classForCoder)
-        let bundleURL = bundle.url(forResource: "GKNavigationBarSwift", withExtension: "bundle")
-        guard let url = bundleURL else { return nil }
-        return Bundle(url: url)
-    }
-    
     open func fixNavItemSpaceDisabled() -> Bool {
         return self.gk_disableFixSpace && !self.gk_openSystemFixSpace
     }
