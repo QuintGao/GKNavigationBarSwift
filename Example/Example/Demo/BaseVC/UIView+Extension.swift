@@ -2,7 +2,7 @@
 //  UIView+Extension.swift
 //  Example
 //
-//  Created by gaokun on 2022/3/21.
+//  Created by QuintGao on 2022/3/21.
 //  Copyright © 2022 QuintGao. All rights reserved.
 //
 

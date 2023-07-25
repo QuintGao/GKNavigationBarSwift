@@ -2,7 +2,7 @@
 //  Example-Bridging-Header.h
 //  Example
 //
-//  Created by gaokun on 2020/10/27.
+//  Created by QuintGao on 2020/10/27.
 //  Copyright © 2020 QuintGao. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  UIViewController+GKGesture.swift
 //  GKNavigationBarSwift
 //
-//  Created by gaokun on 2022/3/18.
+//  Created by QuintGao on 2022/3/18.
 //  Copyright © 2022 QuintGao. All rights reserved.
 //
 
