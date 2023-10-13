@@ -29,6 +29,7 @@ extension UIView {
     
     func convertToImage() -> UIImage? {
         let size = self.bounds.size
+        if size.width <= 0 || size.height <= 0 { return nil }
         UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
         guard let context = UIGraphicsGetCurrentContext() else { return nil }
         self.layer.render(in: context)

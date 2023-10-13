@@ -818,7 +818,12 @@ extension UIViewController {
             }
             
             // 如果是通过present方式弹出且高度小于屏幕高度，则认为是非全屏
-            isNonFullScreen = (self.presentingViewController != nil) && viewH < self.view.bounds.height
+            var window = view.window
+            if window == nil {
+                window = GKDevice.keyWindow()
+            }
+            
+            isNonFullScreen = (self.presentingViewController != nil) && viewH < window?.bounds.height ?? 0
         }
         return isNonFullScreen
     }

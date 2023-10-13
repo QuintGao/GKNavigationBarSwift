@@ -39,6 +39,12 @@ class GKWXHomeViewController: GKTabBaseViewController {
     }
 
     func getCapture(with view: UIView) -> UIImage? {
+        if view == nil {
+            return nil
+        }
+        if view.bounds.size.width <= 0 || view.bounds.size.height <= 0 {
+            return nil
+        }
         UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.isOpaque, 0)
         view.drawHierarchy(in: view.bounds, afterScreenUpdates: false)
         let image = UIGraphicsGetImageFromCurrentImageContext()

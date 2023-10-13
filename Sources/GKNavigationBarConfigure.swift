@@ -189,6 +189,8 @@ open class GKNavigationBarConfigure : NSObject {
     
     /// 获取某个view的截图
     open func getCapture(with view: UIView) -> UIImage? {
+        if view == nil { return nil }
+        if view.bounds.size.width <= 0 || view.bounds.size.height <= 0 { return nil }
         UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, UIScreen.main.scale)
         view.drawHierarchy(in: view.bounds, afterScreenUpdates: false)
         let image = UIGraphicsGetImageFromCurrentImageContext()
