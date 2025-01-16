@@ -18,7 +18,7 @@ class GKWYNewsHomeViewController: GKTabBaseViewController {
         self.gk_statusBarStyle = .lightContent
 //        self.gk_navBackgroundColor = .black
         
-        let pageImage = UIImageView(frame: CGRect(x: 0, y: GKDevice.statusBarNavBarHeight(), width: view.bounds.width, height: view.bounds.height - GKDevice.statusBarNavBarHeight() - GKDevice.tabBarHeight()))
+        let pageImage = UIImageView(frame: CGRect(x: 0, y: UIDevice.statusBarNavBarHeight(), width: view.bounds.width, height: view.bounds.height - UIDevice.statusBarNavBarHeight() - UIDevice.tabBarHeight()))
         pageImage.image = UIImage(named: "news_homepage")
         self.view.addSubview(pageImage)
         pageImage.isUserInteractionEnabled = true

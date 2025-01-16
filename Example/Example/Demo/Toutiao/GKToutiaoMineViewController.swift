@@ -16,7 +16,7 @@ class GKToutiaoMineViewController: GKTabBaseViewController {
 
         self.gk_navigationBar.isHidden = true
         
-        let pageImage = UIImageView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height - GKDevice.tabBarHeight()))
+        let pageImage = UIImageView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height - UIDevice.tabBarHeight()))
         pageImage.image = UIImage(named: "mine_page")
         self.view.addSubview(pageImage)
         

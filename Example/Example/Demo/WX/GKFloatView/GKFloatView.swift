@@ -30,7 +30,7 @@ class GKFloatView: UIView {
     class func create() {
         if (_floatView != nil) {return}
         let floatView = GKFloatView()
-        floatView.frame = CGRect(x: GKFloatScreenW - CGFloat(10) - GKFloatWH, y: GKDevice.statusBarNavBarHeight() + CGFloat(20), width: GKFloatWH, height: GKFloatWH)
+        floatView.frame = CGRect(x: GKFloatScreenW - CGFloat(10) - GKFloatWH, y: UIDevice.statusBarNavBarHeight() + CGFloat(20), width: GKFloatWH, height: GKFloatWH)
         _floatView = floatView
         (UIApplication.shared.delegate?.window ?? nil)?.addSubview(floatView)
     }

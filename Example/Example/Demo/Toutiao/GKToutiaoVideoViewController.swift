@@ -16,7 +16,7 @@ class GKToutiaoVideoViewController: GKTabBaseViewController {
 
         self.gk_navBackgroundImage = UIImage(named: "video_nav")
         
-        let pageImage = UIImageView(frame: CGRect(x: 0, y: GKDevice.statusBarNavBarHeight(), width: view.bounds.width, height: view.bounds.height - GKDevice.statusBarNavBarHeight() - GKDevice.tabBarHeight()))
+        let pageImage = UIImageView(frame: CGRect(x: 0, y: UIDevice.statusBarNavBarHeight(), width: view.bounds.width, height: view.bounds.height - UIDevice.statusBarNavBarHeight() - UIDevice.tabBarHeight()))
         pageImage.image = UIImage(named: "micro_page")
         self.view.addSubview(pageImage)
         pageImage.isUserInteractionEnabled = true

@@ -17,7 +17,7 @@ class GKWYMusicMineViewController: GKTabBaseViewController {
         self.gk_navTitle = "朋友"
         self.gk_navBackgroundColor = UIColor(red: 200/255.0, green: 39/255.0, blue: 39/255.0, alpha: 1.0)
         
-        let pageImage = UIImageView(frame: CGRect(x: 0, y: GKDevice.statusBarNavBarHeight(), width: view.bounds.width, height: view.bounds.height - GKDevice.statusBarNavBarHeight() - GKDevice.tabBarHeight()))
+        let pageImage = UIImageView(frame: CGRect(x: 0, y: UIDevice.statusBarNavBarHeight(), width: view.bounds.width, height: view.bounds.height - UIDevice.statusBarNavBarHeight() - UIDevice.tabBarHeight()))
         pageImage.image = UIImage(named: "music_page")
         self.view.addSubview(pageImage)
         pageImage.isUserInteractionEnabled = true

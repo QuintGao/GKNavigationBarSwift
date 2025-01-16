@@ -61,6 +61,8 @@
 		79E5722F2893BCD1005EB065 /* GKDemo006ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5722E2893BCD0005EB065 /* GKDemo006ViewController.swift */; };
 		79E572312893C4C2005EB065 /* GKDemo007ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E572302893C4C2005EB065 /* GKDemo007ViewController.swift */; };
 		79E572332893C5EC005EB065 /* GKDemo007ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E572322893C5EC005EB065 /* GKDemo007ListViewController.swift */; };
+		79F1EC5C2D38F87B002CC806 /* GKDemo008ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1EC5B2D38F87B002CC806 /* GKDemo008ViewController.swift */; };
+		79F1EC5E2D38F893002CC806 /* GKAVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1EC5D2D38F893002CC806 /* GKAVPlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -134,6 +136,8 @@
 		79E5722E2893BCD0005EB065 /* GKDemo006ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKDemo006ViewController.swift; sourceTree = "<group>"; };
 		79E572302893C4C2005EB065 /* GKDemo007ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKDemo007ViewController.swift; sourceTree = "<group>"; };
 		79E572322893C5EC005EB065 /* GKDemo007ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKDemo007ListViewController.swift; sourceTree = "<group>"; };
+		79F1EC5B2D38F87B002CC806 /* GKDemo008ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKDemo008ViewController.swift; sourceTree = "<group>"; };
+		79F1EC5D2D38F893002CC806 /* GKAVPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKAVPlayerViewController.swift; sourceTree = "<group>"; };
 		D34ABAF9BDED111FFC6E33C2 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3259CD44342A10D43715F11 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -302,6 +306,8 @@
 				79E572322893C5EC005EB065 /* GKDemo007ListViewController.swift */,
 				60B70DA32570D1D0008D62FC /* GKDemoTransitionViewController.swift */,
 				796AB5682442E83E00C724D4 /* GKDemoWebViewController.swift */,
+				79F1EC5B2D38F87B002CC806 /* GKDemo008ViewController.swift */,
+				79F1EC5D2D38F893002CC806 /* GKAVPlayerViewController.swift */,
 				796AB5692442E83E00C724D4 /* web.txt */,
 			);
 			path = DemoVC;
@@ -456,6 +462,7 @@
 				796AB5882442E83F00C724D4 /* GKDemo003ViewController.swift in Sources */,
 				796AB5762442E83F00C724D4 /* GKWYMusicViewController.swift in Sources */,
 				60C7D94F27E817EF00D7BD64 /* UIView+Extension.swift in Sources */,
+				79F1EC5E2D38F893002CC806 /* GKAVPlayerViewController.swift in Sources */,
 				796AB5862442E83F00C724D4 /* GKWYNewsCommentViewController.swift in Sources */,
 				796AB5832442E83F00C724D4 /* GKWYNewsDetailViewController.swift in Sources */,
 				796AB5802442E83F00C724D4 /* GKWYNewsViewController.swift in Sources */,
@@ -473,6 +480,7 @@
 				796AB5752442E83F00C724D4 /* GKWYMusicFriendViewController.swift in Sources */,
 				796AB58C2442E83F00C724D4 /* GKDemoWebViewController.swift in Sources */,
 				796AB57B2442E83F00C724D4 /* GKDouyinSearchViewController.swift in Sources */,
+				79F1EC5C2D38F87B002CC806 /* GKDemo008ViewController.swift in Sources */,
 				796AB5712442E83F00C724D4 /* GKToutiaoVideoViewController.swift in Sources */,
 				79E572312893C4C2005EB065 /* GKDemo007ViewController.swift in Sources */,
 				608FC7222546AA20003DB82F /* GKWXHomeViewController.swift in Sources */,
@@ -635,7 +643,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75UA6PQ9U3;
+				DEVELOPMENT_TEAM = JWMR39G949;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = Example/Info.plist;
@@ -644,7 +652,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.gknavigationbarswift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.gknavigationbarswift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Example/Example-Bridging-Header.h";
@@ -662,7 +670,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75UA6PQ9U3;
+				DEVELOPMENT_TEAM = JWMR39G949;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = Example/Info.plist;
@@ -671,7 +679,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.gknavigationbarswift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.gknavigationbarswift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Example/Example-Bridging-Header.h";

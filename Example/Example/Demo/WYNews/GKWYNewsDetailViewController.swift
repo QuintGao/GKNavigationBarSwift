@@ -20,7 +20,7 @@ class GKWYNewsDetailViewController: GKTabBaseViewController {
         self.gk_systemGestureHandleDisabled = true
         self.gk_pushDelegate = self
         
-        let pageImage = UIImageView(frame: CGRect(x: 0, y: GKDevice.statusBarNavBarHeight(), width: view.bounds.width, height: view.bounds.height - GKDevice.statusBarNavBarHeight()))
+        let pageImage = UIImageView(frame: CGRect(x: 0, y: UIDevice.statusBarNavBarHeight(), width: view.bounds.width, height: view.bounds.height - UIDevice.statusBarNavBarHeight()))
         pageImage.image = UIImage(named: "news_detailpage")
         self.view.addSubview(pageImage)
         pageImage.isUserInteractionEnabled = true

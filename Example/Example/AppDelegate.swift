@@ -14,6 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+    var isSupportLandscape: Bool = false
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         setupNavBar()
@@ -24,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setupNavBar() {
         GKConfigure.setupCustom {
-            let view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: GKDevice.statusBarNavBarHeight()))
+            let view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIDevice.statusBarNavBarHeight()))
             // 导航栏背景图片
             $0.backgroundImage = view.image(with: [UIColor(red: 127.0/255, green: 23.0/255, blue: 135.0/255, alpha: 1.0).cgColor, UIColor(red: 37.0/255, green: 26.0/255, blue: 188.0/255, alpha: 1.0).cgColor])
             // 导航栏暗黑模式下的背景图片
@@ -63,6 +65,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         nav.gk_openSystemNavHandle = true
         self.window?.rootViewController = nav
         self.window?.makeKeyAndVisible()
+    }
+    
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        isSupportLandscape ? .all : .portrait
     }
 }
 

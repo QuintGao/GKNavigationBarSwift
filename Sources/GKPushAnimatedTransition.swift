@@ -71,22 +71,19 @@ open class GKPushAnimatedTransition: GKBaseAnimatedTransition {
                 frame.origin.x = -0.3 * frame.size.width
                 fromView.frame = frame
             }
-            
             self.toViewController.view.frame = CGRect(x: 0, y: 0, width: screenW, height: screenH)
         }) { (finished) in
-            if self.isHideTabBar {
-                if (self.transitionContext.transitionWasCancelled) {
-                    self.containerView.addSubview(self.fromViewController.view)
-                }else {
-                    self.fromViewController.view.removeFromSuperview()
-                }
-                fromView.transform = .identity
-                fromView.removeFromSuperview()
-                
-                if (captureView != nil) {
-                    captureView?.removeFromSuperview()
-                    captureView = nil
-                }
+            if (self.transitionContext.transitionWasCancelled) {
+                self.containerView.addSubview(self.fromViewController.view)
+            }else {
+                self.fromViewController.view.removeFromSuperview()
+            }
+            fromView.transform = .identity
+            fromView.removeFromSuperview()
+            
+            if (captureView != nil) {
+                captureView?.removeFromSuperview()
+                captureView = nil
             }
             if self.isScale {
                 self.shadowView.removeFromSuperview()
