@@ -37,7 +37,7 @@ open class GKPushAnimatedTransition: GKBaseAnimatedTransition {
         
         if self.isHideTabBar {
             // 截取tabBar
-            let captureImage = GKConfigure.getCapture(with: tabBar!)
+            let captureImage = GKConfigure.getCapture(with: tabBar)
             self.fromViewController.gk_captureImage = captureImage
             captureView = UIImageView(image: captureImage)
             var frame = tabBar!.frame;

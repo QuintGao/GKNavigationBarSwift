@@ -124,7 +124,7 @@ open class GKNavigationBarConfigure : NSObject {
     
     /// 设置默认配置
     open func setupDefault() {
-        GKNavigationBarConfigure.awake
+        awake()
         backgroundColor = .white
         titleColor = .black
         titleFont = UIFont.boldSystemFont(ofSize: 17.0)
@@ -199,8 +199,8 @@ open class GKNavigationBarConfigure : NSObject {
     }
     
     /// 获取某个view的截图
-    open func getCapture(with view: UIView) -> UIImage? {
-        if view == nil { return nil }
+    open func getCapture(with view: UIView?) -> UIImage? {
+        guard let view else { return nil }
         if view.bounds.size.width <= 0 || view.bounds.size.height <= 0 { return nil }
         UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, UIScreen.main.scale)
         view.drawHierarchy(in: view.bounds, afterScreenUpdates: false)
