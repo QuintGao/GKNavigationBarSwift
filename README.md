@@ -2,6 +2,8 @@
 
 GKNavigationBar的Swift版本 - iOS自定义导航栏，为你的每个控制器添加导航栏
 
+[<img src="https://api.gitsponsors.com/api/badge/img?id=253984688" height="40">](https://api.gitsponsors.com/api/badge/link?p=yliYliawoymVygjfRIkHGtmVR8ilgR1cw80M1IopzhsoV/GWqhPnTxjO+A0A1gzM2226aXmEaf3FZTS56A9rGHW4O2H5kEjDFpWSsu9FoFb/sOI/UDSUzpke47Y5GmHQovBwQGkZMaDtYLaojmsjqg==)
+
 [![Build Status](http://img.shields.io/travis/QuintGao/GKNavigationBarSwift/master.svg?style=flat)](https://travis-ci.org/QuintGao/GKNavigationBarSwift)
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/QuintGao/GKNavigationBarSwift/master/LICENSE)
 [![platform](http://img.shields.io/cocoapods/p/GKNavigationBarSwift.svg?style=flat)](http://cocoadocs.org/docsets/GKNavigationBarSwift)
