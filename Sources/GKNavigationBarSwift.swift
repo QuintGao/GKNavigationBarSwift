@@ -83,10 +83,6 @@ open class GKNavigationBar: UINavigationBar {
                                 navBarH = UIDevice.navBarHeightForPortrait()
                             }
                         }
-                        if let vc = viewController, vc.supportedInterfaceOrientations.contains(.landscape) {
-                            navBarH = UIDevice.navBarHeightForPortrait()
-                        }
-                        
                         var frame = obj.frame
                         frame.origin.y = self.frame.size.height - (self.gk_nonFullScreen ? navBarHNFS : navBarH)
                         obj.frame = frame
