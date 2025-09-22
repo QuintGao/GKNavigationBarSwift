@@ -558,7 +558,8 @@ extension UIDevice {
     public static func isDynamicIslandScreen() -> Bool {
         if !isIPhone { return false }
         let excludeModels = ["iPhone 16e"]
-        if excludeModels.contains { deviceName.hasPrefix($0) } {
+        let isContains = excludeModels.contains { deviceName.hasPrefix($0) }
+        if isContains {
             return false
         }
         let includeModels = ["iPhone 14 Pro", "iPhone 15", "iPhone 16", "iPhone 17", "iPhone Air"]
@@ -637,7 +638,6 @@ extension UIDevice {
     
     /// 导航栏完整高度（状态栏+导航栏），状态栏隐藏时只有导航栏高度
     public static func navBarFullHeight() -> CGFloat {
-        let deviceModel = deviceModel
         let pixelOne = 1.0 / UIScreen.main.scale
         let statusBarH = statusBarFullHeight()
         let safeTop = safeAreaInsets().top;
