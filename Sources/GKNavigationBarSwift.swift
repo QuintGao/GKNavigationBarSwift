@@ -16,25 +16,23 @@ open class GKNavigationBar: UINavigationBar {
     /// 当前所在的控制器是否隐藏状态栏
     public var gk_statusBarHidden: Bool = false
     
+    private let backCls = "_UI" + "Bar" + "Background"
+    
+    private let navBackCls = "_UI" + "Navigation" + "Bar" + "Background"
+    
     /// 导航栏透明度
     public var gk_navBarBackgroundAlpha: CGFloat = 1 {
         willSet {
             for obj in self.subviews {
-                if let cls = NSClassFromString("_UIBarBackground") {
+                if let cls = NSClassFromString(backCls) {
                     if #available(iOS 10.0, *), obj.isKind(of: cls) {
-                        DispatchQueue.main.async {
+                        if obj.alpha != newValue {
+                            obj.alpha = newValue
+                        }
+                    } else {
+                        if let navCls = NSClassFromString(navBackCls), obj.isKind(of: navCls) {
                             if obj.alpha != newValue {
                                 obj.alpha = newValue
-                            }
-                        }
-                    }else {
-                        if let navBarBackgroundCls = NSClassFromString("_UINavigationBarBackground") {
-                            if obj.isKind(of: navBarBackgroundCls) {
-                                DispatchQueue.main.async {
-                                    if obj.alpha != newValue {
-                                        obj.alpha = newValue
-                                    }
-                                }
                             }
                         }
                     }
@@ -68,9 +66,10 @@ open class GKNavigationBar: UINavigationBar {
         /// 适配iOS11及以上，遍历所有子控件，向下移动状态栏高度
         if #available(iOS 11.0, *) {
             for obj in self.subviews {
-                if let cls = NSClassFromString("_UIBarBackground") {
+                if let cls = NSClassFromString(backCls) {
                     if obj.isKind(of: cls) {
                         var frame = obj.frame
+                        frame.origin.y = 0
                         frame.size.height = self.frame.size.height
                         obj.frame = frame
                     }else {
@@ -84,7 +83,12 @@ open class GKNavigationBar: UINavigationBar {
                             }
                         }
                         var frame = obj.frame
-                        frame.origin.y = self.frame.size.height - (self.gk_nonFullScreen ? navBarHNFS : navBarH)
+                        if UIDevice.isLiquidGlass() && self.gk_nonFullScreen {
+                            frame.size.height = UIDevice.navBarForIphone()
+                            frame.origin.y = self.frame.size.height - frame.size.height
+                        } else {
+                            frame.origin.y = self.frame.size.height - (self.gk_nonFullScreen ? navBarHNFS : navBarH)
+                        }
                         obj.frame = frame
                     }
                 }

@@ -286,6 +286,11 @@ extension UIDevice {
             "iPhone17,2" : "iPhone 16 Pro Max",
             "iPhone17,3" : "iPhone 16",
             "iPhone17,4" : "iPhone 16 Plus",
+            "iPhone17,5" : "iPhone 16e",
+            "iPhone18,1" : "iPhone 17 Pro",
+            "iPhone18,2" : "iPhone 17 Pro Max",
+            "iPhone18,3" : "iPhone 17",
+            "iPhone18,4" : "iPhone Air",
             
             "iPad1,1" : "iPad 1",
             "iPad2,1" : "iPad 2 (WiFi)",
@@ -426,6 +431,19 @@ extension UIDevice {
             "Watch7,3" : "Apple Watch Series 9 41mm case (GPS+Cellular)",
             "Watch7,4" : "Apple Watch Series 9 45mm case (GPS+Cellular)",
             "Watch7,5" : "Apple Watch Ultra 2",
+            "Watch7,8" : "Apple Watch Series 10 42mm case (GPS)",
+            "Watch7,9" : "Apple Watch Series 10 46mm case (GPS)",
+            "Watch7,10" : "Apple Watch Series 10 42mm case (GPS+Cellular)",
+            "Watch7,11" : "Apple Watch Series 10 46mm (GPS+Cellular)",
+            "Watch7,12" : "Apple Watch Ultra 3 49mm",
+            "Watch7,13" : "Apple Watch SE 3 40mm",
+            "Watch7,14" : "Apple Watch SE 3 44mm",
+            "Watch7,15" : "Apple Watch SE 3 40mm (GPS+Cellular)",
+            "Watch7,16" : "Apple Watch SE 3 44mm (GPS+Cellular)",
+            "Watch7,17" : "Apple Watch Series 11 42mm",
+            "Watch7,18" : "Apple Watch Series 11 46mm",
+            "Watch7,19" : "Apple Watch Series 11 42mm (GPS + Celllular)",
+            "Watch7,20" : "Apple Watch Series 11 46mm (GPS + Celllular)",
             
             "AudioAccessory1,1" : "HomePod",
             "AudioAccessory1,2" : "HomePod",
@@ -532,10 +550,19 @@ extension UIDevice {
     //"iPhone17,2" : "iPhone 16 Pro Max",
     //"iPhone17,3" : "iPhone 16",
     //"iPhone17,4" : "iPhone 16 Plus",
+    //"iPhone17,5" : "iPhone 16e",
+    //"iPhone18,1" : "iPhone 17 Pro",
+    //"iPhone18,2" : "iPhone 17 Pro Max",
+    //"iPhone18,3" : "iPhone 17",
+    //"iPhone18,4" : "iPhone Air",
     public static func isDynamicIslandScreen() -> Bool {
         if !isIPhone { return false }
-        let models = ["iPhone 14 Pro", "iPhone 15", "iPhone 16"]
-        return models.contains { deviceName.hasPrefix($0) }
+        let excludeModels = ["iPhone 16e"]
+        if excludeModels.contains { deviceName.hasPrefix($0) } {
+            return false
+        }
+        let includeModels = ["iPhone 14 Pro", "iPhone 15", "iPhone 16", "iPhone 17", "iPhone Air"]
+        return includeModels.contains { deviceName.hasPrefix($0) }
     }
     
     /// 将屏幕分为普通和紧凑两种，这个方法用于判断普通屏幕（也即大屏幕）
@@ -553,15 +580,43 @@ extension UIDevice {
         return navBarFullHeight()
     }
     
+    /// 液态玻璃
+    public static func isLiquidGlass() -> Bool {
+        if #available(iOS 26.0, *) {
+            // 获取info.plist里面的值
+            let infoDictionary = Bundle.main.infoDictionary;
+            if let dict = infoDictionary, dict.keys.contains("UIDesignRequiresCompatibility") {
+                let result = dict["UIDesignRequiresCompatibility"] as? Bool ?? false
+                return result ? false : true
+            }
+        }
+        return false
+    }
+    
+    public static func navBarForIpad() -> CGFloat {
+        if isLiquidGlass() {
+            return 54
+        }
+        return version >= 12.0 ? 50 : 44
+    }
+    
+    public static func navBarForIphone() -> CGFloat {
+        if isLiquidGlass() {
+            return 54
+        }
+        return 44
+    }
+    
+    
     /// 导航栏高度（无状态栏）
     public static func navBarHeight() -> CGFloat {
         if isIPad {
-            return version >= 12.0 ? 50 : 44
+            return navBarForIpad()
         }else {
             if isLandScape() {
-                return isRegularScreen() ? 44 : 32
+                return isRegularScreen() ? navBarForIphone() : 32
             }else {
-                return 44
+                return navBarForIphone()
             }
         }
     }
@@ -569,32 +624,51 @@ extension UIDevice {
     /// 导航栏竖屏高度（无状态栏）
     public static func navBarHeightForPortrait() -> CGFloat {
         if isIPad {
-            return version >= 12.0 ? 50 : 44
+            return navBarForIpad()
         }else {
-            return 44
+            return navBarForIphone()
         }
     }
     
     /// 非全屏时的导航栏高度
     public static func navBarHeightNonFullScreen() -> CGFloat {
-        return 56
+        return isLiquidGlass() ? 70 : 56
     }
     
     /// 导航栏完整高度（状态栏+导航栏），状态栏隐藏时只有导航栏高度
     public static func navBarFullHeight() -> CGFloat {
         let deviceModel = deviceModel
         let pixelOne = 1.0 / UIScreen.main.scale
-        var result = statusBarFullHeight()
+        let statusBarH = statusBarFullHeight()
+        let safeTop = safeAreaInsets().top;
+        var result: CGFloat = 0
         if isIPad {
-            result += 50
+            result += statusBarH;
+            result += navBarForIpad()
         }else if isLandScape() {
-            result += isRegularScreen() ? 44 : 32
+            result += statusBarH;
+            result += isRegularScreen() ? navBarForIphone() : 32
         }else {
-            result += 44
-            if deviceModel == "iPhone17,1" || deviceModel == "iPhone17,2" { // 16 Pro / 16 Pro Max
-                result += (2 + pixelOne) // 56.333
-            }else if isDynamicIslandScreen() {
-                result -= pixelOne // 53.667
+            result += navBarForIphone()
+            if isLiquidGlass() { // 液态屏，导航栏y值和安全区域顶部高度一致，导航栏高度变成54
+                result += safeTop
+            }else if isDynamicIslandScreen() { // 带灵动岛的屏幕
+                // 14 Pro Max - 16 Plus 安全区域顶部高度59，导航栏y值53.6666666
+                // 16 Pro - 17 Pro Max 安全区域顶部高度62，导航栏y值56.3333333
+                // Air 安全区域顶部高度68，导航栏y值62.3333333
+                
+                // 经研究发现
+                // 14 Pro Max-16 Plus的导航栏y值可以用安全区域高度-5-1像素的高度
+                // 16 Pro - 17 Pro Max 包括Air，可以用安全区域高度-5-2倍的1像素高度
+                
+                if safeTop <= 59 { // 14 Pro Max - 16 Plus 顶部安全区域高度59
+                    // 14 Pro Max - 16 Plus 导航栏的y值是53.66666666
+                    result += (safeTop - 5 - pixelOne)
+                } else {
+                    // 16 Pro - 17 Pro Max 导航栏的y值是56.33333333
+                    // 17 Air 导航栏的y值是62.3333333
+                    result += (safeTop - 5 - 2 * pixelOne )
+                }
             }
         }
         return result
@@ -606,9 +680,9 @@ extension UIDevice {
         let pixelOne = 1.0 / UIScreen.main.scale
         var result = statusBarHeightForPortrait()
         if isIPad {
-            result += 50
+            result += navBarForIpad()
         }else {
-            result += 44
+            result += navBarForIphone()
             if deviceModel == "iPhone17,1" || deviceModel == "iPhone17,2" { // 16 Pro / 16 Pro Max
                 result += (2 + pixelOne) // 56.333
             }else if isDynamicIslandScreen() {
