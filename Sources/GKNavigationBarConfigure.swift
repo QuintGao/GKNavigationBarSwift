@@ -590,6 +590,7 @@ extension UIDevice {
                 let result = dict["UIDesignRequiresCompatibility"] as? Bool ?? false
                 return result ? false : true
             }
+            return true
         }
         return false
     }
@@ -637,12 +638,16 @@ extension UIDevice {
     }
     
     private static func navBarForIphonePortrait() -> CGFloat {
-        let pixelOne = 1.0 / UIScreen.main.scale;
-        let safeTop = safeAreaInsets().top;
-        var result: CGFloat = 0;
-        result += navBarForIphone();
+        let pixelOne = 1.0 / UIScreen.main.scale
+        let insets = safeAreaInsets()
+        var safeTop = insets.top
+        if isNotchedScreen {
+            safeTop = max(max(insets.left, insets.right), max(insets.top, insets.bottom))
+        }
+        var result: CGFloat = 0
+        result += navBarForIphone()
         if isLiquidGlass() { // 液态屏，导航栏y值和安全区域顶部高度一致，导航栏高度变成54
-            result += safeTop;
+            result += safeTop
         }else if isDynamicIslandScreen() { // 带灵动岛的屏幕
             // 14 Pro Max - 16 Plus 安全区域顶部高度59，导航栏y值53.6666666
             // 16 Pro - 17 Pro Max 安全区域顶部高度62，导航栏y值56.3333333
@@ -661,9 +666,9 @@ extension UIDevice {
                 result += (safeTop - 5 - 2 * pixelOne )
             }
         }else {
-            result += safeTop;
+            result += safeTop
         }
-        return result;
+        return result
     }
     
     /// 导航栏完整高度（状态栏+导航栏），状态栏隐藏时只有导航栏高度

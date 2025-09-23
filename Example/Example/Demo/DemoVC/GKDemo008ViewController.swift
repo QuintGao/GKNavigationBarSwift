@@ -39,7 +39,7 @@ class GKDemo008ViewController: GKBaseViewController {
             $0.centerX.equalTo(self.view)
         }
         
-        btn1.snp.makeConstraints {
+        btn2.snp.makeConstraints {
             $0.top.equalTo(self.btn1.snp.bottom).offset(50)
             $0.centerX.equalTo(self.view)
         }
@@ -70,5 +70,11 @@ class GKDemo008ViewController: GKBaseViewController {
         appDelegate.isSupportLandscape = false
         
         GKAVPlayerManager.shared.playVideo(from: self)
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        print(self.gk_navigationBar.frame)
     }
 }
