@@ -687,7 +687,12 @@ extension UIDevice {
                 result += isRegularScreen() ? navBarForIphone() : 32
             }
         }else {
-            result = navBarForIphonePortrait();
+            if isNotchedScreen {
+                result = navBarForIphonePortrait()
+            } else {
+                result += statusBarH
+                result += navBarForIphone()
+            }
         }
         return result
     }
@@ -700,7 +705,12 @@ extension UIDevice {
             result += statusBarH;
             result += navBarForIpad();
         }else {
-            result = navBarForIphonePortrait();
+            if isNotchedScreen {
+                result = navBarForIphonePortrait()
+            } else {
+                result += statusBarH
+                result += navBarForIphone()
+            }
         }
         return result
     }
