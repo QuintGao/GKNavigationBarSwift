@@ -636,58 +636,66 @@ extension UIDevice {
         return isLiquidGlass() ? 70 : 56
     }
     
+    private static func navBarForIphonePortrait() -> CGFloat {
+        let pixelOne = 1.0 / UIScreen.main.scale;
+        let safeTop = safeAreaInsets().top;
+        var result: CGFloat = 0;
+        result += navBarForIphone();
+        if isLiquidGlass() { // 液态屏，导航栏y值和安全区域顶部高度一致，导航栏高度变成54
+            result += safeTop;
+        }else if isDynamicIslandScreen() { // 带灵动岛的屏幕
+            // 14 Pro Max - 16 Plus 安全区域顶部高度59，导航栏y值53.6666666
+            // 16 Pro - 17 Pro Max 安全区域顶部高度62，导航栏y值56.3333333
+            // Air 安全区域顶部高度68，导航栏y值62.3333333
+            
+            // 经研究发现
+            // 14 Pro Max-16 Plus的导航栏y值可以用安全区域高度-5-1像素的高度
+            // 16 Pro - 17 Pro Max 包括Air，可以用安全区域高度-5-2倍的1像素高度
+            
+            if safeTop <= 59 { // 14 Pro Max - 16 Plus 顶部安全区域高度59
+                // 14 Pro Max - 16 Plus 导航栏的y值是53.66666666
+                result += (safeTop - 5 - pixelOne)
+            } else {
+                // 16 Pro - 17 Pro Max 导航栏的y值是56.33333333
+                // 17 Air 导航栏的y值是62.3333333
+                result += (safeTop - 5 - 2 * pixelOne )
+            }
+        }else {
+            result += safeTop;
+        }
+        return result;
+    }
+    
     /// 导航栏完整高度（状态栏+导航栏），状态栏隐藏时只有导航栏高度
     public static func navBarFullHeight() -> CGFloat {
-        let pixelOne = 1.0 / UIScreen.main.scale
         let statusBarH = statusBarFullHeight()
-        let safeTop = safeAreaInsets().top;
         var result: CGFloat = 0
         if isIPad {
             result += statusBarH;
             result += navBarForIpad()
         }else if isLandScape() {
-            result += statusBarH;
-            result += isRegularScreen() ? navBarForIphone() : 32
-        }else {
-            result += navBarForIphone()
-            if isLiquidGlass() { // 液态屏，导航栏y值和安全区域顶部高度一致，导航栏高度变成54
-                result += safeTop
-            }else if isDynamicIslandScreen() { // 带灵动岛的屏幕
-                // 14 Pro Max - 16 Plus 安全区域顶部高度59，导航栏y值53.6666666
-                // 16 Pro - 17 Pro Max 安全区域顶部高度62，导航栏y值56.3333333
-                // Air 安全区域顶部高度68，导航栏y值62.3333333
-                
-                // 经研究发现
-                // 14 Pro Max-16 Plus的导航栏y值可以用安全区域高度-5-1像素的高度
-                // 16 Pro - 17 Pro Max 包括Air，可以用安全区域高度-5-2倍的1像素高度
-                
-                if safeTop <= 59 { // 14 Pro Max - 16 Plus 顶部安全区域高度59
-                    // 14 Pro Max - 16 Plus 导航栏的y值是53.66666666
-                    result += (safeTop - 5 - pixelOne)
-                } else {
-                    // 16 Pro - 17 Pro Max 导航栏的y值是56.33333333
-                    // 17 Air 导航栏的y值是62.3333333
-                    result += (safeTop - 5 - 2 * pixelOne )
-                }
+            if isLiquidGlass() {
+                result += 24;
+                result += isRegularScreen() ? navBarForIphone() : 32;
+            }else {
+                result += statusBarH;
+                result += isRegularScreen() ? navBarForIphone() : 32
             }
+        }else {
+            result = navBarForIphonePortrait();
         }
         return result
     }
     
     /// 竖屏导航栏完整高度（状态栏+导航栏）
     public static func navBarFullHeightForPortrait() -> CGFloat {
-        let deviceModel = deviceModel
-        let pixelOne = 1.0 / UIScreen.main.scale
-        var result = statusBarHeightForPortrait()
+        let statusBarH = statusBarHeightForPortrait()
+        var result: CGFloat = 0;
         if isIPad {
-            result += navBarForIpad()
+            result += statusBarH;
+            result += navBarForIpad();
         }else {
-            result += navBarForIphone()
-            if deviceModel == "iPhone17,1" || deviceModel == "iPhone17,2" { // 16 Pro / 16 Pro Max
-                result += (2 + pixelOne) // 56.333
-            }else if isDynamicIslandScreen() {
-                result -= pixelOne // 53.667
-            }
+            result = navBarForIphonePortrait();
         }
         return result
     }
